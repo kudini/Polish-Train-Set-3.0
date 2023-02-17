@@ -1,0 +1,216 @@
+Polish Train Set - Change log
+================================
+3.0.2
+New wagons: Eanos (445W)
+Corrected weight for ED161
+Fixed Eanos sprites
+Model_life property changed for Eanos - vehicle expire
+Increased reliability_decay for steam engines
+Refit to LIME allowed for Sdw and Sdwh wagons
+Refit to CBLK allowed for Sdw, Sdwh and Uacs wagons
+Refit to ALUM, CSTI, IRON, STAL, STCB, STST, ZINC disallowed for Sgs and Sdgmnss wagons
+Corrected introduction date for Lekqss
+Increased cargo_age_period parameter for Lekqss
+Decreased cargo_age_period parameter for Sgs and Sdgmnss carrying non-refrigerated products
+
+3.0.1
+Corrected power for EU43
+
+3.0
+New engine: BR 285 (TRAXX F140 DE)
+New wagons: Eanos, Slms
+Ibhs wagon got replaced by Ibhss
+Added new FIRS 4's cargoes
+Corrected power for SU42 and EP02
+Fixed error with not working EU07's POLREGIO livery
+Fixed EN63A and ED161 2X sprites
+Added diesel mode for ET26
+Changed purchase costs for wagons and engines
+Changed running and halted cost parameters for steam, diesel and electric engines
+Decreased capacity of cargos with CC_PIECE_GOODS cargo class for Gags
+Increased cargo age bonus for restaurnat and luggage wagons
+Increased cargo_age_period parameter for ED161 and ED250
+Changed capacity of VEHI for all flatbed wagons
+Decreased power for electric locomotives without multiple-unit train control and high power electric locomotives (>5000 kW) if they are not leading engine
+Decreased power for EP05 and EU07 if they are connected to other electric engines or if they are third engine in train
+Decreased reliability_decay parameter for all steam engines, WM-15A, SM30, 6Dl and EP02
+Fixed error with missing SU160 locomotive in brake force calculations
+Model_life property changed for engines ST43 and SU42 - vehicles expire
+Increased vehicle_life for all engines
+
+1.2.2
+Decreased purchase cost of SN81
+Original, mono and maglev trains are disabled by default
+New liveries for EU43-Traxx
+Refit to SALT disallowed for UIC class E and F wagons
+Refit to SALT allowed for UIC class G and H wagons
+Refit to QLME and SASH allowed for UIC class G wagons
+Additional information added for large distance EMU's
+Increased running and halted cost parameters for ED161
+Changed purchase cost for EN63A and ED161
+Increased capacity for ED161
+Increased cargo_age_period parameter for Slr, Ibhs, ED250 and ED161
+
+1.2.1
+Error fix
+
+1.2
+New engines: ED74 "Bydgostia", SN81, EU47 and SU42-6Dl
+New wagons: Twindexx Vario coaches (B16mnopuxz and AB12bfmnopuvxz)
+New livery for SM42
+Fixed EN63A-Impuls sprites
+
+1.1
+New engine: ED161 "Dart"
+New wagon: WLABwxz
+Changed introduction date of WLABd
+Changed purchase costs for all vehicles
+Changed tractive effort of modern EMU's
+Added new FIRS 3's cargoes
+
+1.0
+New engines: ET26-Dragon 2 and EN63A-Impuls
+Added model_life parameter (60 years) for ET21
+EN76-Elf can be coupled up to 3 units
+
+Polish PKP Set v2.0 - Change log
+================================
+
+2.0.14
+New engines: TKi3, Od13, Ti12, SU160, ED250(Pendolino) and ASF,
+New wagons: Wdn, Kd, Hes, Rnh, Rnh (type 5R) and Uahs,
+New liveries for EU07, A/Bdnu, BDwxzd, Bdhpumn and WLABd,
+New classic livery added to Bh("bonanza"),
+Engines connected to ASF generates no power and no costs,
+Corrected templates for long vehicles
+Changed purchase method for Bipa; the new vehicle has only 2 parts,
+New parameter added for using original introduction dates.
+
+2.0.13
+Fixed error with missing Wddo(2W) wagon in brake force calculations (#8399),
+Fixed error with wrong WM-15A vehicles capacity (#8392),
+New ZOOM_LEVEL_IN_2X graphics added for classic livery of Bh("ryflak").
+
+2.0.12
+New engines added: SM41, SP32, EU46-Vectron,
+New luggage vans: Fy, Fhx, Dhxt and Dwxz (#7761),
+New restaurant/sleeping carriages: Jhx, Jhix, WRdmnu and WLAB10mnouz,
+New freight wagons: Wddo (type 2W), Ggs, Sn,
+Fixed problem with wagon limits for SA106 (#7711),
+All engines now have virtual cargo PASS and can be autoreplaced (#7712),
+Fixed error with wrong WLABd capacity (#7797),
+Fixed wrong colours for CMNT cargo, added support for new cargoes (#7933),
+Wagon Sggmnss can transport mail,
+Capacities of Wddo(h) and Es decreased for non friable cargos (#7748),
+Decreased model_life for early steam and electric engines (Ok1, Ty23, Okl27,
+ Pt31 and EP01),
+Increased vehicle_life for TKh1, Tp4 and Ty37 (#7726).
+Decreased power for steam engines if they are not leading engine,
+Increased Vmax. for EP02 to 110km/h,
+Decreased Vmax. for oldest open and covered wagons to 65km/h,
+Decreased Vmax. for Kddet to 80km/h,
+Decreased Max. tractive effort for EU44,
+Sprites added for loading stages for Habbins,
+Decreased power consumption for wagon heating systems in arctic climate,
+New ZOOM_LEVEL_IN_2X graphics added for Ok1 and Ty23.
+
+2.0.11
+New engines added: TKh1, OKz32, SP45, SM30, SM31, SA106, ET42, ED72,
+New wagons added: BCi, Bhxz, Gmw, Fg, BDwxzd, Bdhpumn, Es,
+Flatbed wagon Pkkd31 removed form the set,
+New wagons Pdk31, Pdkh31, Kbkks and Kgns added instead of removed Pddk31,
+Refit option added for EN57 and EN71 (vehicles can transport MAIL),
+New liveries for EN57, EN71, SM42, ST44, SU45, SU46, EU07, EP09, ET22 and ET41,
+Model_life property changed for engines EP05 and ET40 - vehicles expire,
+Model_life property changed for wagons Gmy, Ghmx, Ohtx, Bh("ryflak"),
+ Bhp and Fals - vehicles expire,
+Increased capacity and running_cost_factor for all post wagons,
+Corrected introduction_date for wagons Kddet, Hbbins and Habbins,
+Corrected cost_factor for wagons Hbbins and Habbins,
+Decreased Vmax. for Bhp to 100km/h,
+Decreased cargo_age_period for Bh("ryflak") and Bh("bonanza"),
+Refit option added for both Bh wagons (vehicles can transport MAIL),
+Wagon Tadns cannot transport sand,
+Wagon Sdgmnss can transport refrigerated products,
+Resolved problem with desync error,
+Corrected Power, purchase and running costs for Pt47,
+Increased Vmax. for Pt47 to 120km/h,
+Increased capacity for wagons Gbs and Ibhs,
+Changed loading_speed for Eaos, Fals, Falns, Gags, Gbs, Hbbins, Habbins,
+ Zaes, SgS, Sdgmnss,  Gmy, Gmw, Ghmx, Pdn, SN61, EN57, EN71, ED72, EN76
+ and all passenger wagons, 
+New ZOOM_LEVEL_IN_2X graphics added for Pt47, Ol49, Ty51, Gmy, Fg, BCy, BCyh,
+ Kdt31, Kdth31 and Kbkks,
+New translations added: Finnish and Italian.
+
+2.0.10
+New wagons added: A/B9mnopuz, Sdgmnss,
+Refit option to 3- and 2-part version added to double-deck carriage Bipa,
+Corrected problem with non-zero refit cost and TRAIN_FLAG_AUTOREFIT flag,
+Autorefit option added to almost all wagons, except post vans and freight
+ wagons which change your apperance after refit,
+Refit cost added for passenger wagons, when rebuilt to first or second class,
+Increased running costs for all wagons,
+Increased loading speed for wagons Zaes and Uacs,
+Decreased cargo capacity for wagon Eaos when transports WOOD or WDPRD,
+New ZOOM_LEVEL_IN_2X graphics added for wagons Pddk30, Eamos and Res,
+New cargo graphics for BDMT in Pddk30, Eamos and Res.
+
+2.0.9
+New wagons added: Eamos, Tadns, WLABd and Bh("bonanza"),
+End of service for Tp4 and Ok1 changed to year 1956,
+New purchase costs for engines - prices are more dependent on vehicle speed,
+New running costs for engines, dynamically calculated according to the train
+ speed and load,
+Increased purchase costs and running costs for wagons,
+Loading_speed property changed for Eaos, Res, Sgs, Fals, Falns, Gags, SN61,
+ EN57 and EN71,
+Running cost increased for wagons with brakeman's hut (BCyh, Wddoh, Kdth, Rh),
+Model_life property changed for Kddet,
+Running_cost_factor property changed for Bipa,
+Cargo_age_period for A/Bhxz, A/Bdnu and A/Bdhmnu differs for 1st and 2nd class,
+Cargo_age_period decreased for Bipa, EN57 nad EN71,
+TRAIN_FLAG_AUTOREFIT flag added to ordinary open and covered wagons,
+Refit to MAIZ or CERE allowed for normal covered wagons (Kdt, Kdth, Kddet,
+ Gags and Gbs),
+Refit to MAIZ disallowed for normal self-discharging wagons (Fals, Falns),
+Refit to FICR disallowed for normal open wagons (Wddo, Wddoh, Eaos)(#6706),
+Visual glitches fixed in Habbins, SU45 and SU46,
+Bug fixed for EN76 (#6708),
+New ZOOM_LEVEL_IN_2X graphics for wagon Slr,
+Capacity increased for SN61, Bipa and Bh("ryflak"),
+Implementation of A/Bdhmnu changed - number of parts optimized,
+New Wddo, Wddoh and Eaos graphics for WDPR cargo (#6741),
+Palette recolouring for rear lights implemented for A/Bhxz, A/Bdnu and Bipa,
+New translations added: Croatian, Spanish and Catalan.
+
+2.0.8
+New wagon added: flatbed wagon Res,
+New ZOOM_LEVEL_IN_2X graphics for engine: Ty2,
+New ZOOM_LEVEL_IN_2X graphics for wagons: Wddo, Wddoh, Kdt, Kdth, Gags, Gbs
+ and Ibhs,
+New graphics for Pddk30 with wood and wood products,
+Length of tank wagon Rh changed to proper value,
+Maximum number of EN57 in one train changed to 3,
+Bug fixed for EU43, EU44 and EN76,
+New translations: German and Russian.
+
+2.0.7
+New parameter added: Keep old vehicles in purchase menu,
+New parameter added: Disable original monorail and maglev trains,
+Vehicle_life property for engines changed to typical value (~20),
+Wagons with nad without brakes (BCy/h, Wddo/h, Kdt/h) now are separate vehicles,
+New rules added: train can leave depot only if it has sufficient braking force,
+New wagons added: cement wagon Sdw and cement wagon Sdwh,
+New engines added: Ty37 and ET40,
+New parameter added: Purchase cost multiplier,
+New parameter added: Running cost multiplier,
+New purchase and running costs for engines and wagons,
+OKl27 and TKt48 now are not reversed when the train is going back,
+SM42, SP42 and SU42 now are separate vehicles,
+Special sprites added to long passenger wagons for prevent glitches,
+Special sprites added to A/Bdhmnu for simulate smooth corners,
+New sequence of vehicle IDs.
+
+2.0.6
+First published version.

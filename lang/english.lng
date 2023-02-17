@@ -1,0 +1,259 @@
+##grflangid 0x01
+
+# GRF name and description
+STR_GRF_NAME        :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :{ORANGE}{TITLE} {VERSION}{BLACK} contains most known Polish rolling stock used over the years, since 1918 to the present.{}{COPYRIGHT}2011-2015{}Author: {SILVER}TadeuszD{BLACK}{}Graphics: {SILVER}TadeuszD{BLACK}, {SILVER}Walter Novotny{BLACK}, {SILVER}Sojita{BLACK}, {SILVER}McZapkie{BLACK}, {SILVER}Czajnikowiec{BLACK}, {SILVER}101ksl{BLACK}, {SILVER}Mewa{BLACK}{}Special thanks to: {SILVER}niemiec{BLACK}{}License: {SILVER}GPLv2{BLACK}{}WWW: {LTBLUE}http://openttd-polska.pl{BLACK}
+
+# GRF parameters
+STR_PARAM_NAME_DISABLE_ORIG     :Disable original normal trains
+STR_PARAM_DESC_DISABLE_ORIG     :Select this option to disable original rail engines and wagons for normal tracks. Not applicable to monorail and maglev trains.
+STR_PARAM_NAME_DISABLE_MONO_MAGLEV  :Disable original monorail and maglev trains
+STR_PARAM_DESC_DISABLE_MONO_MAGLEV  :Select this option to disable original monorail and maglev engines and wagons. Not applicable to normal track trains.
+STR_PARAM_NAME_KEEP_OLD_VEHS    :Keep old vehicles in purchase menu
+STR_PARAM_DESC_KEEP_OLD_VEHS    :Select this option to disable expiration of old engines and wagons. Historical vehicles will remain available in purchase menu also in modern ages. This option applies only to this set. To disable expiration of another vehicles use option "Vehicles never expire" in game settings.
+STR_PARAM_NAME_REPLACE_CARGOES  :Transport 'goods' in special wagons
+STR_PARAM_DESC_REPLACE_CARGOES  :Some wagons in the set are dedicated to transport special cargoes, defined by FIRS and ECS industry sets. If you play without FIRS and ECS, these wagons are disabled. Select this option to use these wagons with a standard 'goods' cargo.
+STR_PARAM_NAME_ORIG_INTRO_DATES :Use original introduction dates for early rolling stock 
+STR_PARAM_DESC_ORIG_INTRO_DATES :Select this option to use original introduction dates for early PKP rolling stock instead of 1918 - the year in which Poland regained its independence.{}When option is enabled, the first vehicles are available in 1882.
+STR_PARAM_NAME_TOURISTS         :ECS 'tourists' in passenger/suburban coaches
+STR_PARAM_DESC_TOURISTS         :This option don't work yet.
+STR_PARAM_TOURISTS_AUTO         :Autorefit
+STR_PARAM_TOURISTS_MANUAL       :Manulal
+STR_PARAM_TOURISTS_OFF          :Disabled
+
+STR_PARAM_NAME_PURCHASE_COST    :Purchase cost multiplier
+STR_PARAM_DESC_PURCHASE_COST    :Use this option to increase the purchase cost of engines and wagons. Applicable only in this set.
+STR_PARAM_NAME_RUNNING_COST     :Running cost multiplier
+STR_PARAM_DESC_RUNNING_COST     :Use this option to increase the running cost of engines and wagons. Applicable only for vehicles in this set.
+STR_PARAM_COST_X1               :1x
+STR_PARAM_COST_X2               :2x
+STR_PARAM_COST_X4               :4x
+STR_PARAM_COST_X8               :8x
+
+STR_PURCHASE_DESCR_2L           :{STRING}{}{BLACK}{STRING}
+STR_PURCHASE_DESCR_3L           :{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}
+STR_PURCHASE_DESCR_4L           :{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}
+STR_SUBTYPE_DESCR_2P            :{STRING}{BLACK}, {STRING}
+
+STR_ENGINE_HEAVY_FREIGHT        :Info: {ORANGE}Locomotive for {YELLOW}heavy freight trains
+STR_ENGINE_FREIGHT              :Info: {ORANGE}Locomotive for {YELLOW}freight trains
+STR_ENGINE_PASSENGER_FREIGHT    :Info: {ORANGE}Universal locomotive for {YELLOW}passenger and freight trains
+STR_ENGINE_PASSENGER            :Info: {ORANGE}Locomotive for {YELLOW}passenger trains
+STR_ENGINE_EXPRESS              :Info: {ORANGE}Locomotive for {YELLOW}passenger and express trains
+STR_ENGINE_SHUNTER              :Info: {YELLOW}Shunter / Shed pilot
+
+STR_BRAKE_NONE                  :Brake system: {RED}None
+STR_BRAKE_HAND                  :Brake system: {GREEN}Hand (brakeman's cab)
+STR_BRAKE_AIR                   :Brake system: {GREEN}Air (centralized)
+
+STR_HEATING_STEAM_TEXT          :Heating system: {LTBLUE}Steam
+STR_HEATING_ST_EL_TEXT          :Heating system: {LTBLUE}Steam/electric
+STR_HEATING_ELECTRIC_TEXT       :Heating system: {LTBLUE}Electric
+
+STR_INCOME_1_CLASS              :Note: {YELLOW}Higher income rate{ORANGE} for {RED}1{ORANGE}-st class passengers over long distances
+STR_INCOME_LOWER                :Note: {RED}Lower income rate{ORANGE} for passengers over long distances
+STR_INCOME_ALL_EXPRESS          :Note: {YELLOW}Increases income rate{ORANGE} for passengers in all express coaches in the train
+STR_INCOME_HIGH                 :Note: {YELLOW}High income rate{ORANGE} for passengers over long distances
+STR_INCOME_CARGO_HIGH           :Note: {YELLOW}Higher income rate{ORANGE} for cargoes over long distances
+STR_CAPACITY_NON_FRIABLE        :Note: {RED}Decreased capacity{ORANGE} for non-friable cargoes
+STR_CAPACITY_LIQUID             :Note: {RED}Decreased capacity{ORANGE} for liquid cargoes
+
+STR_HEATING_NONE_TEXT           :Heating power: {RED}None
+STR_HEATING_STEAM_POWER_TEXT    :Heating power: {LTBLUE}Steam ({SIGNED_WORD}kW)
+STR_HEATING_STEAM_CLAYTON_TEXT  :Heating power: {LTBLUE}Steam "Clayton" (150kW)
+STR_HEATING_COMBINED_TEXT       :Heating power: {LTBLUE}Combined diesel/electric (150kW)
+STR_HEATING_ELECTRIC_POWER_TEXT :Heating power: {LTBLUE}Electric ({SIGNED_WORD}kW)
+
+STR_ATTACH_DISALLOW_MCAR        :You cannot use a motor car as an ordinary wagon.
+STR_ATTACH_DISALLOW_EZT2        :Incompatible couplers. You cannot couple EMUs with different types of couplers.
+STR_ATTACH_DISALLOW_EZT1        :Incompatible couplers. You cannot couple EMUs with classical engines/wagons. 
+STR_ATTACH_DISALLOW_TROLLEY     :Incompatible types. You cannot couple a trolley with classical engines/wagons. 
+STR_ATTACH_DISALLOW             :You cannot attach this vehicle to {STRING}.
+STR_TRAIN_TOO_LONG              :There are too many vehicles attached to {STRING}.
+STR_TRAIN_WITHOUT_BRAKE         :The train has too few wagons with brakes.{} You should add more wagons with hand/air brakes.
+STR_TRAIN_NOT_HEATED            :The train is not heated properly. There is a mismatch of heating systems or an insufficiency of heating power.{} You should change engine or add special heating wagon.
+
+STR_SUBTYPE_OLD_2CLASS          : - 2-nd class compartments
+STR_SUBTYPE_OLD_12CLASS         : - 1/2-nd class compartments
+STR_SUBTYPE_OLD_1CLASS          : - 1-st class compartments
+STR_SUBTYPE_NEW_2CLASS          : - 2-nd class seats
+STR_SUBTYPE_NEW_1CLASS          : - 1-st class seats
+
+STR_SUBTYPE_LIVERY_CLASSIC      : - Classic livery
+STR_SUBTYPE_LIVERY_YEAR_DEP     : - Year-dependent livery
+STR_SUBTYPE_LIVERY_CARGO_DEP    : - Cargo-dependent livery
+STR_SUBTYPE_LIVERY_RANDOM       : - Random livery
+STR_SUBTYPE_LIVERY_VISIBLE      : - Visible vehicle
+STR_SUBTYPE_LIVERY_INVISIBLE    : - Invisible vehicle
+
+STR_SUBTYPE_LIVERY_PKP_IC       : - "PKP IC" livery
+STR_SUBTYPE_LIVERY_PKP_CARGO    : - "PKP Cargo" livery
+STR_SUBTYPE_LIVERY_PKP_PR       : - "PKP Przewozy Regionalne" livery
+STR_SUBTYPE_LIVERY_PKP_POLREGIO : - "PKP POLREGIO" livery
+STR_SUBTYPE_LIVERY_LOTOS        : - "Lotos Kolej" livery
+STR_SUBTYPE_ENXX_ORANGE         : - Orange livery
+STR_SUBTYPE_ENXX_RED_YEL        : - Red/Yellow livery
+STR_SUBTYPE_ENXX_BLU_YEL        : - Blue/Yellow livery
+STR_SUBTYPE_ENXX_BLK_RED        : - Black/Red livery
+STR_SUBTYPE_ENXX_KM             : - "Koleje Mazowieckie" livery
+
+STR_TKH1_NAME           :TKh1 (Steam)
+STR_TKI3_NAME           :TKi3 (Steam)
+STR_OD13_NAME           :Od13 (Steam)
+STR_TI12_NAME           :Ti12 (Steam)
+STR_TP4_NAME            :Tp4 (Steam)
+STR_OK1_NAME            :Ok1 (Steam)
+STR_TY23_NAME           :Ty23 (Steam)
+STR_OKL27_NAME          :OKl27 (Steam)
+STR_PT31_NAME           :Pt31 (Steam)
+STR_OKZ32_NAME          :OKz32 (Steam)
+STR_TY37_NAME           :Ty37 (Steam)
+STR_TY2_NAME            :Ty2 (Steam)
+STR_PT47_NAME           :Pt47 (Steam)
+STR_TKT48_NAME          :TKt48 (Steam)
+STR_OL49_NAME           :Ol49 (Steam)
+STR_TY51_NAME           :Ty51 (Steam)
+STR_SN61_NAME           :SN61 (Diesel motor car)
+STR_SN61_TEXT           :Info: {ORANGE}Diesel motor car - max. {YELLOW}3 units{ORANGE} and {YELLOW}3 trailers{ORANGE} allowed
+STR_SN81_NAME           :SN81 (Diesel railbus)
+STR_SA106_NAME          :SA106 (Diesel railbus)
+STR_SA106_TEXT          :Info: {ORANGE}Diesel railbus - max. {YELLOW}3 units{ORANGE} and {YELLOW}3 trailers{ORANGE} allowed
+STR_SM30_NAME           :SM30 (Diesel)
+STR_SM41_NAME           :SM41 (Diesel)
+STR_SM42_NAME           :SM42 (Diesel)
+STR_SP42_NAME           :SP42 (Diesel)
+STR_SU42_NAME           :SU42 (Diesel)
+STR_ST43_NAME           :ST43 (Diesel)
+STR_ST44_NAME           :ST44 (Diesel)
+STR_SP45_NAME           :SP45 (Diesel)
+STR_SU45_NAME           :SU45 (Diesel)
+STR_SU46_NAME           :SU46 (Diesel)
+STR_SM31_NAME           :SM31 (Diesel)
+STR_SP32_NAME           :SP32 (Diesel)
+STR_BR285_NAME          :BR 285-Traxx F140 DE (Diesel)
+STR_6DL_NAME            :SU42-6Dl (Diesel)
+STR_SU160_NAME          :SU160-Gama (Diesel)
+STR_EP01_NAME           :EP01 (Electric)
+STR_EP02_NAME           :EP02 (Electric)
+STR_EU07_NAME           :EU07 (Electric)
+STR_ET21_NAME           :ET21 (Electric)
+STR_ET22_NAME           :ET22 (Electric)
+STR_EP08_NAME           :EP08 (Electric)
+STR_EP05_NAME           :EP05 (Electric)
+STR_ET40_NAME           :ET40 (Electric)
+STR_ET41_NAME           :ET41 (Electric)
+STR_ET42_NAME           :ET42 (Electric)
+STR_EP09_NAME           :EP09 (Electric)
+STR_EU43_NAME           :EU43-Traxx (Electric)
+STR_EU44_NAME           :EU44 "Husarz" (Electric)
+STR_EU47_NAME           :EU47-Traxx (Electric)  
+STR_EU46_NAME           :EU46-Vectron (Electric)
+STR_ET26_NAME           :ET26-Dragon 2 (Electric)
+STR_ET26_TEXT           :Note: {ORANGE}Electric locomotive with last-mile diesel engine ({YELLOW}540 kW{ORANGE})
+STR_EN57_NAME           :EN57 (EMU)
+STR_EN57_TEXT           :Info: {YELLOW}3{ORANGE}-part Electric Multiple Unit
+STR_EN71_NAME           :EN71 (EMU)
+STR_EN71_TEXT           :Info: {YELLOW}4{ORANGE}-part Electric Multiple Unit
+STR_ED72_NAME           :ED72 (EMU)
+STR_ED72_TEXT           :Info: {YELLOW}4{ORANGE}-part Electric Multiple Unit with {YELLOW}50{ORANGE} {RED}1{ORANGE}-st and {YELLOW}288{ORANGE} {RED}2{ORANGE}-nd class sitting places
+STR_ED74_NAME           :ED74 "Bydgostia" (EMU)
+STR_ED74_TEXT           :Info: {YELLOW}4{ORANGE}-part Electric Multiple Unit with {YELLOW}33{ORANGE} {RED}1{ORANGE}-st and {YELLOW}169{ORANGE} {RED}2{ORANGE}-nd class sitting places
+STR_EN76_NAME           :EN76-Elf (EMU)
+STR_ED250_NAME          :ED250 "Pendolino" (EMU)
+STR_ED250_TEXT          :Info: {YELLOW}7{ORANGE}-part Electric Multiple Unit with {YELLOW}buffet car{ORANGE}, {YELLOW}45{ORANGE} {RED}1{ORANGE}-st and {YELLOW}357{ORANGE} {RED}2{ORANGE}-nd class sitting places
+STR_EN63A_NAME          :EN63A-Impuls (EMU)
+STR_ED161_NAME          :ED161 "Dart" (EMU)
+STR_ED161_TEXT          :Info: {YELLOW}8{ORANGE}-part Electric Multiple Unit with {YELLOW}buffet car{ORANGE}, {YELLOW}60{ORANGE} {RED}1{ORANGE}-st and {YELLOW}296{ORANGE} {RED}2{ORANGE}-nd class sitting places
+
+STR_GMY_NAME            :Mail van (Gmy)
+STR_GHMX_NAME           :Mail van (Ghmx)
+STR_GMW_NAME            :Mail van (Gmw)
+STR_PDN_NAME            :Mail van (Pdn)
+STR_OHXT_NAME           :Heating wagon (Ohxt)
+STR_FG_NAME             :Mail/luggage van (Fg)
+STR_FY_NAME             :Luggage van (Fy)
+STR_FHX_NAME            :Luggage van (Fhx)
+STR_DHXT_NAME           :Luggage van (Dhxt)
+STR_DWXZ_NAME           :Luggage van (Dwxz)
+STR_BDWXZD_NAME         :Passenger/luggage coach (BDwxzd)
+STR_JHX_NAME            :Restaurant coach (Jhx)
+STR_JHIX_NAME           :Restaurant coach (Jhix)
+STR_WRDMNU_NAME         :Restaurant coach (WRdmnu)
+STR_WRMNOUZ_NAME        :Restaurant coach (WRmnouz)
+STR_BCY_NAME            :Passenger coach (BCy)
+STR_BCYH_NAME           :Passenger coach (BCyh)
+STR_BHXZ_NAME           :Express coach (Bhxz)
+STR_ABHXZ_NAME          :Express coach (A/Bhxz)
+STR_ABHXZ_TEXT          :Refitable to: {RED}2{ORANGE}-nd, {RED}1/2{ORANGE}-nd or {RED}1{ORANGE}-st class express coach{BLACK}. Default: {RED}2{ORANGE}-nd class coach
+STR_BCI_NAME            :Passenger coach "kowbojka" (BCi)
+STR_BH_RYF_NAME         :Passenger coach "ryflak" (Bh)
+STR_BH_RYF_TEXT         :Info: {ORANGE}Trailer for {YELLOW}diesel motor car SN61
+STR_WLAB_NAME           :Sleeping car (WLABd)
+STR_WLABWXZ_NAME        :Sleeping car (WLABwxz)
+STR_WLAB10MNOUZ_NAME    :Sleeping car (WLAB10mnouz)
+STR_ABDNU_NAME          :Express coach (A/Bdnu)
+STR_ABDNU_TEXT          :Refitable to: {RED}2{ORANGE}-nd, {RED}1/2{ORANGE}-nd or {RED}1{ORANGE}-st class express coach{BLACK}. Default: {RED}2{ORANGE}-nd class coach
+STR_BH_BON_NAME         :Passenger coach "bonanza" (Bh)
+STR_BH_BON_TEXT         :Info: {ORANGE}Trailer for {YELLOW}diesel railbus SA106
+STR_ABDHMNU_NAME        :InterCity coach (A/Bdhmnu)
+STR_ABDHMNU_TEXT        :Refitable to: {RED}2{ORANGE}-nd or {RED}1{ORANGE}-st class InterCity coach{BLACK}. Default: {RED}2{ORANGE}-nd class coach
+STR_AB9MNOPUZ_NAME      :EuroCity coach (A/B9mnopuz)
+STR_AB9MNOPUZ_TEXT      :Refitable to: {RED}2{ORANGE}-nd or {RED}1{ORANGE}-st class EuroCity coach{BLACK}. Default: {RED}2{ORANGE}-nd class coach
+STR_BIPA_NAME           :Double-deck coach (Bhp)
+STR_BIPA_TEXT           :Info: {ORANGE}multi-part double-deck passenger coach{}{BLACK}Refitable to: {YELLOW}2{ORANGE}-, {YELLOW}3{ORANGE}- or {YELLOW}4{ORANGE}-part coach{BLACK}. Default: {YELLOW}2{ORANGE}-part coach
+STR_BIPA_4PARTS         : - 4-part coach
+STR_BIPA_3PARTS         : - 3-part coach
+STR_BIPA_2PARTS         : - 2-part coach
+STR_BDHPUMN_NAME        :Double-deck coach (Bdhpumn)
+STR_TWINDEXX_NAME       :Double-deck coach (B16mnopuxz)
+STR_TWINDEXXCC_NAME     :Double-deck coach (AB12bfmnopuvxz)
+STR_TWINDEXX_TEXT       :Info: {ORANGE}Push-pull double-deck passenger coaches Twindexx Vario can be connected to a EU47 locomotive{}{BLACK}A configuration up to {YELLOW}7{ORANGE} middle cars (B16mnopuxz) and {YELLOW}1{ORANGE} control car (AB12bfmnopuvxz) is permitted
+
+STR_WDN_NAME            :Bulk wagon (Wdn)
+STR_WDDO_NAME           :Bulk wagon (Wddo)
+STR_WDDOH_NAME          :Bulk wagon (Wddoh)
+STR_WDDO_2W_NAME        :Bulk wagon (Wddo) type 2W
+STR_ES_NAME             :Bulk wagon (Es)
+STR_EAOS_NAME           :Bulk wagon (Eaos)
+STR_EANOS_NAME          :Bulk wagon (Eanos)
+STR_EANOS_445W_NAME     :Bulk wagon (Eanos) type 445W
+STR_PPU_NAME            :Heavy bulk wagon (PPu)
+STR_EAMOS_NAME          :Heavy bulk wagon (Eamos)
+STR_FALS_NAME           :Self-discharging wagon "talbot" (Fals)
+STR_FALNS_NAME          :Self-discharging wagon "talbot" (Falns)
+STR_TADNS_NAME          :Covered hopper wagon (Tadns)
+STR_KD_NAME             :Covered wagon (Kd)
+STR_KDT_NAME            :Covered wagon (Kdt)
+STR_KDTH_NAME           :Covered wagon (Kdth)
+STR_KDDET_NAME          :Covered wagon (Kddet)
+STR_GGS_NAME            :Covered wagon (Ggs)
+STR_GAGS_NAME           :Covered wagon (Gags)
+STR_GBS_NAME            :Covered wagon (Gbs)
+STR_HBBINS_NAME         :Covered wagon (Hbbins)
+STR_HABBINS_NAME        :Covered wagon (Habbins)
+STR_SLR_NAME            :Refrigerated wagon (Slr)
+STR_SLMS_NAME           :Refrigerated wagon (Slms)
+STR_IBHSS_NAME          :Refrigerated wagon (Ibhss)
+STR_PDK31_NAME          :Flatbed wagon (Pdk31)
+STR_PDKH31_NAME         :Flatbed wagon (Pdkh31)
+STR_KBKKS_NAME          :Flatbed wagon (Kbkks)
+STR_KGNS_NAME           :Flatbed wagon (Kgns)
+STR_RES_NAME            :Flatbed wagon (Res)
+STR_SGS_NAME            :Container wagon (Sgs)
+STR_SDGMNSS_NAME        :Intermodal wagon (Sdgmnss)
+STR_RH_NAME             :Tank wagon (Rh)
+STR_RBH_NAME            :Tank wagon (Rbh)
+STR_ZAES_NAME           :Tank wagon (Zaes)
+STR_SN_NAME             :Livestock wagon (Sn)
+STR_HES_NAME            :Livestock wagon (Hes)
+STR_RNH_NAME            :Wagon for chemicals (Rnh)
+STR_RNH_5R_NAME         :Tank wagon for chemicals (Rnh) type 5R
+STR_UAHS_NAME           :Tank wagon for chemicals (Uahs)
+STR_SDW_NAME            :Cement wagon (Sdw)
+STR_SDWH_NAME           :Cement wagon (Sdwh)
+STR_UACS_NAME           :Silo wagon (Uacs)
+STR_LEKQSS_NAME         :Autorack wagon (Lekqss)
+
+STR_WM15A_NAME          :Trolley WM-15A (Diesel)
+STR_PWM15_NAME          :Trailer PWM-15
+STR_ASF_NAME            :Tow truck ASF EL16 (Battery)

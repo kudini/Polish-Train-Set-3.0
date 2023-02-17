@@ -1,0 +1,116 @@
+// This is part of Polish PKP Set 2.0 NewGRF.
+// Don't include any headers inside this file!
+// (c) Tadeusz Domagalski, licence: GPLv2
+
+/* A/Bhxz sprites */
+spriteset(sset_abhxz_purchase, "gfx/lilpop.png")    { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_abhxz_c2, "gfx/lilpop.png")          { tmpl_sprite_train12(4, 20) }
+spriteset(sset_abhxz_c12, "gfx/lilpop.png")         { tmpl_sprite_train12(4, 80) }
+spriteset(sset_abhxz_c1, "gfx/lilpop.png")          { tmpl_sprite_train12(4, 120) }
+spriteset(sset_abhxz_c2_open, "gfx/lilpop.png")     { tmpl_sprite_train12(4, 160) }
+spriteset(sset_abhxz_c12_open, "gfx/lilpop.png")    { tmpl_sprite_train12(4, 200) }
+spriteset(sset_abhxz_c1_open, "gfx/lilpop.png")     { tmpl_sprite_train12(4, 240) }
+spriteset(sset_abhxz_c2_cut, "gfx/lilpop.png")      { tmpl_sprite_train12(4, 280) }
+spriteset(sset_abhxz_c12_cut, "gfx/lilpop.png")     { tmpl_sprite_train12(4, 320) }
+spritegroup sgroup_abhxz_c2 {
+    loaded:     [sset_abhxz_c2];
+    loading:    [sset_abhxz_c2_open];
+}
+spritegroup sgroup_abhxz_c12 {
+    loaded:     [sset_abhxz_c12];
+    loading:    [sset_abhxz_c12_open];
+}
+spritegroup sgroup_abhxz_c1 {
+    loaded:     [sset_abhxz_c1];
+    loading:    [sset_abhxz_c1_open];
+}
+
+#ifdef SITTING_PLACES
+    #undef SITTING_PLACES
+#endif
+#define SITTING_PLACES 80
+
+/* A/Bhxz switches */
+switch(FEAT_TRAINS, SELF, switch_abhxz_articulated, extra_callback_info1) {
+    1: return item_dummy_3;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+switch(FEAT_TRAINS, SELF, switch_abhxz_c2_graphics, (extra_callback_info1&0xFF)==0 && other_veh_is_hidden(1)) {
+    1: return sset_abhxz_c2_cut;
+    return sgroup_abhxz_c2;
+}
+switch(FEAT_TRAINS, SELF, switch_abhxz_c12_graphics, (extra_callback_info1&0xFF)==0 && other_veh_is_hidden(1)) {
+    1: return sset_abhxz_c12_cut;
+    return sgroup_abhxz_c12;
+}
+switch(FEAT_TRAINS, SELF, switch_abhxz_c1_graphics, (extra_callback_info1&0xFF)==0 && other_veh_is_hidden(1)) {
+    1: return sset_abhxz_c12_cut;
+    return sgroup_abhxz_c1;
+}
+switch(FEAT_TRAINS, SELF, switch_abhxz_graphics, cargo_subtype % 3) {
+    1: return switch_abhxz_c12_graphics;
+    2: return switch_abhxz_c1_graphics;
+    return switch_abhxz_c2_graphics;
+}
+switch(FEAT_TRAINS, SELF, switch_abhxz_capacity, cargo_subtype % 3) {
+    1: return 64;
+    2: return 48;
+    return SITTING_PLACES;
+}
+switch (FEAT_TRAINS, SELF, switch_abhxz_add_text, IS_HEATING_CLIMATE ) {
+    1: return string(STR_PURCHASE_DESCR_4L, string(STR_BRAKE_AIR), string(STR_HEATING_STEAM_TEXT), string(STR_ABHXZ_TEXT), string(STR_INCOME_1_CLASS));
+    return string(STR_PURCHASE_DESCR_3L, string(STR_BRAKE_AIR), string(STR_ABHXZ_TEXT), string(STR_INCOME_1_CLASS));
+}
+
+/* Define the actual train */
+item(FEAT_TRAINS, item_abhxz) {
+    property {
+        /* common properties */
+        name:                           string(STR_ABHXZ_NAME);
+        climates_available:             PKP_CLIMATES; 
+        introduction_date:              date(1931, 1, 1);
+        vehicle_life:                   20;
+        reliability_decay:              20;
+        CARGO_PASSENGERS_WAGON_DEFINITION
+        loading_speed:                  7;
+        cost_factor:                    PURCHASE_COST_ABHXZ;
+        running_cost_factor:            RUNNING_COST_PASS_EXPRESS-1;
+        /* train properties */
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          120 km/h;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0;
+        running_cost_base:              RUNNING_COST_STEAM;
+        cargo_capacity:                 SITTING_PLACES;
+        weight:                         41 ton;
+        length:                         8;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+        bitmask_vehicle_info:           bitmask(VINFO_PASSENGER_WAGON);
+    }
+
+if(param_keep_old_vehs) {
+    property {
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+    }
+} else {
+    property {
+        model_life:                     72;
+        retire_early:                   16;
+    }
+}
+
+    graphics {
+        purchase:                   sset_abhxz_purchase;
+        additional_text:            switch_abhxz_add_text;
+        default:                    switch_abhxz_graphics;
+        cargo_subtype_text:         switch_old_subtype_text;
+        articulated_part:           switch_abhxz_articulated;
+        purchase_cargo_capacity:    return SITTING_PLACES;
+        cargo_capacity:             switch_abhxz_capacity;
+        cargo_age_period:           switch_old_cargo_age_period;
+        colour_mapping:             switch_lights_wagon_olive_2;
+        refit_cost:                 switch_old_refit_cost;
+    }
+}

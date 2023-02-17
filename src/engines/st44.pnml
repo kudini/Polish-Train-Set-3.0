@@ -1,0 +1,122 @@
+// This is part of Polish PKP Set 2.0 NewGRF.
+// Don't include any headers inside this file!
+// (c) Tadeusz Domagalski, licence: GPLv2
+
+/* ST44 sprites */
+spriteset(sset_st44_purchase, "gfx/st44.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_st44_purchase_yellow, "gfx/st44.png")    { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_st44, "gfx/st44.png")                    { tmpl_sprite_train10(4, 20) }
+spriteset(sset_st44_yellow, "gfx/st44.png")             { tmpl_sprite_train10(4, 80) }
+spriteset(sset_st44_pkp_cargo, "gfx/st44.png")          { tmpl_sprite_train10(4, 140) }
+
+/* ST44 switches */
+#define IS_ST44_YELLOW  build_year >= 1989
+#define IS_ST44_NEW_LIVERY(year)    (build_year >= year) || (date_of_last_service >= date(year, 1, 1))
+switch (FEAT_TRAINS, SELF, switch_st44_subtype_text2, cargo_subtype) {
+    0: return string(STR_SUBTYPE_LIVERY_CARGO_DEP);
+    1: return string(STR_SUBTYPE_LIVERY_CLASSIC);
+    2: return string(STR_SUBTYPE_LIVERY_PKP_CARGO);
+    return CB_RESULT_NO_TEXT;
+}
+switch (FEAT_TRAINS, SELF, switch_st44_subtype_text, PKP_LIVERIES_AVAILABLE) {
+    1: return switch_st44_subtype_text2;
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_purchase, IS_ST44_YELLOW) {
+    1: return sset_st44_purchase_yellow;
+    return sset_st44_purchase;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_articulated, extra_callback_info1) {
+    1: return item_st44;        // dummy parts
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_length, position_in_vehid_chain % 2) {
+    1: return 2;               // dummy parts
+    return 8;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_classic_graphics, IS_ST44_YELLOW) {
+    1: return sset_st44_yellow;
+    return sset_st44;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_cargo2_graphics, bitmask_consist_info & VINFO_WAGON_TYPE) {
+    bitmask(VINFO_CARGO_WAGON): return sset_st44_pkp_cargo;
+    return switch_st44_classic_graphics;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_cargo_graphics, IS_ST44_NEW_LIVERY(2001)) {
+    1: return switch_st44_cargo2_graphics;
+    return switch_st44_classic_graphics;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_livery_graphics, cargo_subtype % 3) {
+    0: return switch_st44_cargo_graphics;
+//  1: return switch_st44_classic_graphics;
+    2: return sset_st44_pkp_cargo;
+    return switch_st44_classic_graphics;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_graphics, position_in_vehid_chain % 2) {
+    0: return switch_st44_livery_graphics;
+    return sset_dummy;
+}
+switch(FEAT_TRAINS, SELF, switch_st44_visual_effect_local, position_in_vehid_chain % 2) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 1, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+switch (FEAT_TRAINS, SELF, switch_st44_add_text, IS_HEATING_CLIMATE ) {
+	1: return string(STR_PURCHASE_DESCR_2L, string(STR_HEATING_NONE_TEXT), string(STR_ENGINE_HEAVY_FREIGHT));
+	return string(STR_ENGINE_HEAVY_FREIGHT);
+}
+ENGINE_RUNNING_COST_SWITCH(st44, ST44)
+DIESEL_ELECTRIC_ENGINE_POWER_SWITCH(st44)
+ENGINE_VISUAL_EFFECT_SWITCH(st44)
+
+/* Define the actual train */
+item(FEAT_TRAINS, item_st44) {
+    property {
+		/* common properties */
+        name:                           string(STR_ST44_NAME);
+        climates_available:             PKP_CLIMATES; 
+        introduction_date:              date(1966, 1, 1);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   33;     // 30;
+        reliability_decay:              10;     // 20;
+        CARGO_LOCOMOTIVES_DEFINITION
+        loading_speed:                  5; 
+        cost_factor:                    PURCHASE_COST_ST44;
+        running_cost_factor:            RUNNING_COST_ST44;
+		/* train properties */
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 km/h;
+        misc_flags:                     bitmask();
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        ai_special_flag:                AI_FLAG_CARGO;
+        power:                          1472 kW;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        dual_headed:                    0;
+        ENGINE_CAPACITY_REFIT_PROPERTY
+        weight:                         116 ton;
+        ai_engine_rank:                 0; // not intended to be used by the ai
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        extra_power_per_wagon:          0 kW;
+        tractive_effort_coefficient:    0.309;
+        air_drag_coefficient:           0.07;
+        length:                         8;
+        extra_weight_per_wagon:         0;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 0, DISABLE_WAGON_POWER);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                   switch_st44_purchase;
+        additional_text:            switch_st44_add_text;
+        default:                    switch_st44_graphics;
+        cargo_subtype_text:         switch_st44_subtype_text;
+        articulated_part:           switch_st44_articulated;
+        length:                     switch_st44_length;
+        visual_effect_and_powered:  switch_st44_visual_effect;
+        can_attach_wagon:           switch_normal_can_attach;
+        start_stop:                 switch_normal_start_stop;
+        ENGINE_CAPACITY_REFIT_CALLBACKS
+        ENGINE_RUNNING_COST_CALLBACKS(st44)
+        ENGINE_POWER_CALLBACKS(st44)
+    }
+}

@@ -1,0 +1,152 @@
+// This is part of Polish PKP Set 2.0 NewGRF.
+// Don't include any headers inside this file!
+// (c) Tadeusz Domagalski, licence: GPLv2
+
+/* Eaos sprites */
+spriteset(sset_eaos_old_purchase, "gfx/408w.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eaos_new_purchase, "gfx/408w.png")       { tmpl_sprite_purchase(124, 60) }
+spriteset(sset_eaos_old_empty, "gfx/408w.png")          { tmpl_sprite_train_sym(4, 20) }
+spriteset(sset_eaos_new_empty, "gfx/408w.png")          { tmpl_sprite_train_sym(124, 20) }
+spriteset(sset_eaos_old_empty_8, "gfx/408w.png")        { tmpl_sprite_train_8(4, 20) }
+spriteset(sset_eaos_new_empty_8, "gfx/408w.png")        { tmpl_sprite_train_8(124, 20) }
+spriteset(sset_eaos_old_half, "gfx/408w.png")           { tmpl_sprite_train_sym(4, 80) }
+spriteset(sset_eaos_new_half, "gfx/408w.png")           { tmpl_sprite_train_sym(124, 80) }
+spriteset(sset_eaos_old_full, "gfx/408w.png")           { tmpl_sprite_train_sym(4, 120) }
+spriteset(sset_eaos_new_full, "gfx/408w.png")           { tmpl_sprite_train_sym(124, 120) }
+spriteset(sset_eaos_old_wood_half, "gfx/408w.png")      { tmpl_sprite_train_sym(4, 160) }
+spriteset(sset_eaos_new_wood_half, "gfx/408w.png")      { tmpl_sprite_train_sym(124, 160) }
+spriteset(sset_eaos_old_wood_full, "gfx/408w.png")      { tmpl_sprite_train_sym(4, 200) }
+spriteset(sset_eaos_new_wood_full, "gfx/408w.png")      { tmpl_sprite_train_sym(124, 200) }
+spriteset(sset_eaos_old_wdpr_half, "gfx/408w.png")      { tmpl_sprite_train(4, 240) }
+spriteset(sset_eaos_new_wdpr_half, "gfx/408w.png")      { tmpl_sprite_train(4, 280) }
+spriteset(sset_eaos_old_wdpr_full, "gfx/408w.png")      { tmpl_sprite_train_8(4, 320) }
+spriteset(sset_eaos_new_wdpr_full, "gfx/408w.png")      { tmpl_sprite_train_8(124, 320) }
+#ifdef ZOOM_SPRITES_ENABLED
+alternative_sprites(sset_eaos_old_empty,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(8, 40) }
+alternative_sprites(sset_eaos_new_empty,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(248, 40) }
+alternative_sprites(sset_eaos_old_empty_8,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_8_x2(8, 40) }
+alternative_sprites(sset_eaos_new_empty_8,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_8_x2(248, 40) }
+alternative_sprites(sset_eaos_old_half,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(8, 120) }
+alternative_sprites(sset_eaos_new_half,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(248, 120) }
+alternative_sprites(sset_eaos_old_full,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(8, 200) }
+alternative_sprites(sset_eaos_new_full,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(248, 200) }
+alternative_sprites(sset_eaos_old_wood_half,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(8, 280) }
+alternative_sprites(sset_eaos_new_wood_half,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(248, 280) }
+alternative_sprites(sset_eaos_old_wood_full,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(8, 360) }
+alternative_sprites(sset_eaos_new_wood_full,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_sym_x2(248, 360) }
+alternative_sprites(sset_eaos_old_wdpr_half,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_x2(8, 440) }
+alternative_sprites(sset_eaos_new_wdpr_half,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_x2(8, 520) }
+alternative_sprites(sset_eaos_old_wdpr_full,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_8_x2(8, 600) }
+alternative_sprites(sset_eaos_new_wdpr_full,
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/408w-x2.png")    { tmpl_sprite_train_8_x2(248, 600) }
+#endif
+spritegroup sgroup_eaos_old {
+    loaded:     [sset_eaos_old_empty, sset_eaos_old_half, sset_eaos_old_full];
+    loading:    [sset_eaos_old_empty, sset_eaos_old_half, sset_eaos_old_full];
+}
+spritegroup sgroup_eaos_new {
+    loaded:     [sset_eaos_new_empty, sset_eaos_new_half, sset_eaos_new_full];
+    loading:    [sset_eaos_new_empty, sset_eaos_new_half, sset_eaos_new_full];
+}
+spritegroup sgroup_eaos_old_wood {
+    loaded:     [sset_eaos_old_empty, sset_eaos_old_wood_half, sset_eaos_old_wood_full];
+    loading:    [sset_eaos_old_empty, sset_eaos_old_wood_half, sset_eaos_old_wood_full];
+}
+spritegroup sgroup_eaos_new_wood {
+    loaded:     [sset_eaos_new_empty, sset_eaos_new_wood_half, sset_eaos_new_wood_full];
+    loading:    [sset_eaos_new_empty, sset_eaos_new_wood_half, sset_eaos_new_wood_full];
+}
+spritegroup sgroup_eaos_old_wdpr {
+    loaded:     [sset_eaos_old_empty_8, sset_eaos_old_wdpr_half, sset_eaos_old_wdpr_full];
+    loading:    [sset_eaos_old_empty_8, sset_eaos_old_wdpr_half, sset_eaos_old_wdpr_full];
+}
+spritegroup sgroup_eaos_new_wdpr {
+    loaded:     [sset_eaos_new_empty_8, sset_eaos_new_wdpr_half, sset_eaos_new_wdpr_full];
+    loading:    [sset_eaos_new_empty_8, sset_eaos_new_wdpr_half, sset_eaos_new_wdpr_full];
+}
+
+/* Eaos switches */
+#define IS_430W     build_year >= 2003
+switch(FEAT_TRAINS, SELF, switch_eaos_purchase, IS_430W) {
+    1: return sset_eaos_new_purchase;
+    return sset_eaos_old_purchase;
+}
+switch(FEAT_TRAINS, SELF, switch_eaos_graphics, IS_430W) {
+    1: return sgroup_eaos_new;
+    return sgroup_eaos_old;
+}
+switch(FEAT_TRAINS, SELF, switch_eaos_wood, IS_430W) {
+    1: return sgroup_eaos_new_wood;
+    return sgroup_eaos_old_wood;
+}
+switch(FEAT_TRAINS, SELF, switch_eaos_wdpr, IS_430W) {
+    1: return sgroup_eaos_new_wdpr;
+    return sgroup_eaos_old_wdpr;
+}
+switch(FEAT_TRAINS, SELF, switch_eaos_capacity, cargo_type_in_veh) {
+    WOOD: return 45;
+    WDPR: return 45;
+    return CB_FAILED;
+}
+switch(FEAT_TRAINS, SELF, switch_eaos_loading_speed, cargo_type_in_veh) {
+    WOOD: return 6;
+    WDPR: return 6;     // 8 ticks
+    return CB_FAILED;   // 7 ticks
+}
+
+/* Define the actual train */
+item(FEAT_TRAINS, item_eaos) {
+    property {
+		/* common properties */
+        name:                           string(STR_EAOS_NAME);
+        climates_available:             PKP_CLIMATES; 
+        introduction_date:              date(1963, 1, 1);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   20;
+        reliability_decay:              20;
+        CARGO_NORMAL_OPEN_WAGON_DEFINITION
+        loading_speed:                  8; 
+        cost_factor:                    PURCHASE_COST_EAOS;
+        running_cost_factor:            RUNNING_COST_CARGO_MEDIUM;
+		/* train properties */
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 km/h;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0;
+        running_cost_base:              RUNNING_COST_STEAM;
+        cargo_capacity:                 50;
+        weight:                         21 ton;
+        length:                         8;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+        bitmask_vehicle_info:           bitmask(VINFO_CARGO_WAGON);
+    }
+
+    graphics {
+        WOOD:                       switch_eaos_wood;
+        WDPR:                       switch_eaos_wdpr;
+        purchase:                   switch_eaos_purchase;
+        additional_text:            return string(STR_PURCHASE_DESCR_2L, string(STR_BRAKE_AIR), string(STR_CAPACITY_NON_FRIABLE));
+        default:                    switch_eaos_graphics;
+        purchase_cargo_capacity:    return CB_FAILED;
+        cargo_capacity:             switch_eaos_capacity;
+        loading_speed:              switch_eaos_loading_speed;
+        colour_mapping:             switch_bulk_recolour;
+    }
+}

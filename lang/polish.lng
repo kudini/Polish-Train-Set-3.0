@@ -1,0 +1,262 @@
+##grflangid 0x30
+##plural 7
+##gender n m f
+##case c b d m n w
+
+# GRF name and description
+STR_GRF_NAME        :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :{ORANGE}{TITLE} {VERSION}{BLACK} zawiera zestaw powszechnie znanego polskiego taboru kolejowego, eksploatowanego od 1918r. aż do dnia dzisiejszego.{}{COPYRIGHT}2011-2021{}Autor: {SILVER}TadeuszD{BLACK}, {SILVER}Mewa{BLACK}{}Grafiki: {SILVER}TadeuszD{BLACK}, {SILVER}Walter Novotny{BLACK}, {SILVER}Sojita{BLACK}, {SILVER}McZapkie{BLACK}, {SILVER}Czajnikowiec{BLACK}, {SILVER}101ksl{BLACK}, {SILVER}Mewa{BLACK}{}Podziękowania dla: {SILVER}niemiec{BLACK}{}Licencja: {SILVER}GPLv2{BLACK}{}WWW: {LTBLUE}http://openttd-polska.pl{BLACK}
+
+# GRF parameters
+STR_PARAM_NAME_DISABLE_ORIG     :Wyłącz oryginalne pociągi normalnotorowe
+STR_PARAM_DESC_DISABLE_ORIG     :Zaznacz tę opcję aby wyłączyć oryginalne lokomotywy i wagony normalnotorowe. Nie dotyczy kolei jednoszynowej i magnetycznej.
+STR_PARAM_NAME_DISABLE_MONO_MAGLEV  :Wyłącz oryginalne pociągi monorail i maglev
+STR_PARAM_DESC_DISABLE_MONO_MAGLEV  :Zaznacz tę opcję aby wyłączyć oryginalne lokomotywy i wagony kolei jednoszynowej i magnetycznej. Nie dotyczy pociągów normalnotorowych.
+STR_PARAM_NAME_KEEP_OLD_VEHS    :Zachowuj stare pociągi w menu zakupu
+STR_PARAM_DESC_KEEP_OLD_VEHS    :Zaznacz tę opcję aby wyłączyć wycofywanie starych lokomotyw i wagonów. Historyczny tabor będzie dostępny w menu zakupu również we współczesnych czasach. Opcja ta dotyczy wyłącznie pojazdów z tego setu. Aby wyłączyć wycofywanie innych pojazdów, użyj parametru "Pojazdy nigdy nie są wycofywane" w ustawieniach gry.
+STR_PARAM_NAME_REPLACE_CARGOES  :Transportuj 'towary' w wagonach specjalistycznych
+STR_PARAM_DESC_REPLACE_CARGOES  :Niektóre wagony w tym secie są dedykowane do transportu towarów specjalnych, definiowanych przez dodatki przemysłowe FIRS i ECS. Jeśli grasz bez FIRS lub ECS, te wagony stają się niedostepne. Zaznacz tę opcję aby umożliwić przewóz standardowego ładunku 'towary' w tych wagonach.
+STR_PARAM_NAME_ORIG_INTRO_DATES :Użyj oryginalnych dat budowy wczesnego taboru
+STR_PARAM_DESC_ORIG_INTRO_DATES :Zaznacz tę opcję aby użyć oryginalnych dat budowy wcześnego taboru PKP zamiast roku 1918 - roku, w który Polska odzyskała niepodległość.{}Gdy opcja jest włączona, pierwsze pojazdy są dostępne w 1882 roku.
+STR_PARAM_NAME_TOURISTS         :Obsługa 'turystów' ECS w wagonach osobowych i podmiejskich
+STR_PARAM_DESC_TOURISTS         :Ta opcja jeszcze nie działa.
+STR_PARAM_TOURISTS_AUTO         :Autorefit
+STR_PARAM_TOURISTS_MANUAL       :Ręczna
+STR_PARAM_TOURISTS_OFF          :Wyłączona
+
+STR_PARAM_NAME_PURCHASE_COST    :Mnożnik cen zakupu pociągów
+STR_PARAM_DESC_PURCHASE_COST    :Użyj tę opcję aby zwiększyć ceny zakupu lokomotyw i wagonów. Dotyczy wyłącznie pojazdów z tego setu.
+STR_PARAM_NAME_RUNNING_COST     :Mnożnik kosztów utrzymania pociągów
+STR_PARAM_DESC_RUNNING_COST     :Użyj tę opcję aby zwiększyć koszty utrzymania lokomotyw i wagonów. Dotyczy wyłącznie pojazdów z tego setu.
+STR_PARAM_COST_X1               :1x
+STR_PARAM_COST_X2               :2x
+STR_PARAM_COST_X4               :4x
+STR_PARAM_COST_X8               :8x
+
+STR_PURCHASE_DESCR_2L           :{STRING}{}{BLACK}{STRING}
+STR_PURCHASE_DESCR_3L           :{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}
+STR_PURCHASE_DESCR_4L           :{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}
+STR_SUBTYPE_DESCR_2P            :{STRING}{BLACK}, {STRING}
+
+STR_ENGINE_HEAVY_FREIGHT        :Opis: {ORANGE}Lokomotywa do {YELLOW}ciężkich pociągów towarowych
+STR_ENGINE_FREIGHT              :Opis: {ORANGE}Lokomotywa do {YELLOW}pociągów towarowych
+STR_ENGINE_PASSENGER_FREIGHT    :Opis: {ORANGE}Uniwersalna lokomotywa do {YELLOW}pociągów osobowych i towarowych
+STR_ENGINE_PASSENGER            :Opis: {ORANGE}Lokomotywa do {YELLOW}pociągów osobowych
+STR_ENGINE_EXPRESS              :Opis: {ORANGE}Lokomotywa do {YELLOW}pociągów pośpiesznych i ekspresowych
+STR_ENGINE_SHUNTER              :Opis: {YELLOW}Lokomotywa przetokowa
+
+STR_BRAKE_NONE                  :Hamulec: {RED}Brak
+STR_BRAKE_HAND                  :Hamulec: {GREEN}Ręczny (budka hamulcowa)
+STR_BRAKE_AIR                   :Hamulec: {GREEN}Pneumatyczny zespolony
+
+STR_HEATING_STEAM_TEXT          :Ogrzewanie: {LTBLUE}Parowe
+STR_HEATING_ST_EL_TEXT          :Ogrzewanie: {LTBLUE}Parowo-elektryczne
+STR_HEATING_ELECTRIC_TEXT       :Ogrzewanie: {LTBLUE}Elektryczne
+
+STR_INCOME_1_CLASS              :Uwaga: {YELLOW}Wyższa stawka{ORANGE} za przewóz pasażerów {RED}1{ORANGE} klasy na duże odległości
+STR_INCOME_LOWER                :Uwaga: {RED}Niższa stawka{ORANGE} za przewóz pasażerów na duże odległości
+STR_INCOME_ALL_EXPRESS          :Uwaga: {YELLOW}Wyższa stawka{ORANGE} za przewóz pasażerów we wszystkich wagonach pośpiesznych w pociągu
+STR_INCOME_HIGH                 :Uwaga: {YELLOW}Wysoka stawka{ORANGE} za przewóz pasażerów na duże odległości
+STR_INCOME_CARGO_HIGH           :Uwaga: {YELLOW}Wyższa stawka{ORANGE} za przewóz towarów na duże odległości
+STR_CAPACITY_NON_FRIABLE        :Uwaga: {RED}Obniżona pojemność{ORANGE} dla ładunków innych niż sypkie
+STR_CAPACITY_LIQUID             :Uwaga: {RED}Obniżona pojemność{ORANGE} dla ładunków płynnych
+
+STR_HEATING_NONE_TEXT           :Zasilanie ogrzewania: {RED}Brak
+STR_HEATING_STEAM_POWER_TEXT    :Zasilanie ogrzewania: {LTBLUE}Parowe ({SIGNED_WORD}kW)
+STR_HEATING_STEAM_CLAYTON_TEXT  :Zasilanie ogrzewania: {LTBLUE}Parowe "Clayton" (150kW)
+STR_HEATING_COMBINED_TEXT       :Zasilanie ogrzewania: {LTBLUE}Spalinowo-elektryczne (150kW)
+STR_HEATING_ELECTRIC_POWER_TEXT :Zasilanie ogrzewania: {LTBLUE}Elektryczne ({SIGNED_WORD}kW)
+
+STR_ATTACH_DISALLOW_MCAR        :Nie można dołączyć wagonu motorowego jako zwykły wagon.
+STR_ATTACH_DISALLOW_EZT2        :Niewłaściwe sprzęgi. Nie można łączyć ze sobą EZT o różnych sprzęgach.
+STR_ATTACH_DISALLOW_EZT1        :Niewłaściwe sprzęgi. Nie można łączyć EZT z klasycznymi lokomotywami/wagonami.
+STR_ATTACH_DISALLOW_TROLLEY     :Różne typy taboru. Nie można łączyć drezyn z klasycznymi lokomotywami/wagonami.
+STR_ATTACH_DISALLOW             :Nie można dołączyć tego pojazdu do {STRING}.
+STR_TRAIN_TOO_LONG              :Do {STRING} jest dołączonych za dużo pojazdów.
+STR_TRAIN_WITHOUT_BRAKE         :Pociąg ma za mało wagonów z hamulcem.{} Dodaj więcej wagonów z hamulcem ręcznym lub pneumatycznym.
+STR_TRAIN_NOT_HEATED            :Pociąg nie jest prawidłowo ogrzewany. Występuje niezgodność systemów ogrzewania lub niedobór mocy grzewczej.{} Zmień lokomotywę lub dodaj do pociągu specjalny wagon ogrzewczy.
+
+STR_SUBTYPE_OLD_2CLASS          : - przedziały 2 klasy
+STR_SUBTYPE_OLD_12CLASS         : - przedziały 1/2 klasy
+STR_SUBTYPE_OLD_1CLASS          : - przedziały 1 klasy
+STR_SUBTYPE_NEW_2CLASS          : - miejsca siedzące 2 klasy
+STR_SUBTYPE_NEW_1CLASS          : - miejsca siedzące 1 klasy
+
+STR_SUBTYPE_LIVERY_CLASSIC      : - malowanie klasyczne
+STR_SUBTYPE_LIVERY_YEAR_DEP     : - malowanie zależne od roku
+STR_SUBTYPE_LIVERY_CARGO_DEP    : - malowanie zależne od ładunku
+STR_SUBTYPE_LIVERY_RANDOM       : - malowanie losowe
+STR_SUBTYPE_LIVERY_VISIBLE      : - pojazd widoczny
+STR_SUBTYPE_LIVERY_INVISIBLE    : - pojazd niewidoczny
+
+STR_SUBTYPE_LIVERY_PKP_IC       : - malowanie "PKP IC"
+STR_SUBTYPE_LIVERY_PKP_CARGO    : - malowanie "PKP Cargo"
+STR_SUBTYPE_LIVERY_PKP_PR       : - malowanie "PKP Przewozy Regionalne"
+STR_SUBTYPE_LIVERY_PKP_POLREGIO : - malowanie "PKP POLREGIO"
+STR_SUBTYPE_LIVERY_LOTOS        : - malowanie "Lotos Kolej"
+STR_SUBTYPE_ENXX_ORANGE         : - malowanie pomarańczowe
+STR_SUBTYPE_ENXX_RED_YEL        : - malowanie czerwono-żółte
+STR_SUBTYPE_ENXX_BLU_YEL        : - malowanie niebiesko-żółte
+STR_SUBTYPE_ENXX_BLK_RED        : - malowanie czarno-czerwone
+STR_SUBTYPE_ENXX_KM             : - malowanie "Koleje Mazowieckie"
+
+STR_TKH1_NAME           :TKh1 (Parowóz)
+STR_TKI3_NAME           :TKi3 (Parowóz)
+STR_OD13_NAME           :Od13 (Parowóz)
+STR_TI12_NAME           :Ti12 (Parowóz)
+STR_TP4_NAME            :Tp4 (Parowóz)
+STR_OK1_NAME            :Ok1 (Parowóz)
+STR_TY23_NAME           :Ty23 (Parowóz)
+STR_OKL27_NAME          :OKl27 (Parowóz)
+STR_PT31_NAME           :Pt31 (Parowóz)
+STR_OKZ32_NAME          :OKz32 (Parowóz)
+STR_TY37_NAME           :Ty37 (Parowóz)
+STR_TY2_NAME            :Ty2 (Parowóz)
+STR_PT47_NAME           :Pt47 (Parowóz)
+STR_TKT48_NAME          :TKt48 (Parowóz)
+STR_OL49_NAME           :Ol49 (Parowóz)
+STR_TY51_NAME           :Ty51 (Parowóz)
+STR_SN61_NAME           :Wagon motorowy SN61 (Diesel)
+STR_SN61_TEXT           :Info: {ORANGE}Spalinowy wagon motorowy - można połączyć max. {YELLOW}3 jednostki{ORANGE} oraz {YELLOW}3 wagony doczepne
+STR_SN81_NAME           :Szynobus SN81 (Diesel)
+STR_SA106_NAME          :Szynobus SA106 (Diesel)
+STR_SA106_TEXT          :Info: {ORANGE}Szynobus spalinowy - można połączyć max. {YELLOW}3 jednostki{ORANGE} oraz {YELLOW}3 wagony doczepne
+STR_SM30_NAME           :SM30 (Diesel)
+STR_SM41_NAME           :SM41 (Diesel)
+STR_SM42_NAME           :SM42 (Diesel)
+STR_SP42_NAME           :SP42 (Diesel)
+STR_SU42_NAME           :SU42 (Diesel)
+STR_ST43_NAME           :ST43 (Diesel)
+STR_ST44_NAME           :ST44 (Diesel)
+STR_SP45_NAME           :SP45 (Diesel)
+STR_SU45_NAME           :SU45 (Diesel)
+STR_SU46_NAME           :SU46 (Diesel)
+STR_SM31_NAME           :SM31 (Diesel)
+STR_SP32_NAME           :SP32 (Diesel)
+STR_BR285_NAME          :BR 285-Traxx F140 DE (Diesel)
+STR_6DL_NAME            :SU42-6Dl (Diesel)
+STR_SU160_NAME          :SU160-Gama (Diesel)
+STR_EP01_NAME           :EP01 (Elektrowóz)
+STR_EP02_NAME           :EP02 (Elektrowóz)
+STR_EU07_NAME           :EU07 (Elektrowóz)
+STR_ET21_NAME           :ET21 (Elektrowóz)
+STR_ET22_NAME           :ET22 (Elektrowóz)
+STR_EP08_NAME           :EP08 (Elektrowóz)
+STR_EP05_NAME           :EP05 (Elektrowóz)
+STR_ET40_NAME           :ET40 (Elektrowóz)
+STR_ET41_NAME           :ET41 (Elektrowóz)
+STR_ET42_NAME           :ET42 (Elektrowóz)
+STR_EP09_NAME           :EP09 (Elektrowóz)
+STR_EU43_NAME           :EU43-Traxx (Elektrowóz)
+STR_EU44_NAME           :EU44 "Husarz" (Elektrowóz)
+STR_EU47_NAME           :EU47-Traxx (Elektrowóz)
+STR_EU46_NAME           :EU46-Vectron (Elektrowóz)
+STR_ET26_NAME           :ET26-Dragon 2 (Elektrowóz)
+STR_ET26_TEXT           :Uwaga: {ORANGE}Lokomotywa elektryczna ze spalinowym silnikiem dojazdowym ({YELLOW}540 kW{ORANGE})
+STR_EN57_NAME           :EN57 (EZT)
+STR_EN57_TEXT           :Opis: {YELLOW}3{ORANGE}-członowy Elektryczny Zespół Trakcyjny
+STR_EN71_NAME           :EN71 (EZT)
+STR_EN71_TEXT           :Opis: {YELLOW}4{ORANGE}-członowy Elektryczny Zespół Trakcyjny
+STR_ED72_NAME           :ED72 (EZT)
+STR_ED72_TEXT           :Opis: {YELLOW}4{ORANGE}-członowy Elektryczny Zespół Trakcyjny z {YELLOW}50{ORANGE} miejscami siedzącymi {RED}1{ORANGE} i {YELLOW}288{ORANGE} miejscami siedzącymi {RED}2{ORANGE} klasy
+STR_ED74_NAME           :ED74 "Bydgostia" (EZT)
+STR_ED74_TEXT           :Opis: {YELLOW}4{ORANGE}-członowy Elektryczny Zespół Trakcyjny z {YELLOW}33{ORANGE} miejscami siedzącymi {RED}1{ORANGE} i {YELLOW}169{ORANGE} miejscami siedzącymi {RED}2{ORANGE} klasy
+STR_EN76_NAME           :EN76-Elf (EZT)
+STR_ED250_NAME          :ED250 "Pendolino" (EZT)
+STR_ED250_TEXT          :Opis: {YELLOW}7{ORANGE}-członowy Elektryczny Zespół Trakcyjny z {YELLOW}45{ORANGE} miejscami siedzącymi {RED}1{ORANGE} klasy, {YELLOW}357{ORANGE} miejscami siedzącymi {RED}2{ORANGE} klasy i {YELLOW}przedziałem barowym{ORANGE}
+STR_EN63A_NAME          :EN63A-Impuls (EZT)
+STR_ED161_NAME          :ED161 "Dart" (EZT)
+STR_ED161_TEXT          :Opis: {YELLOW}8{ORANGE}-członowy Elektryczny Zespół Trakcyjny z {YELLOW}60{ORANGE} miejscami siedzącymi {RED}1{ORANGE} klasy, {YELLOW}296{ORANGE} miejscami siedzącymi {RED}2{ORANGE} klasy i {YELLOW}przedziałem barowym{ORANGE}
+
+STR_GMY_NAME            :Wagon pocztowy (Gmy)
+STR_GHMX_NAME           :Wagon pocztowy (Ghmx)
+STR_GMW_NAME            :Wagon pocztowy (Gmw)
+STR_PDN_NAME            :Wagon pocztowy (Pdn)
+STR_OHXT_NAME           :Wagon ogrzewczy (Ohxt)
+STR_FG_NAME             :Wagon pocztowo-bagażowy (Fg)
+STR_FY_NAME             :Wagon bagażowy (Fy)
+STR_FHX_NAME            :Wagon bagażowy (Fhx)
+STR_DHXT_NAME           :Wagon bagażowy (Dhxt)
+STR_DWXZ_NAME           :Wagon bagażowy (Dwxz)
+STR_BDWXZD_NAME         :Wagon osobowy z przedz. bagażowym (BDwxzd)
+STR_JHX_NAME            :Wagon restauracyjny (Jhx)
+STR_JHIX_NAME           :Wagon restauracyjny (Jhix)
+STR_WRDMNU_NAME         :Wagon restauracyjny (WRdmnu)
+STR_WRMNOUZ_NAME        :Wagon restauracyjny (WRmnouz)
+STR_BCY_NAME            :Wagon osobowy "boczniak" (BCy)
+STR_BCYH_NAME           :Wagon osobowy "boczniak" (BCyh)
+STR_BHXZ_NAME           :Wagon pośpieszny (Bhxz)
+STR_ABHXZ_NAME          :Wagon pośpieszny (A/Bhxz)
+STR_ABHXZ_TEXT          :Można przebudować na: {ORANGE}wagon pośpieszny {RED}2{ORANGE}, {RED}1/2{ORANGE} lub {RED}1{ORANGE} klasy{BLACK}. Domyślnie: {ORANGE}wagon {RED}2{ORANGE} klasy
+STR_BCI_NAME            :Wagon osobowy "kowbojka" (BCi)
+STR_BH_RYF_NAME         :Wagon osobowy "ryflak" (Bh)
+STR_BH_RYF_TEXT         :Opis: {ORANGE}Wagon doczepny do {YELLOW}wagonu motorowego SN61
+STR_WLABWXZ_NAME        :Wagon sypialny (WLABwxz)
+STR_WLAB_NAME           :Wagon sypialny (WLABd)
+STR_WLAB10MNOUZ_NAME    :Wagon sypialny (WLAB10mnouz)
+STR_ABDNU_NAME          :Wagon pośpieszny (A/Bdnu)
+STR_ABDNU_TEXT          :Można przebudować na: {ORANGE}wagon pośpieszny {RED}2{ORANGE}, {RED}1/2{ORANGE} lub {RED}1{ORANGE} klasy{BLACK}. Domyślnie: {ORANGE}wagon {RED}2{ORANGE} klasy
+STR_BH_BON_NAME         :Wagon osobowy "bonanza" (Bh)
+STR_BH_BON_TEXT         :Opis: {ORANGE}Wagon doczepny do {YELLOW}szynobusu SA106
+STR_ABDHMNU_NAME        :Wagon InterCity (A/Bdhmnu)
+STR_ABDHMNU_TEXT        :Można przebudować na: {ORANGE}wagon InterCity {RED}2{ORANGE} lub {RED}1{ORANGE} klasy{BLACK}. Domyślnie: {ORANGE}wagon {RED}2{ORANGE} klasy
+STR_AB9MNOPUZ_NAME      :Wagon EuroCity (A/B9mnopuz)
+STR_AB9MNOPUZ_TEXT      :Można przebudować na: {ORANGE}wagon EuroCity {RED}2{ORANGE} lub {RED}1{ORANGE} klasy{BLACK}. Domyślnie: {ORANGE}wagon {RED}2{ORANGE} klasy
+STR_BIPA_NAME           :Wagon osobowy piętrowy (Bhp)
+STR_BIPA_TEXT           :Opis: {ORANGE}wieloczłonowy piętrowy wagon osobowy{}{BLACK}Można przebudować na: {ORANGE}wagon {YELLOW}2{ORANGE}-, {YELLOW}3{ORANGE}- lub {YELLOW}4{ORANGE}-członowy{BLACK}. Domyślnie: {ORANGE}wagon {YELLOW}2{ORANGE}-członowy
+STR_BIPA_4PARTS         : - wagon 4-członowy
+STR_BIPA_3PARTS         : - wagon 3-członowy
+STR_BIPA_2PARTS         : - wagon 2-członowy
+STR_BDHPUMN_NAME        :Wagon osobowy piętrowy (Bdhpumn)
+STR_TWINDEXX_NAME       :Wagon osobowy piętrowy (B16mnopuxz)
+STR_TWINDEXXCC_NAME     :Wagon osobowy piętrowy (AB12bfmnopuvxz)
+STR_TWINDEXX_TEXT       :Opis: {ORANGE}piętrowe wagony osobowe typu push-pull serii Twindexx Vario można łączyć z lokomotywą EU47{}{BLACK}Można łączyć w zestawy złożone z maksymalnie {YELLOW}7{ORANGE} wagonów środkowych (B16mnopuxz) i {YELLOW}1{ORANGE} wagonu sterowniczego (AB12bfmnopuvxz)
+
+STR_WDN_NAME            :Wagon węglarka (Wdn)
+STR_WDDO_NAME           :Wagon węglarka (Wddo)
+STR_WDDOH_NAME          :Wagon węglarka (Wddoh)
+STR_WDDO_2W_NAME        :Wagon węglarka (Wddo) typ 2W
+STR_ES_NAME             :Wagon węglarka (Es)
+STR_EAOS_NAME           :Wagon węglarka (Eaos)
+STR_EANOS_NAME          :Wagon węglarka (Eanos)
+STR_EANOS_445W_NAME     :Wagon węglarka (Eanos) typ 445W
+STR_PPU_NAME            :Węglarko-platforma (PPu)
+STR_EAMOS_NAME          :Węglarko-platforma (Eamos)
+STR_FALS_NAME           :Wagon samowyładowczy "talbot" (Fals)
+STR_FALNS_NAME          :Wagon samowyładowczy "talbot" (Falns)
+STR_TADNS_NAME          :Wagon samowyładowczy kryty (Tadns)
+STR_KD_NAME             :Wagon kryty (Kd)
+STR_KDT_NAME            :Wagon kryty (Kdt)
+STR_KDTH_NAME           :Wagon kryty (Kdth)
+STR_KDDET_NAME          :Wagon kryty (Kddet)
+STR_GGS_NAME            :Wagon kryty (Ggs)
+STR_GAGS_NAME           :Wagon kryty (Gags)
+STR_GBS_NAME            :Wagon kryty (Gbs)
+STR_HBBINS_NAME         :Wagon kryty (Hbbins)
+STR_HABBINS_NAME        :Wagon kryty (Habbins)
+STR_SLR_NAME            :Wagon chłodnia (Slr)
+STR_SLMS_NAME           :Wagon chłodnia (Slms)
+STR_IBHSS_NAME          :Wagon chłodnia (Ibhss)
+STR_PDK31_NAME          :Wagon platforma (Pdk31)
+STR_PDKH31_NAME         :Wagon platforma (Pdkh31)
+STR_KBKKS_NAME          :Wagon platforma (Kbkks)
+STR_KGNS_NAME           :Wagon platforma (Kgns)
+STR_RES_NAME            :Wagon platforma (Res)
+STR_SGS_NAME            :Platforma do przew. kontenerów (Sgs)
+STR_SDGMNSS_NAME        :Platforma do przew. intermodalnych (Sdgmnss)
+STR_RH_NAME             :Wagon cysterna (Rh)
+STR_RBH_NAME            :Wagon cysterna (Rbh)
+STR_ZAES_NAME           :Wagon cysterna (Zaes)
+STR_SN_NAME             :Wagon do przewozu żywca (Sn)
+STR_HES_NAME            :Wagon do przewozu żywca (Hes)
+STR_RNH_NAME            :Wagon kwasiarka (Rnh)
+STR_RNH_5R_NAME         :Cysterna na chemikalia (Rnh) typ 5R
+STR_UAHS_NAME           :Cysterna na chemikalia (Uahs)
+STR_SDW_NAME            :Wagon wapniarka (Sdw)
+STR_SDWH_NAME           :Wagon wapniarka (Sdwh)
+STR_UACS_NAME           :Wagon do przew. cementu (Uacs)
+STR_LEKQSS_NAME         :Platforma do przew. samochodów (Lekqss)
+
+STR_WM15A_NAME          :Drezyna WM-15A (Diesel)
+STR_PWM15_NAME          :Przyczepa PWM-15
+STR_ASF_NAME            :Ciągnik ASF EL16 (Akumulatorowy)

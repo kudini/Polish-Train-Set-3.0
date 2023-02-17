@@ -1,0 +1,136 @@
+// This is part of Polish PKP Set 2.0 NewGRF.
+// Don't include any headers inside this file!
+// (c) Tadeusz Domagalski, licence: GPLv2
+
+// This file requires enxx-common.pnml included before
+
+/* EN57 sprites */
+spriteset(sset_en57_advert, "gfx/en57.png")         { tmpl_sprite_advertisement200(4, 280) }
+
+/* EN57 switches */
+switch(FEAT_TRAINS, SELF, switch_en57_purchase, extra_callback_info1 & 0xFF) {
+    0x21: return sset_en57_advert;
+    return sset_enxx_purchase;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_articulated, extra_callback_info1) {
+    1..4: return item_en57;
+    5: return item_enxx_mail_dummy_2;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_length, position_in_vehid_chain % 5) {
+    1: return 4;    // dummy part
+    3: return 2;    // dummy part
+    return 8;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_tour_capacity, position_in_vehid_chain % 5) {
+    0: return 56;
+    2: return 76-2;
+    4: return 56;
+    return 1;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_pass_capacity, position_in_vehid_chain % 5) {
+    0: return 56+26;   //56;
+    2: return 76+24-2; //76;
+    4: return 56+26;   //56;
+    return 1;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_capacity, cargo_type_in_veh) {
+    TOUR: return switch_en57_tour_capacity;
+    return switch_en57_pass_capacity;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_graphics, STORE_TEMP(position_in_vehid_chain % 5, 0xFF)) {
+    0: return switch_enxx_head;
+    2: return switch_enxx_mid;
+    4: return switch_enxx_tail;
+    return sset_dummy;
+}
+switch(FEAT_TRAINS, SELF, switch_en57_visual_effect_local, position_in_vehid_chain % 5) {
+    2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+switch(FEAT_TRAINS, SELF, switch_en57_add_text, IS_HEATING_CLIMATE ) {
+    1: return string(STR_PURCHASE_DESCR_3L, string(STR_HEATING_ELECTRIC_TEXT), string(STR_EN57_TEXT), string(STR_INCOME_LOWER));
+    return string(STR_PURCHASE_DESCR_2L, string(STR_EN57_TEXT), string(STR_INCOME_LOWER));
+}
+switch(FEAT_TRAINS, SELF, switch_en57_can_attach, vehicle_type_id) {
+    item_en57:  return CB_RESULT_ATTACH_ALLOW;
+    item_en71:  return CB_RESULT_ATTACH_ALLOW;
+    item_ed72:  return CB_RESULT_ATTACH_ALLOW;
+    item_ed74:  return string(STR_ATTACH_DISALLOW_EZT2);
+    item_en76:  return string(STR_ATTACH_DISALLOW_EZT2);
+    item_ed250:  return string(STR_ATTACH_DISALLOW_EZT2);
+    item_en63a:  return string(STR_ATTACH_DISALLOW_EZT2);
+    item_ed161:  return string(STR_ATTACH_DISALLOW_EZT2);
+    return string(STR_ATTACH_DISALLOW_EZT1);
+}
+switch(FEAT_TRAINS, SELF, switch_en57_start_stop, COUNT_EZT > 3) {
+    1: return string(STR_TRAIN_TOO_LONG, string(STR_EN57_NAME));
+    return CB_RESULT_NO_TEXT;
+}
+ENGINE_RUNNING_COST_SWITCH(en57, EN57)
+DIESEL_ELECTRIC_ENGINE_POWER_SWITCH(en57)
+ENGINE_VISUAL_EFFECT_SWITCH(en57)
+
+#ifdef SITTING_PLACES
+    #undef SITTING_PLACES
+#endif
+#ifdef STANDING_PLACES
+    #undef STANDING_PLACES
+#endif
+#define SITTING_PLACES 56*2+76
+#define STANDING_PLACES 26*2+24
+#define CARGO_CAPACITY_EN57     int((SITTING_PLACES+STANDING_PLACES+2)/5)
+
+/* Define the actual train */
+item(FEAT_TRAINS, item_en57) {
+    property {
+        /* common properties */
+        name:                           string(STR_EN57_NAME);
+        climates_available:             PKP_CLIMATES; 
+        introduction_date:              date(1958, 1, 1);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        reliability_decay:              20;
+        CARGO_PASSENGERS_WAGON_DEFINITION
+        loading_speed:                  25;     // per part
+        cost_factor:                    PURCHASE_COST_EN57;
+        running_cost_factor:            RUNNING_COST_EN57;
+        cargo_age_period:               int(185*0.84);  // faster ageing
+        /* train properties */
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          110 km/h;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        power:                          700 kW;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        dual_headed:                    0;
+        cargo_capacity:                 CARGO_CAPACITY_EN57;
+        weight:                         126 ton;
+        ai_engine_rank:                 0; // not intended to be used by the ai
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        extra_power_per_wagon:          0 kW;
+        tractive_effort_coefficient:    0.079;
+        air_drag_coefficient:           0.07;
+        length:                         8;
+        extra_weight_per_wagon:         0;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+        bitmask_vehicle_info:           bitmask(VINFO_PASSENGER_WAGON);
+    }
+    graphics {
+        purchase:                   switch_en57_purchase;
+        additional_text:            switch_en57_add_text;
+        default:                    switch_en57_graphics;
+        cargo_subtype_text:         switch_enxx_subtype_text;
+        articulated_part:           switch_en57_articulated;
+        length:                     switch_en57_length;
+        visual_effect_and_powered:  switch_en57_visual_effect;
+        purchase_cargo_capacity:    return CB_FAILED;
+        cargo_capacity:             switch_en57_capacity;
+        can_attach_wagon:           switch_en57_can_attach;
+        start_stop:                 switch_en57_start_stop;
+        ENGINE_RUNNING_COST_CALLBACKS(en57)
+        ENGINE_POWER_CALLBACKS(en57)
+    }
+}

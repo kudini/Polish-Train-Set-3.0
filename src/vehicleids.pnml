@@ -1,0 +1,182 @@
+// This is part of Polish PKP Set 2.0 NewGRF.
+// Don't include any headers inside this file!
+// (c) Tadeusz Domagalski, licence: GPLv2
+
+/* Registering vehicle IDs */
+/* IDs of articulated parts */
+item(FEAT_TRAINS, item_dummy_1) { }
+item(FEAT_TRAINS, item_dummy_2) { }
+item(FEAT_TRAINS, item_dummy_3) { }
+item(FEAT_TRAINS, item_dummy_4) { }
+item(FEAT_TRAINS, item_goods_dummy_1) { }
+item(FEAT_TRAINS, item_goods_dummy_3) { }
+item(FEAT_TRAINS, item_bh_mail_dummy_3) { }
+item(FEAT_TRAINS, item_enxx_mail_dummy_2) { }
+
+item(FEAT_TRAINS, item_tp4) { }
+item(FEAT_TRAINS, item_ok1) { }
+item(FEAT_TRAINS, item_ty23) { }
+item(FEAT_TRAINS, item_pt31) { }
+item(FEAT_TRAINS, item_okz32) { }
+item(FEAT_TRAINS, item_ty37) { }
+item(FEAT_TRAINS, item_ty2) { }
+item(FEAT_TRAINS, item_pt47) { }
+item(FEAT_TRAINS, item_ol49) { }
+item(FEAT_TRAINS, item_ty51) { }
+
+item(FEAT_TRAINS, item_st43) { }
+item(FEAT_TRAINS, item_st44) { }
+item(FEAT_TRAINS, item_sp45) { }
+item(FEAT_TRAINS, item_su45) { }
+item(FEAT_TRAINS, item_su46) { }
+item(FEAT_TRAINS, item_sm31) { }
+item(FEAT_TRAINS, item_sp32) { }
+item(FEAT_TRAINS, item_class66) { }   // for future use
+item(FEAT_TRAINS, item_br285) { }
+item(FEAT_TRAINS, item_su160) { }
+item(FEAT_TRAINS, item_sn81) { }
+item(FEAT_TRAINS, item_sa137) { }   // for future use
+
+item(FEAT_TRAINS, item_ep02) { }
+item(FEAT_TRAINS, item_et21) { }
+item(FEAT_TRAINS, item_eu07) { }
+item(FEAT_TRAINS, item_et22) { }
+item(FEAT_TRAINS, item_ep08) { }   // for future use
+item(FEAT_TRAINS, item_ep05) { }
+item(FEAT_TRAINS, item_et40) { }
+item(FEAT_TRAINS, item_et41) { }
+item(FEAT_TRAINS, item_et42) { }
+item(FEAT_TRAINS, item_ep09) { }
+item(FEAT_TRAINS, item_eu43) { }
+item(FEAT_TRAINS, item_eu44) { }
+item(FEAT_TRAINS, item_eu47) { }
+item(FEAT_TRAINS, item_eu46) { }
+item(FEAT_TRAINS, item_et26) { }
+
+item(FEAT_TRAINS, item_en57) { }
+item(FEAT_TRAINS, item_en71) { }
+item(FEAT_TRAINS, item_ed72) { }
+item(FEAT_TRAINS, item_ed74) { }
+item(FEAT_TRAINS, item_en76) { }
+item(FEAT_TRAINS, item_en57a) { }   // for future use
+item(FEAT_TRAINS, item_ed250) { }
+item(FEAT_TRAINS, item_en63a) { }
+item(FEAT_TRAINS, item_ed161) { }
+item(FEAT_TRAINS, item_ed160) { }   // for future use
+
+item(FEAT_TRAINS, item_abdhmnu) { }
+item(FEAT_TRAINS, item_ab9mnopuz) { }
+item(FEAT_TRAINS, item_bipa) { }
+item(FEAT_TRAINS, item_bdhpumn) { }
+item(FEAT_TRAINS, item_twindexx) { }
+
+item(FEAT_TRAINS, item_articulated_reserved_1) { }
+
+/* IDs of single vehicles */
+item(FEAT_TRAINS, item_tkh1) { }
+item(FEAT_TRAINS, item_tki3) { }
+item(FEAT_TRAINS, item_okl27) { }
+item(FEAT_TRAINS, item_tkt48) { }
+
+item(FEAT_TRAINS, item_sm30) { }
+item(FEAT_TRAINS, item_sm41) { }
+item(FEAT_TRAINS, item_sm42) { }
+item(FEAT_TRAINS, item_sp42) { }
+item(FEAT_TRAINS, item_su42) { }
+item(FEAT_TRAINS, item_6dl) { }
+item(FEAT_TRAINS, item_sn61) { }    // currently non-articulated!
+item(FEAT_TRAINS, item_sa106) { }   // currently non-articulated!
+
+item(FEAT_TRAINS, item_ep01) { }
+
+item(FEAT_TRAINS, item_gmy) { }
+item(FEAT_TRAINS, item_ghmx) { }
+item(FEAT_TRAINS, item_gmw) { }
+item(FEAT_TRAINS, item_pdn) { }
+item(FEAT_TRAINS, item_ohtx) { }
+
+item(FEAT_TRAINS, item_fg) { }
+item(FEAT_TRAINS, item_fy) { }
+item(FEAT_TRAINS, item_fhx) { }
+item(FEAT_TRAINS, item_dhxt) { }
+item(FEAT_TRAINS, item_dwxz) { }
+item(FEAT_TRAINS, item_bdwxzd) { }
+
+item(FEAT_TRAINS, item_bcy) { }
+item(FEAT_TRAINS, item_bcyh) { }
+item(FEAT_TRAINS, item_bci) { }
+item(FEAT_TRAINS, item_bh_ryf) { }
+item(FEAT_TRAINS, item_bh_bon) { }
+
+item(FEAT_TRAINS, item_bhxz) { }
+item(FEAT_TRAINS, item_abhxz) { }
+item(FEAT_TRAINS, item_abdnu) { }
+
+item(FEAT_TRAINS, item_wlabwxz) { }
+item(FEAT_TRAINS, item_wlab) { }
+item(FEAT_TRAINS, item_wlab10mnouz) { }
+item(FEAT_TRAINS, item_jhx) { }
+item(FEAT_TRAINS, item_jhix) { }
+item(FEAT_TRAINS, item_wrdmnu) { }
+item(FEAT_TRAINS, item_wrmnouz) { }
+
+item(FEAT_TRAINS, item_wddo) { }
+item(FEAT_TRAINS, item_wddoh) { }
+item(FEAT_TRAINS, item_wddo_2w) { }
+item(FEAT_TRAINS, item_es) { }
+item(FEAT_TRAINS, item_eaos) { }
+item(FEAT_TRAINS, item_eanos) { }
+item(FEAT_TRAINS, item_eanos_445w) { }
+item(FEAT_TRAINS, item_eamos) { }
+item(FEAT_TRAINS, item_fals) { }
+item(FEAT_TRAINS, item_falns) { }
+item(FEAT_TRAINS, item_kdt) { }
+item(FEAT_TRAINS, item_kdth) { }
+item(FEAT_TRAINS, item_kddet) { }
+item(FEAT_TRAINS, item_ggs) { }
+item(FEAT_TRAINS, item_gags) { }
+item(FEAT_TRAINS, item_gbss) { }   // for future use
+item(FEAT_TRAINS, item_gbs) { }
+item(FEAT_TRAINS, item_hbbins) { }
+item(FEAT_TRAINS, item_habbins) { }
+item(FEAT_TRAINS, item_slr) { }
+item(FEAT_TRAINS, item_slrh) { }
+item(FEAT_TRAINS, item_slms) { }
+item(FEAT_TRAINS, item_ibhss) { }
+item(FEAT_TRAINS, item_pdk31) { }
+item(FEAT_TRAINS, item_pdkh31) { }
+item(FEAT_TRAINS, item_kbkks) { }
+item(FEAT_TRAINS, item_kgns) { }
+item(FEAT_TRAINS, item_res) { }
+item(FEAT_TRAINS, item_roos) { }   // for future use
+item(FEAT_TRAINS, item_sgs) { }
+item(FEAT_TRAINS, item_sdgmnss) { }
+item(FEAT_TRAINS, item_simms) { }   // for future use
+item(FEAT_TRAINS, item_smms) { }   // for future use
+item(FEAT_TRAINS, item_rh) { }
+item(FEAT_TRAINS, item_rbh) { }
+item(FEAT_TRAINS, item_zaes) { }
+item(FEAT_TRAINS, item_zas) { }   // for future use
+item(FEAT_TRAINS, item_zans) { }   // for future use
+item(FEAT_TRAINS, item_rgh) { }   // for future use
+item(FEAT_TRAINS, item_uahs_fg460) { }   // for future use
+item(FEAT_TRAINS, item_zaekks) { }   // for future use
+item(FEAT_TRAINS, item_sn) { }
+item(FEAT_TRAINS, item_sdw) { }
+item(FEAT_TRAINS, item_sdwh) { }
+item(FEAT_TRAINS, item_sddw_1s) { }   // for future use
+item(FEAT_TRAINS, item_sddw_2s) { }   // for future use
+item(FEAT_TRAINS, item_tikkms) { }   // for future use
+item(FEAT_TRAINS, item_ucs) { }   // for future use
+item(FEAT_TRAINS, item_uacs) { }
+item(FEAT_TRAINS, item_uacns) { }   // for future use
+item(FEAT_TRAINS, item_ugpps) { }   // for future use
+item(FEAT_TRAINS, item_lekqss) { }
+item(FEAT_TRAINS, item_tads) { }
+
+/* Other vehicles */
+item(FEAT_TRAINS, item_wm15a) { }
+item(FEAT_TRAINS, item_pwm15) { }
+
+/* New vehicles */
+// add here...

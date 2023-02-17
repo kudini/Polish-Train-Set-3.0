@@ -1,0 +1,338 @@
+grf {
+    grfid: "MV\01\03";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESCRIPTION);
+    version: 210;
+    min_compatible_version: 208;
+
+    param {
+        param_disable_orig {
+            type: bool;
+            name: string(STR_PARAM_NAME_DISABLE_ORIG);
+            desc: string(STR_PARAM_DESC_DISABLE_ORIG);
+            def_value: 1;
+        }
+    }
+    param {
+        param_disable_mono_maglev {
+            type: bool;
+            name: string(STR_PARAM_NAME_DISABLE_MONO_MAGLEV);
+            desc: string(STR_PARAM_DESC_DISABLE_MONO_MAGLEV);
+            def_value: 1;
+        }
+    }
+    param {
+        param_keep_old_vehs {
+            type: bool;
+            bit:  0; // uses 1rd bit
+            name: string(STR_PARAM_NAME_KEEP_OLD_VEHS);
+            desc: string(STR_PARAM_DESC_KEEP_OLD_VEHS);
+        }
+        param_replace_cargoes {
+            type: bool;
+            bit:  1; // uses 2th bit
+            name: string(STR_PARAM_NAME_REPLACE_CARGOES);
+            desc: string(STR_PARAM_DESC_REPLACE_CARGOES);
+        }
+        param_orig_intro_dates {
+            type: bool;
+            bit:  2; // uses 3th bit
+            name: string(STR_PARAM_NAME_ORIG_INTRO_DATES);
+            desc: string(STR_PARAM_DESC_ORIG_INTRO_DATES);
+        }
+    }
+    param {
+        param_tourists {
+            type:   int;
+            min_value: 0;
+            max_value: 2;
+            def_value: 0;
+            name:   string(STR_PARAM_NAME_TOURISTS);
+            desc:   string(STR_PARAM_DESC_TOURISTS);
+            names: {
+                        0: string(STR_PARAM_TOURISTS_AUTO);
+                        1: string(STR_PARAM_TOURISTS_MANUAL);
+                        2: string(STR_PARAM_TOURISTS_OFF);
+            };
+        }
+    }
+    param {
+        param_purchase_cost {
+            type:   int;
+            min_value: 0;
+            max_value: 3;
+            def_value: 0;
+            name:   string(STR_PARAM_NAME_PURCHASE_COST);
+            desc:   string(STR_PARAM_DESC_PURCHASE_COST);
+            names: {
+                        0: string(STR_PARAM_COST_X1);
+                        1: string(STR_PARAM_COST_X2);
+                        2: string(STR_PARAM_COST_X4);
+                        3: string(STR_PARAM_COST_X8);
+            };
+        }
+    }
+    param {
+        param_running_cost {
+            type:   int;
+            min_value: 0;
+            max_value: 3;
+            def_value: 0;
+            name:   string(STR_PARAM_NAME_RUNNING_COST);
+            desc:   string(STR_PARAM_DESC_RUNNING_COST);
+            names: {
+                        0: string(STR_PARAM_COST_X1);
+                        1: string(STR_PARAM_COST_X2);
+                        2: string(STR_PARAM_COST_X4);
+                        3: string(STR_PARAM_COST_X8);
+            };
+        }
+    }
+}
+
+//check for OpenTTD and version
+if (ttd_platform != PLATFORM_OPENTTD) {
+    //requires OpenTTD
+    error(FATAL, USED_WITH, "OpenTTD");
+} else {
+    //check for OpenTTD version
+    if (openttd_version < version_openttd(1, 2, 0)) {
+        //requires OpenTTD version
+        error(FATAL, REQUIRES_OPENTTD, "1.2.0");
+    }
+}
+
+train_width_32_px = 1;
+traininfo_y_offset = 2;
+
+if(param_disable_orig) {
+    disable_item(FEAT_TRAINS, 0, 53);
+}
+if(param_disable_mono_maglev) {
+    disable_item(FEAT_TRAINS, 54, 115);
+}
+basecost {
+    PR_BUILD_VEHICLE_TRAIN:     param_purchase_cost;
+    PR_BUILD_VEHICLE_WAGON:     param_purchase_cost + 4;
+    PR_RUNNING_TRAIN_STEAM:     param_running_cost + 1;
+    PR_RUNNING_TRAIN_DIESEL:    param_running_cost + 1;
+    PR_RUNNING_TRAIN_ELECTRIC:  param_running_cost + 1;
+}
+
+// uncomment this lines to include additional ZOOM_LEVEL_IN sprites
+#define ZOOM_SPRITES_ENABLED
+#define ZOOM_SPRITES_NON_GPL_ENABLED
+
+#define PKP_CLIMATES            bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL)
+#define IS_PKP_CLIMATE          climate != CLIMATE_TOYLAND
+#define PKP_INTRODUCTION_DATE   date(1918, 1, 1)
+
+#define PKP_LIVERIES_AVAILABLE      current_year >= 1993
+#define AFTER_DATE(year)           (build_year >= year) || (date_of_last_service >= date(year, 1, 1))
+#define PKP_AUTO_LIVERY_AVAILABLE       AFTER_DATE(2003)
+#define PKP_CARGO_LIVERY_AVAILABLE      AFTER_DATE(2003)
+#define PKP_IC_LIVERY_AVAILABLE         AFTER_DATE(2008)
+#define PKP_PR_LIVERY_AVAILABLE         AFTER_DATE(2012)
+#define PKP_POLREGIO_LIVERY_AVAILABLE   AFTER_DATE(2017)
+
+#define HEATING_CLIMATES        bitmask(CLIMATE_ARCTIC)
+#define IS_HEATING_CLIMATE      climate == CLIMATE_ARCTIC
+
+#define VINFO_PASSENGER_WAGON       0
+#define VINFO_CARGO_WAGON           1
+#define VINFO_HIGH_SPEED_WAGON      2
+#define VINFO_LUGGAGE_WAGON         3
+#define VINFO_RESTAURANT_WAGON      4
+
+#define VINFO_WAGON_TYPE            bitmask(VINFO_PASSENGER_WAGON, VINFO_CARGO_WAGON, VINFO_HIGH_SPEED_WAGON)
+#define VINFO_WAGON_BONUS           bitmask(VINFO_LUGGAGE_WAGON, VINFO_RESTAURANT_WAGON)
+
+#define POST_MULTIPLIER             2
+
+/* Common definitions */
+#include "templates.pnml"
+#include "vehicleids.pnml"
+#include "cargos.pnml"
+#include "costs.pnml"
+#include "palettes.pnml"
+#include "switches.pnml"
+
+/* dummy vehicles */
+#include "dummy.pnml"
+
+/* Steam engines */
+#include "engines/tkh1.pnml"
+#include "engines/tki3.pnml"
+#include "engines/tp4.pnml"
+#include "engines/ok1.pnml"
+#include "engines/ty23.pnml"
+#include "engines/okl27.pnml"
+#include "engines/pt31.pnml"
+#include "engines/okz32.pnml"
+#include "engines/ty37.pnml"
+#include "engines/ty2.pnml"
+#include "engines/pt47.pnml"
+#include "engines/tkt48.pnml"
+#include "engines/ol49.pnml"
+#include "engines/ty51.pnml"
+
+/* Diesel engines */
+#include "engines/sm30.pnml"
+#include "engines/sm41.pnml"
+#include "engines/sm42.pnml"
+#include "engines/sm31.pnml"
+#include "engines/st43.pnml"
+#include "engines/st44.pnml"
+#include "engines/sp45.pnml"
+#include "engines/su45.pnml"
+#include "engines/su46.pnml"
+#include "engines/sp32.pnml"
+#include "engines/br285.pnml"
+#include "engines/6dl.pnml"
+#include "engines/su160.pnml"
+#include "wagons/bh-common.pnml"
+#include "wagons/bh-ryflak.pnml"    // trailer for SN61
+#include "engines/sn61.pnml"
+#include "engines/sn81.pnml"
+#include "engines/sa106.pnml"
+
+/* Electric engines */
+#include "engines/ep01.pnml"
+#include "engines/ep02.pnml"
+#include "engines/et21.pnml"
+#include "engines/eu07.pnml"
+//#include "engines/ep08.pnml"
+#include "engines/ep05.pnml"
+#include "engines/et22.pnml"
+#include "engines/et40.pnml"
+#include "engines/et41.pnml"
+#include "engines/et42.pnml"
+#include "engines/ep09.pnml"
+#include "engines/eu43.pnml"
+#include "engines/eu44.pnml"
+#include "engines/eu47.pnml"
+#include "engines/eu46.pnml"
+#include "engines/et26.pnml"
+
+/* EZT */
+#include "engines/enxx-common.pnml"
+#include "engines/en57.pnml"
+#include "engines/en71.pnml"
+#include "engines/ed72.pnml"
+#include "engines/ed74.pnml"
+#include "engines/en76-elf.pnml"
+#include "engines/ed250-pendolino.pnml"
+#include "engines/en63a-impuls.pnml"
+#include "engines/ed161.pnml"
+
+/* Mail & luggage vans */
+#include "wagons/gmy.pnml"
+#include "wagons/ghmx.pnml"
+#include "wagons/gmw.pnml"
+#include "wagons/pdn.pnml"
+#include "wagons/ohxt.pnml"
+#include "wagons/fg.pnml"
+#include "wagons/fy.pnml"
+#include "wagons/fhx.pnml"
+#include "wagons/dhxt.pnml"
+#include "wagons/dwxz.pnml"
+#include "wagons/bdwxzd.pnml"
+/* Passenger & restaurant carriages */
+#include "wagons/bcy.pnml"
+#include "wagons/bci.pnml"
+#include "wagons/bh-bonanza.pnml"   // trailer for SA106
+#include "wagons/bipa.pnml"
+#include "wagons/bdhpumn.pnml"
+#include "wagons/twindexx.pnml"
+#include "wagons/twindexxcontrolcar.pnml"
+#include "wagons/bhxz.pnml"
+#include "wagons/abhxz.pnml"
+#include "wagons/abdnu.pnml"
+#include "wagons/abdhmnu.pnml"
+#include "wagons/ab9mnopuz.pnml"
+#include "wagons/wlabwxz.pnml"
+#include "wagons/wlab.pnml"
+#include "wagons/wlab10mnouz.pnml"
+#include "wagons/jhx.pnml"
+#include "wagons/jhix.pnml"
+#include "wagons/wrdmnu.pnml"
+#include "wagons/wrmnouz.pnml"
+/* Freight wagons */
+#include "wagons/wddo.pnml"
+#include "wagons/wddo-2w.pnml"
+#include "wagons/es.pnml"
+#include "wagons/eaos.pnml"
+#include "wagons/eanos.pnml"
+#include "wagons/eanos-445w.pnml"
+#include "wagons/eamos.pnml"
+#include "wagons/fals.pnml"
+#include "wagons/falns.pnml"
+#include "wagons/kdt.pnml"
+#include "wagons/kddet.pnml"
+#include "wagons/ggs.pnml"
+#include "wagons/gags.pnml"
+#include "wagons/gbs.pnml"
+#include "wagons/hbbins.pnml"
+#include "wagons/habbins.pnml"
+#include "wagons/slr.pnml"
+#include "wagons/slms.pnml"
+#include "wagons/ibhss.pnml"
+#include "wagons/pdk31.pnml"
+#include "wagons/kbkks.pnml"
+#include "wagons/kgns.pnml"
+#include "wagons/res.pnml"
+#include "wagons/sgs.pnml"
+#include "wagons/sdgmnss.pnml"
+#include "wagons/rh.pnml"
+#include "wagons/rbh.pnml"
+#include "wagons/zaes.pnml"
+#include "wagons/sn.pnml"
+#include "wagons/sdw.pnml"
+#include "wagons/uacs.pnml"
+#include "wagons/lekqss.pnml"
+#include "wagons/tads.pnml"
+
+/* Miscellaneous */
+#include "engines/wm15a.pnml"
+#include "engines/asf.pnml"
+#include "engines/od13.pnml"
+#include "wagons/wdn.pnml"
+#include "wagons/kd.pnml"
+#include "wagons/hes.pnml"
+#include "wagons/rnh.pnml"
+#include "wagons/rnh-5r.pnml"
+#include "wagons/uahs.pnml"
+#include "wagons/ppu.pnml"
+#include "engines/ti12.pnml"
+
+sort(FEAT_TRAINS,
+    // steam engines
+   [ item_tkh1, item_od13, item_ti12, item_tki3, item_tp4, item_ok1, item_ty23, item_okl27, item_pt31,
+    item_okz32, item_ty37, item_ty2, item_pt47, item_tkt48, item_ol49, item_ty51,
+    // diesel engines
+    item_sm30, item_sm41, item_sm42, item_sp42, item_su42, item_sm31, item_st43, item_st44, item_sp45,
+    item_su45, item_su46, item_sp32, item_br285, item_6dl, item_su160, item_sn61, item_sn81, item_sa106,
+    // electric engines
+    item_ep01, item_ep02, item_et21, item_eu07, item_et22, item_ep05, item_et40, item_et41, item_et42,
+    item_ep09, item_eu43, item_eu44, item_eu47, item_eu46, item_et26, item_en57, item_en71, item_ed72, item_ed74, item_en76, item_ed250, item_en63a, item_ed161,
+    // misc.
+    item_wm15a, item_asf ]);
+sort(FEAT_TRAINS,
+    // mail vans
+   [ item_gmy, item_gmw, item_ghmx, item_pdn,
+    // luggage & special vans
+    item_fg, item_fy, item_fhx, item_dhxt, item_dwxz, item_bdwxzd, item_ohxt,
+    // passenger & sleeping cars
+    item_bcy, item_bcyh, item_bci, item_bh_ryf, item_bh_bon, item_bipa, item_bdhpumn, item_twindexx, item_twindexxcc,
+    item_bhxz, item_abhxz, item_abdnu, item_abdhmnu, item_ab9mnopuz, item_wlabwxz, item_wlab, item_wlab10mnouz,
+    // restaurant cars
+    item_jhx, item_jhix, item_wrdmnu, item_wrmnouz,
+    // freight wagons
+    item_wdn, item_wddo, item_wddoh, item_wddo_2w, item_es, item_eaos, item_eanos, item_eanos_445w, item_ppu, item_eamos,
+    item_fals, item_falns, item_tads,
+    item_kd, item_kdt, item_kdth, item_kddet, item_ggs, item_gags, item_gbs, item_hbbins, item_habbins,
+    item_pdk31, item_pdkh31, item_kbkks, item_kgns, item_res, item_sgs, item_sdgmnss,
+    item_slr, item_slms, item_ibhss, item_rh, item_rbh, item_zaes,
+    item_sn, item_hes, item_rnh, item_rnh_5r, item_uahs, item_sdw, item_sdwh, item_uacs, item_lekqss,
+    // misc.
+    item_pwm15 ]);
