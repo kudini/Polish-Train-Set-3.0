@@ -109,6 +109,26 @@ if (ttd_platform != PLATFORM_OPENTTD) {
 train_width_32_px = 1;
 traininfo_y_offset = 2;
 
+railtypetable {
+    RAIL,
+    ELRL,
+    "RLOW", "RMED", "RHIG",
+ "SAAN", "SABN", "SACN",
+ "SBAN", "SBBN", "SBCN",
+ "SCAN", "SCBN", "SCCN",
+ "SDAN", "SDBN",
+ "ELOW", "EMED", "EHIG", "HSTR",
+ "SAAE", "SABE", "SACE",
+ "SBAE", "SBBE", "SBCE",
+ "SCAE", "SCBE", "SCCE",
+ "SDAE", "SDBE",
+ "SEAE", "SEBE",
+ "3RDC", "CLOW", "CMED",
+ "SAAZ", "SABZ", "SACZ",
+ "SBAZ", "SBBZ", "SBCZ",
+ "SCAZ", "SCBZ", "SCCZ"
+}
+
 if(param_disable_orig) {
     disable_item(FEAT_TRAINS, 0, 53);
 }
@@ -122,7 +142,7 @@ basecost {
     PR_RUNNING_TRAIN_DIESEL: param_running_cost + 1;
     PR_RUNNING_TRAIN_ELECTRIC: param_running_cost + 1;
 }
-# 153 "src\\pkp.pnml"
+# 173 "src\\pkp.pnml"
 # 1 "src\\templates.pnml" 1
 
 
@@ -266,7 +286,7 @@ template tmpl_sprite_train12_rear_block(x, y, z) {
 template tmpl_sprite_train12_rear(x, y) {
     tmpl_sprite_train12_rear_block(x, y, 1)
 }
-# 154 "src\\pkp.pnml" 2
+# 174 "src\\pkp.pnml" 2
 # 1 "src\\vehicleids.pnml" 1
 
 
@@ -447,7 +467,7 @@ item(FEAT_TRAINS, item_tads) { }
 
 item(FEAT_TRAINS, item_wm15a) { }
 item(FEAT_TRAINS, item_pwm15) { }
-# 155 "src\\pkp.pnml" 2
+# 175 "src\\pkp.pnml" 2
 # 1 "src\\cargos.pnml" 1
 
 
@@ -466,9 +486,9 @@ cargotable {
     STAL, ALUM, NH3_, CBLK, STCB, CSTI, SOAP, CTAR, FECR, LYE_, O2__, COAT, STST, STSE, STSH, STWR,
     TYRE, VENG
 }
-# 156 "src\\pkp.pnml" 2
+# 176 "src\\pkp.pnml" 2
 # 1 "src\\costs.pnml" 1
-# 157 "src\\pkp.pnml" 2
+# 177 "src\\pkp.pnml" 2
 # 1 "src\\palettes.pnml" 1
 # 37 "src\\palettes.pnml"
 palette_cargo = reserve_sprites(0 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 -0 +1);
@@ -831,7 +851,7 @@ switch(FEAT_TRAINS, SELF, switch_lights_wagon_brown_2, position_in_consist_from_
     1: return palette_lights_red;
     return palette_lights_brown;
 }
-# 158 "src\\pkp.pnml" 2
+# 178 "src\\pkp.pnml" 2
 # 1 "src\\switches.pnml" 1
 # 134 "src\\switches.pnml"
 switch(FEAT_TRAINS, SELF, switch_check_heating_combinations,
@@ -985,7 +1005,7 @@ switch(FEAT_TRAINS, PARENT, switch_sleep_cargo_age_period, bitmask_consist_info 
     bitmask(3, 4): return int(185*8*1.41*2);
     return 185*8;
 }
-# 159 "src\\pkp.pnml" 2
+# 179 "src\\pkp.pnml" 2
 
 
 # 1 "src\\dummy.pnml" 1
@@ -1072,7 +1092,7 @@ item(FEAT_TRAINS, item_dummy_4) {
         default: sset_dummy;
     }
 }
-# 162 "src\\pkp.pnml" 2
+# 182 "src\\pkp.pnml" 2
 
 
 # 1 "src\\engines/tkh1.pnml" 1
@@ -1172,7 +1192,7 @@ if(!param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_tkh1_power;
     }
 }
-# 165 "src\\pkp.pnml" 2
+# 185 "src\\pkp.pnml" 2
 # 1 "src\\engines/tki3.pnml" 1
 
 
@@ -1269,7 +1289,7 @@ if(!param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_tki3_power;
     }
 }
-# 166 "src\\pkp.pnml" 2
+# 186 "src\\pkp.pnml" 2
 # 1 "src\\engines/tp4.pnml" 1
 
 
@@ -1361,7 +1381,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_tp4_power;
     }
 }
-# 167 "src\\pkp.pnml" 2
+# 187 "src\\pkp.pnml" 2
 # 1 "src\\engines/ok1.pnml" 1
 
 
@@ -1466,7 +1486,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ok1_power;
     }
 }
-# 168 "src\\pkp.pnml" 2
+# 188 "src\\pkp.pnml" 2
 # 1 "src\\engines/ty23.pnml" 1
 
 
@@ -1571,7 +1591,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ty23_power;
     }
 }
-# 169 "src\\pkp.pnml" 2
+# 189 "src\\pkp.pnml" 2
 # 1 "src\\engines/okl27.pnml" 1
 
 
@@ -1658,7 +1678,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_okl27_power;
     }
 }
-# 170 "src\\pkp.pnml" 2
+# 190 "src\\pkp.pnml" 2
 # 1 "src\\engines/pt31.pnml" 1
 
 
@@ -1750,7 +1770,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_pt31_power;
     }
 }
-# 171 "src\\pkp.pnml" 2
+# 191 "src\\pkp.pnml" 2
 # 1 "src\\engines/okz32.pnml" 1
 
 
@@ -1864,7 +1884,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_okz32_power;
     }
 }
-# 172 "src\\pkp.pnml" 2
+# 192 "src\\pkp.pnml" 2
 # 1 "src\\engines/ty37.pnml" 1
 
 
@@ -1956,7 +1976,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ty37_power;
     }
 }
-# 173 "src\\pkp.pnml" 2
+# 193 "src\\pkp.pnml" 2
 # 1 "src\\engines/ty2.pnml" 1
 
 
@@ -2097,7 +2117,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ty2_power;
     }
 }
-# 174 "src\\pkp.pnml" 2
+# 194 "src\\pkp.pnml" 2
 # 1 "src\\engines/pt47.pnml" 1
 
 
@@ -2202,7 +2222,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_pt47_power;
     }
 }
-# 175 "src\\pkp.pnml" 2
+# 195 "src\\pkp.pnml" 2
 # 1 "src\\engines/tkt48.pnml" 1
 
 
@@ -2290,7 +2310,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_tkt48_power;
     }
 }
-# 176 "src\\pkp.pnml" 2
+# 196 "src\\pkp.pnml" 2
 # 1 "src\\engines/ol49.pnml" 1
 
 
@@ -2395,7 +2415,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ol49_power;
     }
 }
-# 177 "src\\pkp.pnml" 2
+# 197 "src\\pkp.pnml" 2
 # 1 "src\\engines/ty51.pnml" 1
 
 
@@ -2500,7 +2520,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ty51_power;
     }
 }
-# 178 "src\\pkp.pnml" 2
+# 198 "src\\pkp.pnml" 2
 
 
 # 1 "src\\engines/sm30.pnml" 1
@@ -2617,7 +2637,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_sm30_power;
     }
 }
-# 181 "src\\pkp.pnml" 2
+# 201 "src\\pkp.pnml" 2
 # 1 "src\\engines/sm41.pnml" 1
 
 
@@ -2705,7 +2725,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_sm41_power;
     }
 }
-# 182 "src\\pkp.pnml" 2
+# 202 "src\\pkp.pnml" 2
 # 1 "src\\engines/sm42.pnml" 1
 
 
@@ -2950,7 +2970,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_su42_power;
     }
 }
-# 183 "src\\pkp.pnml" 2
+# 203 "src\\pkp.pnml" 2
 # 1 "src\\engines/sm31.pnml" 1
 
 
@@ -3054,7 +3074,7 @@ item(FEAT_TRAINS, item_sm31) {
         purchase_power: return CB_FAILED; power: switch_sm31_power;
     }
 }
-# 184 "src\\pkp.pnml" 2
+# 204 "src\\pkp.pnml" 2
 # 1 "src\\engines/st43.pnml" 1
 
 
@@ -3158,7 +3178,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_st43_power;
     }
 }
-# 185 "src\\pkp.pnml" 2
+# 205 "src\\pkp.pnml" 2
 # 1 "src\\engines/st44.pnml" 1
 
 
@@ -3282,7 +3302,7 @@ item(FEAT_TRAINS, item_st44) {
         purchase_power: return CB_FAILED; power: switch_st44_power;
     }
 }
-# 186 "src\\pkp.pnml" 2
+# 206 "src\\pkp.pnml" 2
 # 1 "src\\engines/sp45.pnml" 1
 
 
@@ -3378,7 +3398,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_sp45_power;
     }
 }
-# 187 "src\\pkp.pnml" 2
+# 207 "src\\pkp.pnml" 2
 # 1 "src\\engines/su45.pnml" 1
 
 
@@ -3490,7 +3510,7 @@ item(FEAT_TRAINS, item_su45) {
         purchase_power: return CB_FAILED; power: switch_su45_power;
     }
 }
-# 188 "src\\pkp.pnml" 2
+# 208 "src\\pkp.pnml" 2
 # 1 "src\\engines/su46.pnml" 1
 
 
@@ -3602,7 +3622,7 @@ item(FEAT_TRAINS, item_su46) {
         purchase_power: return CB_FAILED; power: switch_su46_power;
     }
 }
-# 189 "src\\pkp.pnml" 2
+# 209 "src\\pkp.pnml" 2
 # 1 "src\\engines/sp32.pnml" 1
 
 
@@ -3706,7 +3726,7 @@ item(FEAT_TRAINS, item_sp32) {
         purchase_power: return CB_FAILED; power: switch_sp32_power;
     }
 }
-# 190 "src\\pkp.pnml" 2
+# 210 "src\\pkp.pnml" 2
 # 1 "src\\engines/br285.pnml" 1
 
 
@@ -3792,7 +3812,7 @@ item(FEAT_TRAINS, item_br285) {
         purchase_power: return CB_FAILED; power: switch_br285_power;
     }
 }
-# 191 "src\\pkp.pnml" 2
+# 211 "src\\pkp.pnml" 2
 # 1 "src\\engines/6dl.pnml" 1
 
 
@@ -3863,7 +3883,7 @@ item(FEAT_TRAINS, item_6dl) {
         purchase_power: return CB_FAILED; power: switch_6dl_power;
     }
 }
-# 192 "src\\pkp.pnml" 2
+# 212 "src\\pkp.pnml" 2
 # 1 "src\\engines/su160.pnml" 1
 
 
@@ -3955,7 +3975,7 @@ item(FEAT_TRAINS, item_su160) {
         purchase_power: return CB_FAILED; power: switch_su160_power;
     }
 }
-# 193 "src\\pkp.pnml" 2
+# 213 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bh-common.pnml" 1
 # 11 "src\\wagons/bh-common.pnml"
 switch(FEAT_TRAINS, SELF, switch_bh_mail_dummy_3_capacity, cargo_classes) {
@@ -4003,7 +4023,7 @@ item(FEAT_TRAINS, item_bh_mail_dummy_3) {
         cargo_age_period: switch_bh_mail_dummy_3_cargo_age;
     }
 }
-# 194 "src\\pkp.pnml" 2
+# 214 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bh-ryflak.pnml" 1
 
 
@@ -4094,7 +4114,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_olive_2;
     }
 }
-# 195 "src\\pkp.pnml" 2
+# 215 "src\\pkp.pnml" 2
 # 1 "src\\engines/sn61.pnml" 1
 
 
@@ -4228,7 +4248,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_olive_2;
     }
 }
-# 196 "src\\pkp.pnml" 2
+# 216 "src\\pkp.pnml" 2
 # 1 "src\\engines/sn81.pnml" 1
 
 
@@ -4338,7 +4358,7 @@ if(param_keep_old_vehs) {
     }
 
 }
-# 197 "src\\pkp.pnml" 2
+# 217 "src\\pkp.pnml" 2
 # 1 "src\\engines/sa106.pnml" 1
 
 
@@ -4443,7 +4463,7 @@ item(FEAT_TRAINS, item_sa106) {
         purchase_power: return CB_FAILED; power: switch_sa106_power;
     }
 }
-# 198 "src\\pkp.pnml" 2
+# 218 "src\\pkp.pnml" 2
 
 
 # 1 "src\\engines/ep01.pnml" 1
@@ -4526,7 +4546,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ep01_power;
     }
 }
-# 201 "src\\pkp.pnml" 2
+# 221 "src\\pkp.pnml" 2
 # 1 "src\\engines/ep02.pnml" 1
 
 
@@ -4579,7 +4599,7 @@ item(FEAT_TRAINS, item_ep02) {
         speed: 110 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 1360 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -4622,7 +4642,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ep02_power;
     }
 }
-# 202 "src\\pkp.pnml" 2
+# 222 "src\\pkp.pnml" 2
 # 1 "src\\engines/et21.pnml" 1
 
 
@@ -4683,7 +4703,7 @@ item(FEAT_TRAINS, item_et21) {
         speed: 100 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 1860 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -4726,7 +4746,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_et21_power;
     }
 }
-# 203 "src\\pkp.pnml" 2
+# 223 "src\\pkp.pnml" 2
 # 1 "src\\engines/eu07.pnml" 1
 
 
@@ -4859,7 +4879,7 @@ item(FEAT_TRAINS, item_eu07) {
         speed: 125 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 2000 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -4892,7 +4912,7 @@ item(FEAT_TRAINS, item_eu07) {
         purchase_power: return CB_FAILED; power: switch_eu07_power;
     }
 }
-# 204 "src\\pkp.pnml" 2
+# 224 "src\\pkp.pnml" 2
 
 # 1 "src\\engines/ep05.pnml" 1
 
@@ -4965,7 +4985,7 @@ item(FEAT_TRAINS, item_ep05) {
         speed: 160 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 2032 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5008,7 +5028,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ep05_power;
     }
 }
-# 206 "src\\pkp.pnml" 2
+# 226 "src\\pkp.pnml" 2
 # 1 "src\\engines/et22.pnml" 1
 
 
@@ -5087,7 +5107,7 @@ item(FEAT_TRAINS, item_et22) {
         speed: 125 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 3000 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5120,7 +5140,7 @@ item(FEAT_TRAINS, item_et22) {
         purchase_power: return CB_FAILED; power: switch_et22_power;
     }
 }
-# 207 "src\\pkp.pnml" 2
+# 227 "src\\pkp.pnml" 2
 # 1 "src\\engines/et40.pnml" 1
 
 
@@ -5175,7 +5195,7 @@ item(FEAT_TRAINS, item_et40) {
         speed: 100 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 4080 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5218,7 +5238,7 @@ if(param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_et40_power;
     }
 }
-# 208 "src\\pkp.pnml" 2
+# 228 "src\\pkp.pnml" 2
 # 1 "src\\engines/et41.pnml" 1
 
 
@@ -5331,7 +5351,7 @@ item(FEAT_TRAINS, item_et41) {
         speed: 125 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 4000 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5364,7 +5384,7 @@ item(FEAT_TRAINS, item_et41) {
         purchase_power: return CB_FAILED; power: switch_et41_power;
     }
 }
-# 209 "src\\pkp.pnml" 2
+# 229 "src\\pkp.pnml" 2
 # 1 "src\\engines/et42.pnml" 1
 
 
@@ -5420,7 +5440,7 @@ item(FEAT_TRAINS, item_et42) {
         speed: 100 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 4480 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5452,7 +5472,7 @@ item(FEAT_TRAINS, item_et42) {
         purchase_power: return CB_FAILED; power: switch_et42_power;
     }
 }
-# 210 "src\\pkp.pnml" 2
+# 230 "src\\pkp.pnml" 2
 # 1 "src\\engines/ep09.pnml" 1
 
 
@@ -5541,7 +5561,7 @@ item(FEAT_TRAINS, item_ep09) {
         speed: 160 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 2920 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5574,7 +5594,7 @@ item(FEAT_TRAINS, item_ep09) {
         purchase_power: return CB_FAILED; power: switch_ep09_power;
     }
 }
-# 211 "src\\pkp.pnml" 2
+# 231 "src\\pkp.pnml" 2
 # 1 "src\\engines/eu43.pnml" 1
 
 
@@ -5652,7 +5672,7 @@ item(FEAT_TRAINS, item_eu43) {
         speed: 140 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 5600 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5685,7 +5705,7 @@ item(FEAT_TRAINS, item_eu43) {
         purchase_power: return CB_FAILED; power: switch_eu43_power;
     }
 }
-# 212 "src\\pkp.pnml" 2
+# 232 "src\\pkp.pnml" 2
 # 1 "src\\engines/eu44.pnml" 1
 
 
@@ -5745,7 +5765,7 @@ item(FEAT_TRAINS, item_eu44) {
         speed: 230 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 6000 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5777,7 +5797,7 @@ item(FEAT_TRAINS, item_eu44) {
         purchase_power: return CB_FAILED; power: switch_eu44_power;
     }
 }
-# 213 "src\\pkp.pnml" 2
+# 233 "src\\pkp.pnml" 2
 # 1 "src\\engines/eu47.pnml" 1
 
 
@@ -5836,7 +5856,7 @@ item(FEAT_TRAINS, item_eu47) {
         speed: 160 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 5600 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5868,7 +5888,7 @@ item(FEAT_TRAINS, item_eu47) {
         purchase_power: return CB_FAILED; power: switch_eu47_power;
     }
 }
-# 214 "src\\pkp.pnml" 2
+# 234 "src\\pkp.pnml" 2
 # 1 "src\\engines/eu46.pnml" 1
 
 
@@ -5928,7 +5948,7 @@ item(FEAT_TRAINS, item_eu46) {
         speed: 200 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_CARGO;
         power: 6400 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -5960,8 +5980,122 @@ item(FEAT_TRAINS, item_eu46) {
         purchase_power: return CB_FAILED; power: switch_eu46_power;
     }
 }
-# 215 "src\\pkp.pnml" 2
+# 235 "src\\pkp.pnml" 2
+# 1 "src\\engines/et26.pnml" 1
 
+
+
+
+
+spriteset(sset_et26_purchase, "gfx/et26.png") { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_et26, "gfx/et26.png") { tmpl_sprite_train12(4, 20) }
+spriteset(sset_et26_diesel, "gfx/et26.png") { tmpl_sprite_train12(4, 80) }
+
+
+
+switch(FEAT_TRAINS, SELF, switch_et26_articulated, extra_callback_info1) {
+    1: return item_et26;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+switch(FEAT_TRAINS, SELF, switch_et26_length, position_in_vehid_chain % 2) {
+    1: return 3;
+    return 8;
+}
+switch(FEAT_TRAINS, SELF, switch_et26_graphics_diesel, tile_has_catenary) {
+    1: sset_et26;
+    return sset_et26_diesel;
+}
+switch(FEAT_TRAINS, SELF, switch_et26_graphics, position_in_vehid_chain % 2) {
+    0: return switch_et26_graphics_diesel;
+    return sset_dummy;
+}
+switch(FEAT_TRAINS, SELF, switch_et26_visual_effect_diesel, tile_has_catenary) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
+}
+switch(FEAT_TRAINS, SELF, switch_et26_visual_effect_local, position_in_vehid_chain % 2) {
+    0: return switch_et26_visual_effect_diesel;
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+switch (FEAT_TRAINS, SELF, switch_et26_add_text, climate == CLIMATE_ARCTIC ) {
+ 1: return string(STR_PURCHASE_DESCR_3L, string(STR_HEATING_ELECTRIC_POWER_TEXT, 450), string(STR_ENGINE_HEAVY_FREIGHT), string(STR_ET26_TEXT));
+ return string(STR_PURCHASE_DESCR_2L, string(STR_ENGINE_HEAVY_FREIGHT), string(STR_ET26_TEXT));
+}
+switch (FEAT_TRAINS, PARENT, switch_et26_running_cost2, current_speed ) { 0: return 18; return 201; } switch (FEAT_TRAINS, PARENT, switch_et26_running_cost, (grfid==str2number("MV\01\03")) * vehicle_type_id) { item_asf: return 0; return switch_et26_running_cost2; }
+switch(FEAT_TRAINS, PARENT, switch_et26_visual_effect, (grfid==str2number("MV\01\03")) * vehicle_type_id) { item_asf: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); return switch_et26_visual_effect_local; }
+
+switch (FEAT_TRAINS, SELF, switch_et26_switch_power, tile_has_catenary) {
+    1: return 6705;
+    return 724;
+}
+
+switch (FEAT_TRAINS, SELF, switch_et26_switch_power3, tile_has_catenary) {
+    1: return 4694;
+    return 724;
+}
+switch (FEAT_TRAINS, SELF, switch_et26_power2, position_in_consist > 0 ) {
+ 1: return switch_et26_switch_power3;
+ return switch_et26_switch_power;
+}
+switch (FEAT_TRAINS, PARENT, switch_et26_power, (grfid==str2number("MV\01\03")) * vehicle_type_id) {
+ item_asf: return 0;
+ return switch_et26_power2;
+}
+
+
+item(FEAT_TRAINS, item_et26) {
+    property {
+
+        name: string(STR_ET26_NAME);
+        climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date: date(2019, 1, 1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 30;
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: bitmask(); cargo_disallow_refit: [TOUR];
+        loading_speed: 5;
+        cost_factor: 66;
+        running_cost_factor: 201;
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        speed: 120 km/h;
+        misc_flags: bitmask();
+        refit_cost: 0;
+        track_type: RAIL;
+        ai_special_flag: AI_FLAG_CARGO;
+        power: 5000 kW;
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        dual_headed: 0;
+        cargo_capacity: 1;
+        weight: 120 ton;
+        ai_engine_rank: 0;
+        engine_class: ENGINE_CLASS_DIESEL;
+        extra_power_per_wagon: 0 kW;
+        tractive_effort_coefficient: 0.3505;
+        air_drag_coefficient: 0.07;
+        length: 8;
+        extra_weight_per_wagon: 0;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 0, DISABLE_WAGON_POWER);
+        bitmask_vehicle_info: 0;
+    }
+
+    graphics {
+        purchase: sset_et26_purchase;
+        additional_text: switch_et26_add_text;
+        power: switch_et26_power;
+        purchase_power: switch_et26_switch_power;
+        default: switch_et26_graphics;
+        articulated_part: switch_et26_articulated;
+        length: switch_et26_length;
+        visual_effect_and_powered: switch_et26_visual_effect;
+        can_attach_wagon: switch_normal_can_attach;
+        start_stop: switch_normal_start_stop;
+        purchase_cargo_capacity: return 0; cargo_capacity: return 0;
+        purchase_running_cost_factor: return CB_FAILED; running_cost_factor: switch_et26_running_cost;
+
+    }
+}
+# 236 "src\\pkp.pnml" 2
 
 
 # 1 "src\\engines/enxx-common.pnml" 1
@@ -6228,7 +6362,7 @@ item(FEAT_TRAINS, item_enxx_mail_dummy_2) {
         sprite_id: SPRITE_ID_NEW_TRAIN;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         power: 0;
         cargo_capacity: 1;
         weight: 0;
@@ -6241,7 +6375,7 @@ item(FEAT_TRAINS, item_enxx_mail_dummy_2) {
         cargo_capacity: switch_enxx_capacity;
     }
 }
-# 219 "src\\pkp.pnml" 2
+# 239 "src\\pkp.pnml" 2
 # 1 "src\\engines/en57.pnml" 1
 
 
@@ -6335,7 +6469,7 @@ item(FEAT_TRAINS, item_en57) {
         speed: 110 km/h;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 700 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -6368,7 +6502,7 @@ item(FEAT_TRAINS, item_en57) {
         purchase_power: return CB_FAILED; power: switch_en57_power;
     }
 }
-# 220 "src\\pkp.pnml" 2
+# 240 "src\\pkp.pnml" 2
 # 1 "src\\engines/en71.pnml" 1
 
 
@@ -6467,7 +6601,7 @@ item(FEAT_TRAINS, item_en71) {
         speed: 110 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 1560 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -6500,7 +6634,7 @@ item(FEAT_TRAINS, item_en71) {
         purchase_power: return CB_FAILED; power: switch_en71_power;
     }
 }
-# 221 "src\\pkp.pnml" 2
+# 241 "src\\pkp.pnml" 2
 # 1 "src\\engines/ed72.pnml" 1
 
 
@@ -6623,7 +6757,7 @@ item(FEAT_TRAINS, item_ed72) {
         speed: 130 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 1400 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -6656,7 +6790,7 @@ item(FEAT_TRAINS, item_ed72) {
         purchase_power: return CB_FAILED; power: switch_ed72_power;
     }
 }
-# 222 "src\\pkp.pnml" 2
+# 242 "src\\pkp.pnml" 2
 # 1 "src\\engines/ed74.pnml" 1
 
 
@@ -6767,7 +6901,7 @@ item(FEAT_TRAINS, item_ed74) {
         speed: 160 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 2000 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -6800,7 +6934,7 @@ item(FEAT_TRAINS, item_ed74) {
         purchase_power: return CB_FAILED; power: switch_ed74_power;
     }
 }
-# 223 "src\\pkp.pnml" 2
+# 243 "src\\pkp.pnml" 2
 # 1 "src\\engines/en76-elf.pnml" 1
 
 
@@ -6916,7 +7050,7 @@ item(FEAT_TRAINS, item_en76) {
         speed: 160 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 2000 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -6948,7 +7082,7 @@ item(FEAT_TRAINS, item_en76) {
         purchase_power: return CB_FAILED; power: switch_en76_power;
     }
 }
-# 224 "src\\pkp.pnml" 2
+# 244 "src\\pkp.pnml" 2
 # 1 "src\\engines/ed250-pendolino.pnml" 1
 
 
@@ -7096,7 +7230,7 @@ item(FEAT_TRAINS, item_ed250) {
         speed: 250 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 5600 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -7128,7 +7262,7 @@ item(FEAT_TRAINS, item_ed250) {
         purchase_power: return CB_FAILED; power: switch_ed250_power;
     }
 }
-# 225 "src\\pkp.pnml" 2
+# 245 "src\\pkp.pnml" 2
 # 1 "src\\engines/en63a-impuls.pnml" 1
 
 
@@ -7250,7 +7384,7 @@ item(FEAT_TRAINS, item_en63a) {
         speed: 160 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 1600 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -7282,7 +7416,7 @@ item(FEAT_TRAINS, item_en63a) {
         purchase_power: return CB_FAILED; power: switch_en63a_power;
     }
 }
-# 226 "src\\pkp.pnml" 2
+# 246 "src\\pkp.pnml" 2
 # 1 "src\\engines/ed161.pnml" 1
 
 
@@ -7464,7 +7598,7 @@ item(FEAT_TRAINS, item_ed161) {
         speed: 200 km/h;
         misc_flags: bitmask();
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
         ai_special_flag: AI_FLAG_PASSENGER;
         power: 2400 kW;
         running_cost_base: RUNNING_COST_ELECTRIC;
@@ -7497,7 +7631,7 @@ item(FEAT_TRAINS, item_ed161) {
         purchase_power: return CB_FAILED; power: switch_ed161_power;
     }
 }
-# 227 "src\\pkp.pnml" 2
+# 247 "src\\pkp.pnml" 2
 
 
 # 1 "src\\wagons/gmy.pnml" 1
@@ -7564,7 +7698,7 @@ if(param_keep_old_vehs) {
         default: sgroup_gmy;
     }
 }
-# 230 "src\\pkp.pnml" 2
+# 250 "src\\pkp.pnml" 2
 # 1 "src\\wagons/ghmx.pnml" 1
 
 
@@ -7635,7 +7769,7 @@ if(param_keep_old_vehs) {
         articulated_part: switch_ghmx_articulated;
     }
 }
-# 231 "src\\pkp.pnml" 2
+# 251 "src\\pkp.pnml" 2
 # 1 "src\\wagons/gmw.pnml" 1
 
 
@@ -7694,7 +7828,7 @@ if(param_keep_old_vehs) {
         default: sgroup_gmw;
     }
 }
-# 232 "src\\pkp.pnml" 2
+# 252 "src\\pkp.pnml" 2
 # 1 "src\\wagons/pdn.pnml" 1
 
 
@@ -7777,7 +7911,7 @@ item(FEAT_TRAINS, item_pdn) {
         articulated_part: switch_pdn_articulated;
     }
 }
-# 233 "src\\pkp.pnml" 2
+# 253 "src\\pkp.pnml" 2
 # 1 "src\\wagons/ohxt.pnml" 1
 
 
@@ -7836,7 +7970,7 @@ if(param_keep_old_vehs) {
         articulated_part: switch_ohxt_articulated;
     }
 }
-# 234 "src\\pkp.pnml" 2
+# 254 "src\\pkp.pnml" 2
 # 1 "src\\wagons/fg.pnml" 1
 
 
@@ -7946,7 +8080,7 @@ if(param_keep_old_vehs) {
         articulated_part: switch_fg_articulated;
     }
 }
-# 235 "src\\pkp.pnml" 2
+# 255 "src\\pkp.pnml" 2
 # 1 "src\\wagons/fy.pnml" 1
 
 
@@ -8011,7 +8145,7 @@ if(param_keep_old_vehs) {
         default: sgroup_fy;
     }
 }
-# 236 "src\\pkp.pnml" 2
+# 256 "src\\pkp.pnml" 2
 # 1 "src\\wagons/fhx.pnml" 1
 
 
@@ -8084,7 +8218,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_olive_2;
     }
 }
-# 237 "src\\pkp.pnml" 2
+# 257 "src\\pkp.pnml" 2
 # 1 "src\\wagons/dhxt.pnml" 1
 
 
@@ -8157,7 +8291,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_olive_2;
     }
 }
-# 238 "src\\pkp.pnml" 2
+# 258 "src\\pkp.pnml" 2
 # 1 "src\\wagons/dwxz.pnml" 1
 
 
@@ -8246,7 +8380,7 @@ item(FEAT_TRAINS, item_dwxz) {
         colour_mapping: switch_dwxz_colour_mapping;
     }
 }
-# 239 "src\\pkp.pnml" 2
+# 259 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bdwxzd.pnml" 1
 
 
@@ -8371,7 +8505,7 @@ item(FEAT_TRAINS, item_bdwxzd) {
         colour_mapping: switch_lights_wagon_brown_2;
     }
 }
-# 240 "src\\pkp.pnml" 2
+# 260 "src\\pkp.pnml" 2
 
 # 1 "src\\wagons/bcy.pnml" 1
 
@@ -8521,7 +8655,7 @@ if(param_keep_old_vehs) {
         purchase_running_cost_factor: return 3 +3; running_cost_factor: switch_BCYH_running_cost;
     }
 }
-# 242 "src\\pkp.pnml" 2
+# 262 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bci.pnml" 1
 
 
@@ -8603,7 +8737,7 @@ if(param_keep_old_vehs) {
         cargo_capacity: return 58;
     }
 }
-# 243 "src\\pkp.pnml" 2
+# 263 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bh-bonanza.pnml" 1
 
 
@@ -8700,7 +8834,7 @@ item(FEAT_TRAINS, item_bh_bon) {
         colour_mapping: switch_lights_wagon_green_2;
     }
 }
-# 244 "src\\pkp.pnml" 2
+# 264 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bipa.pnml" 1
 
 
@@ -8943,7 +9077,7 @@ if(param_keep_old_vehs) {
         refit_cost: switch_bipa_refit_cost;
     }
 }
-# 245 "src\\pkp.pnml" 2
+# 265 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bdhpumn.pnml" 1
 
 
@@ -9190,7 +9324,7 @@ item(FEAT_TRAINS, item_bdhpumn) {
         colour_mapping: switch_bdhpumn_recolour;
     }
 }
-# 246 "src\\pkp.pnml" 2
+# 266 "src\\pkp.pnml" 2
 # 1 "src\\wagons/twindexx.pnml" 1
 
 
@@ -9306,7 +9440,7 @@ item(FEAT_TRAINS, item_twindexx) {
         cargo_capacity: switch_twindexx_capacity;
     }
 }
-# 247 "src\\pkp.pnml" 2
+# 267 "src\\pkp.pnml" 2
 # 1 "src\\wagons/twindexxcontrolcar.pnml" 1
 
 
@@ -9425,7 +9559,7 @@ item(FEAT_TRAINS, item_twindexxcc) {
         cargo_capacity: switch_twindexxcc_capacity;
     }
 }
-# 248 "src\\pkp.pnml" 2
+# 268 "src\\pkp.pnml" 2
 # 1 "src\\wagons/bhxz.pnml" 1
 
 
@@ -9509,7 +9643,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_olive_2;
     }
 }
-# 249 "src\\pkp.pnml" 2
+# 269 "src\\pkp.pnml" 2
 # 1 "src\\wagons/abhxz.pnml" 1
 
 
@@ -9627,7 +9761,7 @@ if(param_keep_old_vehs) {
         refit_cost: switch_old_refit_cost;
     }
 }
-# 250 "src\\pkp.pnml" 2
+# 270 "src\\pkp.pnml" 2
 # 1 "src\\wagons/abdnu.pnml" 1
 # 10 "src\\wagons/abdnu.pnml"
 spriteset(sset_abdnu_old_purchase, "gfx/111a-112a.png") { tmpl_sprite_purchase(4, 60) }
@@ -9820,7 +9954,7 @@ item(FEAT_TRAINS, item_abdnu) {
         refit_cost: switch_old_refit_cost;
     }
 }
-# 251 "src\\pkp.pnml" 2
+# 271 "src\\pkp.pnml" 2
 # 1 "src\\wagons/abdhmnu.pnml" 1
 
 
@@ -9981,7 +10115,7 @@ item(FEAT_TRAINS, item_abdhmnu) {
         refit_cost: switch_new_refit_cost;
     }
 }
-# 252 "src\\pkp.pnml" 2
+# 272 "src\\pkp.pnml" 2
 # 1 "src\\wagons/ab9mnopuz.pnml" 1
 
 
@@ -10142,7 +10276,7 @@ item(FEAT_TRAINS, item_ab9mnopuz) {
         refit_cost: switch_new_refit_cost;
     }
 }
-# 253 "src\\pkp.pnml" 2
+# 273 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wlabwxz.pnml" 1
 
 
@@ -10224,7 +10358,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_dkblue_2;
     }
 }
-# 254 "src\\pkp.pnml" 2
+# 274 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wlab.pnml" 1
 # 9 "src\\wagons/wlab.pnml"
 spriteset(sset_wlab_purchase, "gfx/wlab.png") { tmpl_sprite_purchase(4, 60) }
@@ -10313,7 +10447,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_dkblue_2;
     }
 }
-# 255 "src\\pkp.pnml" 2
+# 275 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wlab10mnouz.pnml" 1
 
 
@@ -10424,7 +10558,7 @@ item(FEAT_TRAINS, item_wlab10mnouz) {
         colour_mapping: switch_lights_wagon_dkblue_2;
     }
 }
-# 256 "src\\pkp.pnml" 2
+# 276 "src\\pkp.pnml" 2
 # 1 "src\\wagons/jhx.pnml" 1
 
 
@@ -10498,7 +10632,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_olive_2;
     }
 }
-# 257 "src\\pkp.pnml" 2
+# 277 "src\\pkp.pnml" 2
 # 1 "src\\wagons/jhix.pnml" 1
 
 
@@ -10576,7 +10710,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_lights_wagon_red_2;
     }
 }
-# 258 "src\\pkp.pnml" 2
+# 278 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wrdmnu.pnml" 1
 
 
@@ -10733,7 +10867,7 @@ item(FEAT_TRAINS, item_wrdmnu) {
         cargo_capacity: return 0;
     }
 }
-# 259 "src\\pkp.pnml" 2
+# 279 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wrmnouz.pnml" 1
 
 
@@ -10835,7 +10969,7 @@ item(FEAT_TRAINS, item_wrmnouz) {
         cargo_capacity: return 0;
     }
 }
-# 260 "src\\pkp.pnml" 2
+# 280 "src\\pkp.pnml" 2
 
 # 1 "src\\wagons/wddo.pnml" 1
 
@@ -11034,7 +11168,7 @@ if(param_keep_old_vehs) {
         purchase_running_cost_factor: return 2 +3; running_cost_factor: switch_WDDOH_running_cost;
     }
 }
-# 262 "src\\pkp.pnml" 2
+# 282 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wddo-2w.pnml" 1
 
 
@@ -11190,7 +11324,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 263 "src\\pkp.pnml" 2
+# 283 "src\\pkp.pnml" 2
 # 1 "src\\wagons/es.pnml" 1
 
 
@@ -11297,7 +11431,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 264 "src\\pkp.pnml" 2
+# 284 "src\\pkp.pnml" 2
 # 1 "src\\wagons/eaos.pnml" 1
 
 
@@ -11451,7 +11585,7 @@ item(FEAT_TRAINS, item_eaos) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 265 "src\\pkp.pnml" 2
+# 285 "src\\pkp.pnml" 2
 # 1 "src\\wagons/eanos.pnml" 1
 
 
@@ -11591,7 +11725,7 @@ if(param_keep_old_vehs) {
         articulated_part: switch_eanos_articulated;
     }
 }
-# 266 "src\\pkp.pnml" 2
+# 286 "src\\pkp.pnml" 2
 # 1 "src\\wagons/eanos-445w.pnml" 1
 
 
@@ -11673,7 +11807,7 @@ item(FEAT_TRAINS, item_eanos_445w) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 267 "src\\pkp.pnml" 2
+# 287 "src\\pkp.pnml" 2
 # 1 "src\\wagons/eamos.pnml" 1
 
 
@@ -11767,7 +11901,7 @@ item(FEAT_TRAINS, item_eamos) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 268 "src\\pkp.pnml" 2
+# 288 "src\\pkp.pnml" 2
 # 1 "src\\wagons/fals.pnml" 1
 
 
@@ -11840,7 +11974,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 269 "src\\pkp.pnml" 2
+# 289 "src\\pkp.pnml" 2
 # 1 "src\\wagons/falns.pnml" 1
 
 
@@ -11913,7 +12047,7 @@ item(FEAT_TRAINS, item_falns) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 270 "src\\pkp.pnml" 2
+# 290 "src\\pkp.pnml" 2
 # 1 "src\\wagons/kdt.pnml" 1
 
 
@@ -12043,7 +12177,7 @@ if(param_keep_old_vehs) {
         purchase_running_cost_factor: return 2 +3; running_cost_factor: switch_KDTH_running_cost;
     }
 }
-# 271 "src\\pkp.pnml" 2
+# 291 "src\\pkp.pnml" 2
 # 1 "src\\wagons/kddet.pnml" 1
 
 
@@ -12109,7 +12243,7 @@ if(param_keep_old_vehs) {
         default: sgroup_kddet;
     }
 }
-# 272 "src\\pkp.pnml" 2
+# 292 "src\\pkp.pnml" 2
 # 1 "src\\wagons/ggs.pnml" 1
 
 
@@ -12178,7 +12312,7 @@ if(param_keep_old_vehs) {
         default: sgroup_ggs;
     }
 }
-# 273 "src\\pkp.pnml" 2
+# 293 "src\\pkp.pnml" 2
 # 1 "src\\wagons/gags.pnml" 1
 
 
@@ -12249,7 +12383,7 @@ item(FEAT_TRAINS, item_gags) {
         cargo_capacity: switch_gags_capacity;
     }
 }
-# 274 "src\\pkp.pnml" 2
+# 294 "src\\pkp.pnml" 2
 # 1 "src\\wagons/gbs.pnml" 1
 
 
@@ -12308,7 +12442,7 @@ item(FEAT_TRAINS, item_gbs) {
         default: sgroup_gbs;
     }
 }
-# 275 "src\\pkp.pnml" 2
+# 295 "src\\pkp.pnml" 2
 # 1 "src\\wagons/hbbins.pnml" 1
 
 
@@ -12365,7 +12499,7 @@ item(FEAT_TRAINS, item_hbbins) {
         articulated_part: switch_hbbins_articulated;
     }
 }
-# 276 "src\\pkp.pnml" 2
+# 296 "src\\pkp.pnml" 2
 # 1 "src\\wagons/habbins.pnml" 1
 
 
@@ -12444,7 +12578,7 @@ item(FEAT_TRAINS, item_habbins) {
         articulated_part: switch_habbins_articulated;
     }
 }
-# 277 "src\\pkp.pnml" 2
+# 297 "src\\pkp.pnml" 2
 # 1 "src\\wagons/slr.pnml" 1
 
 
@@ -12511,7 +12645,7 @@ if(param_keep_old_vehs) {
         default: sgroup_slr;
     }
 }
-# 278 "src\\pkp.pnml" 2
+# 298 "src\\pkp.pnml" 2
 # 1 "src\\wagons/slms.pnml" 1
 
 
@@ -12576,7 +12710,7 @@ if(param_keep_old_vehs) {
         default: sgroup_slms;
     }
 }
-# 279 "src\\pkp.pnml" 2
+# 299 "src\\pkp.pnml" 2
 # 1 "src\\wagons/ibhss.pnml" 1
 
 
@@ -12631,7 +12765,7 @@ item(FEAT_TRAINS, item_ibhss) {
         default: sgroup_ibhss;
     }
 }
-# 280 "src\\pkp.pnml" 2
+# 300 "src\\pkp.pnml" 2
 # 1 "src\\wagons/pdk31.pnml" 1
 
 
@@ -12871,7 +13005,7 @@ if(param_keep_old_vehs) {
         purchase_running_cost_factor: return 2 +3; running_cost_factor: switch_PDKH31_running_cost;
     }
 }
-# 281 "src\\pkp.pnml" 2
+# 301 "src\\pkp.pnml" 2
 # 1 "src\\wagons/kbkks.pnml" 1
 
 
@@ -13000,7 +13134,7 @@ if(param_keep_old_vehs) {
         cargo_capacity: switch_kbkks_capacity;
     }
 }
-# 282 "src\\pkp.pnml" 2
+# 302 "src\\pkp.pnml" 2
 # 1 "src\\wagons/kgns.pnml" 1
 
 
@@ -13096,7 +13230,7 @@ item(FEAT_TRAINS, item_kgns) {
         cargo_capacity: switch_kgns_capacity;
     }
 }
-# 283 "src\\pkp.pnml" 2
+# 303 "src\\pkp.pnml" 2
 # 1 "src\\wagons/res.pnml" 1
 
 
@@ -13240,7 +13374,7 @@ item(FEAT_TRAINS, item_res) {
         cargo_capacity: switch_res_capacity;
     }
 }
-# 284 "src\\pkp.pnml" 2
+# 304 "src\\pkp.pnml" 2
 # 1 "src\\wagons/sgs.pnml" 1
 
 
@@ -13438,7 +13572,7 @@ item(FEAT_TRAINS, item_sgs) {
         loading_speed: return 20*(cargo_capacity/58);
     }
 }
-# 285 "src\\pkp.pnml" 2
+# 305 "src\\pkp.pnml" 2
 # 1 "src\\wagons/sdgmnss.pnml" 1
 
 
@@ -13578,7 +13712,7 @@ item(FEAT_TRAINS, item_sdgmnss) {
         cargo_age_period: switch_sdgmnss_cargo_age_period;
     }
 }
-# 286 "src\\pkp.pnml" 2
+# 306 "src\\pkp.pnml" 2
 # 1 "src\\wagons/rh.pnml" 1
 
 
@@ -13636,7 +13770,7 @@ if(param_keep_old_vehs) {
         default: sset_rh;
     }
 }
-# 287 "src\\pkp.pnml" 2
+# 307 "src\\pkp.pnml" 2
 # 1 "src\\wagons/rbh.pnml" 1
 
 
@@ -13694,7 +13828,7 @@ if(param_keep_old_vehs) {
         default: sset_rbh;
     }
 }
-# 288 "src\\pkp.pnml" 2
+# 308 "src\\pkp.pnml" 2
 # 1 "src\\wagons/zaes.pnml" 1
 
 
@@ -13743,7 +13877,7 @@ item(FEAT_TRAINS, item_zaes) {
         default: sset_zaes;
     }
 }
-# 289 "src\\pkp.pnml" 2
+# 309 "src\\pkp.pnml" 2
 # 1 "src\\wagons/sn.pnml" 1
 
 
@@ -13807,7 +13941,7 @@ if(param_keep_old_vehs) {
         default: sgroup_sn;
     }
 }
-# 290 "src\\pkp.pnml" 2
+# 310 "src\\pkp.pnml" 2
 # 1 "src\\wagons/sdw.pnml" 1
 
 
@@ -13951,7 +14085,7 @@ if(param_keep_old_vehs) {
         purchase_running_cost_factor: return 2 +3; running_cost_factor: switch_SDWH_running_cost;
     }
 }
-# 291 "src\\pkp.pnml" 2
+# 311 "src\\pkp.pnml" 2
 # 1 "src\\wagons/uacs.pnml" 1
 
 
@@ -14007,7 +14141,7 @@ if(param_replace_cargoes) {
         default: sset_uacs;
     }
 }
-# 292 "src\\pkp.pnml" 2
+# 312 "src\\pkp.pnml" 2
 # 1 "src\\wagons/lekqss.pnml" 1
 
 
@@ -14094,7 +14228,7 @@ if(param_replace_cargoes) {
         cargo_capacity: switch_lekqss_capacity;
     }
 }
-# 293 "src\\pkp.pnml" 2
+# 313 "src\\pkp.pnml" 2
 # 1 "src\\wagons/tads.pnml" 1
 
 
@@ -14162,7 +14296,7 @@ item(FEAT_TRAINS, item_tads) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 294 "src\\pkp.pnml" 2
+# 314 "src\\pkp.pnml" 2
 
 
 # 1 "src\\engines/wm15a.pnml" 1
@@ -14366,7 +14500,7 @@ item(FEAT_TRAINS, item_pwm15) {
   cargo_capacity: switch_pwm15_capacity;
     }
 }
-# 297 "src\\pkp.pnml" 2
+# 317 "src\\pkp.pnml" 2
 # 1 "src\\engines/asf.pnml" 1
 
 
@@ -14432,7 +14566,7 @@ item(FEAT_TRAINS, item_asf) {
         purchase_cargo_capacity: return 0; cargo_capacity: return 0;
     }
 }
-# 298 "src\\pkp.pnml" 2
+# 318 "src\\pkp.pnml" 2
 # 1 "src\\engines/od13.pnml" 1
 
 
@@ -14534,7 +14668,7 @@ if(!param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_od13_power;
     }
 }
-# 299 "src\\pkp.pnml" 2
+# 319 "src\\pkp.pnml" 2
 # 1 "src\\wagons/wdn.pnml" 1
 
 
@@ -14646,7 +14780,7 @@ if(!param_keep_old_vehs) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 300 "src\\pkp.pnml" 2
+# 320 "src\\pkp.pnml" 2
 # 1 "src\\wagons/kd.pnml" 1
 
 
@@ -14730,7 +14864,7 @@ if(!param_keep_old_vehs) {
         loading_speed: switch_kd_loading_speed;
     }
 }
-# 301 "src\\pkp.pnml" 2
+# 321 "src\\pkp.pnml" 2
 # 1 "src\\wagons/hes.pnml" 1
 
 
@@ -14794,7 +14928,7 @@ if(param_keep_old_vehs) {
         default: sgroup_hes;
     }
 }
-# 302 "src\\pkp.pnml" 2
+# 322 "src\\pkp.pnml" 2
 # 1 "src\\wagons/rnh.pnml" 1
 
 
@@ -14868,7 +15002,7 @@ if(param_keep_old_vehs) {
         purchase_running_cost_factor: return 2 +3; running_cost_factor: switch_RNH_running_cost;
     }
 }
-# 303 "src\\pkp.pnml" 2
+# 323 "src\\pkp.pnml" 2
 # 1 "src\\wagons/rnh-5r.pnml" 1
 
 
@@ -14934,7 +15068,7 @@ if(param_keep_old_vehs) {
         default: sset_rnh_5r;
     }
 }
-# 304 "src\\pkp.pnml" 2
+# 324 "src\\pkp.pnml" 2
 # 1 "src\\wagons/uahs.pnml" 1
 
 
@@ -15002,7 +15136,7 @@ if(param_replace_cargoes) {
         default: switch_uahs_graphics;
     }
 }
-# 305 "src\\pkp.pnml" 2
+# 325 "src\\pkp.pnml" 2
 # 1 "src\\wagons/ppu.pnml" 1
 
 
@@ -15085,7 +15219,7 @@ if(param_keep_old_vehs) {
         colour_mapping: switch_bulk_recolour;
     }
 }
-# 306 "src\\pkp.pnml" 2
+# 326 "src\\pkp.pnml" 2
 # 1 "src\\engines/ti12.pnml" 1
 
 
@@ -15187,7 +15321,7 @@ if(!param_keep_old_vehs) {
         purchase_power: return CB_FAILED; power: switch_ti12_power;
     }
 }
-# 307 "src\\pkp.pnml" 2
+# 327 "src\\pkp.pnml" 2
 
 sort(FEAT_TRAINS,
 

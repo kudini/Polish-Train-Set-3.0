@@ -17,104 +17,16 @@ switch(FEAT_TRAINS, SELF, switch_et26_length, position_in_vehid_chain % 2) {
     1: return 3;                // dummy parts
     return 8;
 }
-switch(FEAT_TRAINS, SELF, switch_et26_graphics_diesel, current_railtype) {
-    ELRL: sset_et26;            // Electric mode
-    ELOW: sset_et26;
-    EMED: sset_et26;
-    EHIG: sset_et26;
-    HSTR: sset_et26;
-    SAAE: sset_et26;
-    SBAE: sset_et26;
-    SCAE: sset_et26;
-    SDAE: sset_et26;
-    SEAE: sset_et26;
-    SABE: sset_et26;
-    SBBE: sset_et26;
-    SCBE: sset_et26;
-    SDBE: sset_et26;
-    SEBE: sset_et26;
-    SACE: sset_et26;
-    SBCE: sset_et26;
-    SCCE: sset_et26;
-    RAIL: sset_et26_diesel;     // Diesel mode
-    RLOW: sset_et26_diesel;
-    RMED: sset_et26_diesel;
-    RHIG: sset_et26_diesel;
-    SAAN: sset_et26_diesel;
-    SBAN: sset_et26_diesel;
-    SCAN: sset_et26_diesel;
-    SDAN: sset_et26_diesel;
-    SABN: sset_et26_diesel;
-    SBBN: sset_et26_diesel;
-    SCBN: sset_et26_diesel;
-    SDBN: sset_et26_diesel;
-    SACN: sset_et26_diesel;
-    SBCN: sset_et26_diesel;
-    SCCN: sset_et26_diesel;
-    railtype("3RDC"): sset_et26;
-    CLOW: sset_et26;
-    CMED: sset_et26;
-    SAAZ: sset_et26;
-    SBAZ: sset_et26;
-    SCAZ: sset_et26;
-    SABZ: sset_et26;
-    SBBZ: sset_et26;
-    SCBZ: sset_et26;
-    SACZ: sset_et26;
-    SBCZ: sset_et26;
-    SCCZ: sset_et26;
+switch(FEAT_TRAINS, SELF, switch_et26_graphics_diesel, tile_has_catenary) {
+    1: sset_et26;            // Electric mode
     return sset_et26_diesel;
 }
 switch(FEAT_TRAINS, SELF, switch_et26_graphics, position_in_vehid_chain % 2) {
     0: return switch_et26_graphics_diesel;
     return sset_dummy;
 }
-switch(FEAT_TRAINS, SELF, switch_et26_visual_effect_diesel, current_railtype) {
-    ELRL: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);    
-    ELOW: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    EMED: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    EHIG: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    HSTR: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SAAE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SBAE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SCAE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SDAE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SEAE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SABE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SBBE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SCBE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SDBE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SEBE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SACE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SBCE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SCCE: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    RAIL: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    RLOW: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    RMED: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    RHIG: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SAAN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SBAN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SCAN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SDAN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SABN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SBBN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SCBN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SDBN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SACN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SBCN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    SCCN: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
-    railtype("3RDC"): return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    CLOW: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    CMED: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SAAZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SBAZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SCAZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SABZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SBBZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SCBZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SACZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SBCZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
-    SCCZ: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);
+switch(FEAT_TRAINS, SELF, switch_et26_visual_effect_diesel, tile_has_catenary) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);    
     return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 3, DISABLE_WAGON_POWER);
 }
 switch(FEAT_TRAINS, SELF, switch_et26_visual_effect_local, position_in_vehid_chain % 2) {
@@ -128,101 +40,13 @@ switch (FEAT_TRAINS, SELF, switch_et26_add_text, IS_HEATING_CLIMATE ) {
 ENGINE_RUNNING_COST_SWITCH(et26, ET26)
 ENGINE_VISUAL_EFFECT_SWITCH(et26)
 
-switch (FEAT_TRAINS, SELF, switch_et26_switch_power, current_railtype) {
-    ELRL: return 6705; //hp
-    ELOW: return 6705;
-    EMED: return 6705;
-    EHIG: return 6705;
-    HSTR: return 6705;
-    SAAE: return 6705;
-    SBAE: return 6705;
-    SCAE: return 6705;
-    SDAE: return 6705;
-    SEAE: return 6705;
-    SABE: return 6705;
-    SBBE: return 6705;
-    SCBE: return 6705;
-    SDBE: return 6705;
-    SEBE: return 6705;
-    SACE: return 6705;
-    SBCE: return 6705;
-    SCCE: return 6705;
-    RAIL: return 724; //hp
-    RLOW: return 724;
-    RMED: return 724;
-    RHIG: return 724;
-    SAAN: return 724;
-    SBAN: return 724;
-    SCAN: return 724;
-    SDAN: return 724;
-    SABN: return 724;
-    SBBN: return 724;
-    SCBN: return 724;
-    SDBN: return 724;
-    SACN: return 724;
-    SBCN: return 724;
-    SCCN: return 724;
-    railtype("3RDC"): return 6705;
-    CLOW: return 6705;
-    CMED: return 6705;
-    SAAZ: return 6705;
-    SBAZ: return 6705;
-    SCAZ: return 6705;
-    SABZ: return 6705;
-    SBBZ: return 6705;
-    SCBZ: return 6705;
-    SACZ: return 6705;
-    SBCZ: return 6705;
-    SCCZ: return 6705;
+switch (FEAT_TRAINS, SELF, switch_et26_switch_power, tile_has_catenary) {
+    1: return 6705; //hp
     return 724; //hp
 }
 /* switches for reducing power */
-switch (FEAT_TRAINS, SELF, switch_et26_switch_power3, current_railtype) {
-    ELRL: return 4694; //hp
-    ELOW: return 4694;
-    EMED: return 4694;
-    EHIG: return 4694;
-    HSTR: return 4694;
-    SAAE: return 4694;
-    SBAE: return 4694;
-    SCAE: return 4694;
-    SDAE: return 4694;
-    SEAE: return 4694;
-    SABE: return 4694;
-    SBBE: return 4694;
-    SCBE: return 4694;
-    SDBE: return 4694;
-    SEBE: return 4694;
-    SACE: return 4694;
-    SBCE: return 4694;
-    SCCE: return 4694;
-    RAIL: return 724; //hp
-    RLOW: return 724;
-    RMED: return 724;
-    RHIG: return 724;
-    SAAN: return 724;
-    SBAN: return 724;
-    SCAN: return 724;
-    SDAN: return 724;
-    SABN: return 724;
-    SBBN: return 724;
-    SCBN: return 724;
-    SDBN: return 724;
-    SACN: return 724;
-    SBCN: return 724;
-    SCCN: return 724;
-    railtype("3RDC"): return 4694;
-    CLOW: return 4694;
-    CMED: return 4694;
-    SAAZ: return 4694;
-    SBAZ: return 4694;
-    SCAZ: return 4694;
-    SABZ: return 4694;
-    SBBZ: return 4694;
-    SCBZ: return 4694;
-    SACZ: return 4694;
-    SBCZ: return 4694;
-    SCCZ: return 4694;
+switch (FEAT_TRAINS, SELF, switch_et26_switch_power3, tile_has_catenary) {
+    1: return 4694; //hp
     return 724; //hp
 }
 switch (FEAT_TRAINS, SELF, switch_et26_power2, position_in_consist > 0 ) {
