@@ -55,7 +55,7 @@ item(FEAT_TRAINS, item_eu47) {
         speed:                          160 km/h;
         misc_flags:                     bitmask();
         refit_cost:                     0;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         ai_special_flag:                AI_FLAG_CARGO;
         power:                          5600 kW;
         running_cost_base:              RUNNING_COST_ELECTRIC;

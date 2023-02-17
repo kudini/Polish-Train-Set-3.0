@@ -69,25 +69,6 @@ switch(FEAT_TRAINS, SELF, switch_et26_graphics, position_in_vehid_chain % 2) {
     0: return switch_et26_graphics_diesel;
     return sset_dummy;
 }
-railtypetable {
-    RAIL,
-    ELRL,
-    "RLOW", "RMED", "RHIG",\
-	"SAAN", "SABN", "SACN", \
-	"SBAN", "SBBN", "SBCN", \
-	"SCAN", "SCBN", "SCCN", \
-	"SDAN", "SDBN", \
-	"ELOW", "EMED", "EHIG", "HSTR",\
-	"SAAE", "SABE", "SACE", \
-	"SBAE", "SBBE", "SBCE", \
-	"SCAE", "SCBE", "SCCE", \
-	"SDAE", "SDBE",\
-	"SEAE", "SEBE", \
-	"3RDC", "CLOW", "CMED",\
-	"SAAZ", "SABZ", "SACZ", \
-	"SBAZ", "SBBZ", "SBCZ", \
-	"SCAZ", "SCBZ", "SCCZ"
-}
 switch(FEAT_TRAINS, SELF, switch_et26_visual_effect_diesel, current_railtype) {
     ELRL: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);    
     ELOW: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 3, DISABLE_WAGON_POWER);

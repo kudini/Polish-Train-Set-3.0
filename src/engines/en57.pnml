@@ -101,7 +101,7 @@ item(FEAT_TRAINS, item_en57) {
         speed:                          110 km/h;
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost:                     0;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         ai_special_flag:                AI_FLAG_PASSENGER;
         power:                          700 kW;
         running_cost_base:              RUNNING_COST_ELECTRIC;

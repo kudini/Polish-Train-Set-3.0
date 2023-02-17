@@ -105,6 +105,26 @@ if (ttd_platform != PLATFORM_OPENTTD) {
 train_width_32_px = 1;
 traininfo_y_offset = 2;
 
+railtypetable {
+    RAIL,
+    ELRL,
+    "RLOW", "RMED", "RHIG",\
+	"SAAN", "SABN", "SACN", \
+	"SBAN", "SBBN", "SBCN", \
+	"SCAN", "SCBN", "SCCN", \
+	"SDAN", "SDBN", \
+	"ELOW", "EMED", "EHIG", "HSTR",\
+	"SAAE", "SABE", "SACE", \
+	"SBAE", "SBBE", "SBCE", \
+	"SCAE", "SCBE", "SCCE", \
+	"SDAE", "SDBE",\
+	"SEAE", "SEBE", \
+	"3RDC", "CLOW", "CMED",\
+	"SAAZ", "SABZ", "SACZ", \
+	"SBAZ", "SBBZ", "SBCZ", \
+	"SCAZ", "SCBZ", "SCCZ"
+}
+
 if(param_disable_orig) {
     disable_item(FEAT_TRAINS, 0, 53);
 }

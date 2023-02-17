@@ -133,7 +133,7 @@ item(FEAT_TRAINS, item_ed72) {
         speed:                          130 km/h;
         misc_flags:                     bitmask();
         refit_cost:                     0;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         ai_special_flag:                AI_FLAG_PASSENGER;
         power:                          1400 kW;
         running_cost_base:              RUNNING_COST_ELECTRIC;
