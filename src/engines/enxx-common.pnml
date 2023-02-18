@@ -173,12 +173,12 @@ switch(FEAT_TRAINS, SELF, switch_enxx_head, cargo_subtype % 7) {
     6: return sgroup_enxx_km_head;
     return sgroup_enxx_head;
 }
-random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0xFF)), switch_enxx_mid_age2) {
+random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0x7F)), switch_enxx_mid_age2) {
     dependent: switch_enxx_head_age2;
     10: return sgroup_enxx_mid;
     6: return sgroup_enxx_or_mid;
 }
-random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0xFF)), switch_enxx_mid_age3) {
+random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0x7F)), switch_enxx_mid_age3) {
     dependent: switch_enxx_head_age3;
     3: return sgroup_enxx_mid;
     3: return sgroup_enxx_or_mid;
@@ -204,12 +204,12 @@ switch(FEAT_TRAINS, SELF, switch_enxx_mid, cargo_subtype % 7) {
     6: return sgroup_enxx_km_mid;
     return sgroup_enxx_mid;
 }
-random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0xFF)), switch_enxx_tail_age2) {
+random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0x7F)), switch_enxx_tail_age2) {
     dependent: switch_enxx_head_age2;
     10: return sgroup_enxx_tail;
     6: return sgroup_enxx_or_tail;
 }
-random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0xFF)), switch_enxx_tail_age3) {
+random_switch(FEAT_TRAINS, FORWARD_SELF(LOAD_TEMP(0x7F)), switch_enxx_tail_age3) {
     dependent: switch_enxx_head_age3;
     3: return sgroup_enxx_tail;
     3: return sgroup_enxx_or_tail;

@@ -65,7 +65,7 @@ switch(FEAT_TRAINS, SELF, switch_ed72_capacity, cargo_type_in_veh) {
     TOUR: return switch_ed72_tour_capacity;
     return switch_ed72_pass_capacity;
 }
-switch(FEAT_TRAINS, SELF, switch_ed72_graphics, STORE_TEMP(position_in_vehid_chain % 7, 0xFF)) {
+switch(FEAT_TRAINS, SELF, switch_ed72_graphics, STORE_TEMP(position_in_vehid_chain % 7, 0x7F)) {
     0: return sgroup_ed72_head;
     2: return sgroup_ed72_mid1;
     4: return sgroup_ed72_mid2;
