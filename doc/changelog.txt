@@ -2,6 +2,7 @@ Polish Train Set - Change log
 ================================
 vNext
 Fixed handlig of electrified rail in OpenTTD 13 (Thanks for Brickblock1!)
+Fixed EN63A (Impuls) graphics alignment
 Fixed sources not compiling under latest NML
 
 3.0.2
