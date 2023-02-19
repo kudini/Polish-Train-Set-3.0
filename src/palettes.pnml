@@ -32,8 +32,10 @@
 #define CARGO_PHOS      CARGO_NITR+1
 #define CARGO_PORE      CARGO_PHOS+1
 #define CARGO_FECR      CARGO_PORE+1
+#define CARGO_RCYC      CARGO_FECR+1
+#define CARGO_PEAT      CARGO_RCYC+1
 
-#define NUM_CARGO_COLOURS   CARGO_FECR-CARGO_COAL+1
+#define NUM_CARGO_COLOURS   CARGO_PEAT-CARGO_COAL+1
 
 palette_cargo = reserve_sprites(NUM_CARGO_COLOURS);
 replace(palette_cargo) {
@@ -254,6 +256,22 @@ replace(palette_cargo) {
         0xAE: 0x0C;
         0xAF: 0x15;
         }
+    recolour_sprite {   // RCYC
+        0xAA: 0x93;
+        0xAB: 0x5D;
+        0xAC: 0x2E;
+        0xAD: 0xBD;
+        0xAE: 0xCE;
+        0xAF: 0x27;
+        }
+    recolour_sprite {   // PEAT (as biomass)
+        0xAA: 0x24;
+        0xAB: 0x37;
+        0xAC: 0x3E;
+        0xAD: 0x40;
+        0xAE: 0x1C;
+        0xAF: 0x6F;
+        }
 }
 
 // Switches for recolouring cargoes in open wagons
@@ -267,6 +285,8 @@ switch(FEAT_TRAINS, SELF, switch_bulk_recolour2, cargo_type_in_veh) {
     PHOS: return palette_cargo + CARGO_PHOS;
     PORE: return palette_cargo + CARGO_PORE;
     FECR: return palette_cargo + CARGO_FECR;
+    RCYC: return palette_cargo + CARGO_RCYC;
+    PEAT: return palette_cargo + CARGO_PEAT;
     return PALETTE_CC_DARK_BLUE;  // no changes
    }
 switch(FEAT_TRAINS, SELF, switch_bulk_recolour, cargo_type_in_veh) {

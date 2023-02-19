@@ -3,7 +3,7 @@ Polish Train Set - Change log
 vNext
 Fixed handlig of electrified rail in OpenTTD 13 (Thanks for Brickblock1!)
 Fixed EN63A (Impuls) graphics alignment
-Added ferrochrome (FIRS4) bulk cargo colour
+Added bulk cargo colours: ferrochrome (FIRS4), recyclables (XIS), biomass (XIS)
 Fixed sources not compiling under latest NML
 
 3.0.2
