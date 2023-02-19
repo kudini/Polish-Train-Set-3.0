@@ -31,8 +31,9 @@
 #define CARGO_NITR      CARGO_MNO2+1
 #define CARGO_PHOS      CARGO_NITR+1
 #define CARGO_PORE      CARGO_PHOS+1
+#define CARGO_FECR      CARGO_PORE+1
 
-#define NUM_CARGO_COLOURS   CARGO_PORE-CARGO_COAL+1
+#define NUM_CARGO_COLOURS   CARGO_FECR-CARGO_COAL+1
 
 palette_cargo = reserve_sprites(NUM_CARGO_COLOURS);
 replace(palette_cargo) {
@@ -245,6 +246,14 @@ replace(palette_cargo) {
         0xAE: 0x41;
         0xAF: 0x79;
         }
+    recolour_sprite {   // FECR
+        0xAA: 0x11;
+        0xAB: 0x73;
+        0xAC: 0x40;
+        0xAD: 0x13;
+        0xAE: 0x0C;
+        0xAF: 0x15;
+        }
 }
 
 // Switches for recolouring cargoes in open wagons
@@ -257,6 +266,7 @@ switch(FEAT_TRAINS, SELF, switch_bulk_recolour2, cargo_type_in_veh) {
     NITR: return palette_cargo + CARGO_NITR;
     PHOS: return palette_cargo + CARGO_PHOS;
     PORE: return palette_cargo + CARGO_PORE;
+    FECR: return palette_cargo + CARGO_FECR;
     return PALETTE_CC_DARK_BLUE;  // no changes
    }
 switch(FEAT_TRAINS, SELF, switch_bulk_recolour, cargo_type_in_veh) {
