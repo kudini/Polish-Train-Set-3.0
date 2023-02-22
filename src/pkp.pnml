@@ -2,7 +2,7 @@ grf {
     grfid: "MV\01\03";
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESCRIPTION);
-    version: 210;
+    version: 211;
     min_compatible_version: 208;
 
     param {
