@@ -3,12 +3,12 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Tadns sprites */
-spriteset(sset_tadns_purchase, "gfx/439v.png")      { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_tadns, "gfx/439v.png")               { tmpl_sprite_train12(4, 20) }
-spriteset(sset_tadns_open, "gfx/439v.png")          { tmpl_sprite_train12(4, 80) }
-spriteset(sset_tadns_full, "gfx/439v.png")          { tmpl_sprite_train12(4, 120) }
-spriteset(sset_tadns_cut, "gfx/439v.png")           { tmpl_sprite_train12(4, 160) }
-spriteset(sset_tadns_open_cut, "gfx/439v.png")      { tmpl_sprite_train12(4, 200) }
+spriteset(sset_tadns_purchase, "gfx/wagons/439v.png")      { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_tadns, "gfx/wagons/439v.png")               { tmpl_sprite_train12(4, 20) }
+spriteset(sset_tadns_open, "gfx/wagons/439v.png")          { tmpl_sprite_train12(4, 80) }
+spriteset(sset_tadns_full, "gfx/wagons/439v.png")          { tmpl_sprite_train12(4, 120) }
+spriteset(sset_tadns_cut, "gfx/wagons/439v.png")           { tmpl_sprite_train12(4, 160) }
+spriteset(sset_tadns_open_cut, "gfx/wagons/439v.png")      { tmpl_sprite_train12(4, 200) }
 spritegroup sgroup_tadns {
     loaded:     [sset_tadns_open, sset_tadns, sset_tadns];
     loading:    [sset_tadns_open, sset_tadns_full];

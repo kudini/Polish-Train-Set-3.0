@@ -3,8 +3,8 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* EU47(Traxx) sprites */
-spriteset(sset_eu47_purchase, "gfx/eu47.png")  { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_eu47, "gfx/eu47.png")           { tmpl_sprite_train10(4, 20) }
+spriteset(sset_eu47_purchase, "gfx/engines/eu47.png")  { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eu47, "gfx/engines/eu47.png")           { tmpl_sprite_train10(4, 20) }
 
 /* EU47(Traxx) switches */
 switch(FEAT_TRAINS, SELF, switch_eu47_articulated, extra_callback_info1) {

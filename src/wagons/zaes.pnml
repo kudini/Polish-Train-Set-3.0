@@ -3,10 +3,10 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Zaes sprites */
-spriteset(sset_zaes_purchase, "gfx/406r.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_zaes, "gfx/406r.png")                { tmpl_sprite_train(4, 20) }
-spriteset(sset_zaes_oil, "gfx/406r.png")            { tmpl_sprite_train(4, 80) }
-spriteset(sset_zaes_chem, "gfx/406r.png")           { tmpl_sprite_train(4, 120) }
+spriteset(sset_zaes_purchase, "gfx/wagons/406r.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_zaes, "gfx/wagons/406r.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_zaes_oil, "gfx/wagons/406r.png")            { tmpl_sprite_train(4, 80) }
+spriteset(sset_zaes_chem, "gfx/wagons/406r.png")           { tmpl_sprite_train(4, 120) }
 
 /* Define the actual train */
 item(FEAT_TRAINS, item_zaes) {

@@ -3,10 +3,10 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* EU43(Traxx) sprites */
-spriteset(sset_eu43_purchase, "gfx/traxx.png")  { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_eu43_pkp_cargo, "gfx/traxx.png") { tmpl_sprite_train10(4, 20) }
-spriteset(sset_eu43_pkp_pr, "gfx/e186.png")      { tmpl_sprite_train10(4, 78) }
-spriteset(sset_eu43_lotos, "gfx/e186.png")      { tmpl_sprite_train10(4, 116) }
+spriteset(sset_eu43_purchase, "gfx/engines/traxx.png")  { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eu43_pkp_cargo, "gfx/engines/traxx.png") { tmpl_sprite_train10(4, 20) }
+spriteset(sset_eu43_pkp_pr, "gfx/engines/e186.png")      { tmpl_sprite_train10(4, 78) }
+spriteset(sset_eu43_lotos, "gfx/engines/e186.png")      { tmpl_sprite_train10(4, 116) }
 
 /* EU43(Traxx) switches */
 switch (FEAT_TRAINS, SELF, switch_eu43_subtype_text2, cargo_subtype) {

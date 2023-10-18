@@ -3,11 +3,11 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Rnh 5R sprites */
-spriteset(sset_rnh_5r_purchase, "gfx/5r.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_rnh_5r, "gfx/5r.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_rnh_5r_purchase, "gfx/wagons/5r.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_rnh_5r, "gfx/wagons/5r.png")                { tmpl_sprite_train(4, 20) }
 #ifdef _ZOOM_SPRITES_ENABLED_
 alternative_sprites(sset_rnh_5r,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/5r-x2.png")  { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/5r-x2.png")  { tmpl_sprite_train_x2(8, 40) }
 #endif
 
 #define RNH_5R_CAPACITY     22

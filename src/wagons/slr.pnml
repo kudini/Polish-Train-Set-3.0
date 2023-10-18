@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Slr sprites */
-spriteset(sset_slr_purchase, "gfx/slr.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_slr, "gfx/slr.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_slr_open, "gfx/slr.png")         { tmpl_sprite_train(4, 80) }
+spriteset(sset_slr_purchase, "gfx/wagons/slr.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_slr, "gfx/wagons/slr.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_slr_open, "gfx/wagons/slr.png")         { tmpl_sprite_train(4, 80) }
 #ifdef ZOOM_SPRITES_NON_GPL_ENABLED
 alternative_sprites(sset_slr,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/slr-x2.png")     { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/slr-x2.png")     { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_slr_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/slr-x2.png")     { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/slr-x2.png")     { tmpl_sprite_train_x2(8, 120) }
 #endif
 spritegroup sgroup_slr {
     loaded:     [sset_slr];

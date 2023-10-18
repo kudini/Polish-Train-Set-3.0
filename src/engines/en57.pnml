@@ -5,7 +5,7 @@
 // This file requires enxx-common.pnml included before
 
 /* EN57 sprites */
-spriteset(sset_en57_advert, "gfx/en57.png")         { tmpl_sprite_advertisement200(4, 280) }
+spriteset(sset_en57_advert, "gfx/engines/en57.png")         { tmpl_sprite_advertisement200(4, 280) }
 
 /* EN57 switches */
 switch(FEAT_TRAINS, SELF, switch_en57_purchase, extra_callback_info1 & 0xFF) {

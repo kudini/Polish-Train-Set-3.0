@@ -1,2 +1,5 @@
-VERSION     :3.0
+VERSION     :3.0.4
 TITLE       :Polish Train Set
+AUTHOR      :TadeuszD, Mewa
+GRAPHICS    :TadeuszD, Walter Novotny, Sojita, McZapkie, Czajnikowiec, 101ksl, Mewa
+TIMELINE    :2011-2023

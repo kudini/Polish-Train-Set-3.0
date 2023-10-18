@@ -3,28 +3,28 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Kdt sprites */
-spriteset(sset_kdt_purchase, "gfx/kdt.png")     { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_kdt, "gfx/kdt.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_kdt_open, "gfx/kdt.png")         { tmpl_sprite_train(4, 120) }
+spriteset(sset_kdt_purchase, "gfx/wagons/kdt.png")     { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_kdt, "gfx/wagons/kdt.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_kdt_open, "gfx/wagons/kdt.png")         { tmpl_sprite_train(4, 120) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_kdt,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/kdt-x2.png")   { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/kdt-x2.png")   { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_kdt_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/kdt-x2.png")   { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/kdt-x2.png")   { tmpl_sprite_train_x2(8, 200) }
 #endif
 spritegroup sgroup_kdt {
     loaded:     [sset_kdt_open, sset_kdt, sset_kdt];
     loading:    [sset_kdt_open];
 }
 /* Kdth sprites */
-spriteset(sset_kdth_purchase, "gfx/kdt.png")    { tmpl_sprite_purchase(124, 100) }
-spriteset(sset_kdth, "gfx/kdt.png")             { tmpl_sprite_train(4, 60) }
-spriteset(sset_kdth_open, "gfx/kdt.png")        { tmpl_sprite_train(4, 160) }
+spriteset(sset_kdth_purchase, "gfx/wagons/kdt.png")    { tmpl_sprite_purchase(124, 100) }
+spriteset(sset_kdth, "gfx/wagons/kdt.png")             { tmpl_sprite_train(4, 60) }
+spriteset(sset_kdth_open, "gfx/wagons/kdt.png")        { tmpl_sprite_train(4, 160) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_kdth,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/kdt-x2.png")   { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/kdt-x2.png")   { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_kdth_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/kdt-x2.png")   { tmpl_sprite_train_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/kdt-x2.png")   { tmpl_sprite_train_x2(8, 280) }
 #endif
 spritegroup sgroup_kdth {
     loaded:     [sset_kdth_open, sset_kdth, sset_kdth];

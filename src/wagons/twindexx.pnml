@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Twindexx sprites */
-spriteset(sset_twindexx_purchase, "gfx/twindexx.png")  { tmpl_sprite_purchase(4, 520) }
-spriteset(sset_twindexx, "gfx/twindexx.png")           { tmpl_sprite_train12(4, 20) }
-spriteset(sset_twindexx_open, "gfx/twindexx.png")      { tmpl_sprite_train12(4, 120) }
-spriteset(sset_twindexx_cut, "gfx/twindexx.png")       { tmpl_sprite_train12(4, 280) }
-spriteset(sset_twindexx_rear, "gfx/twindexx.png")      { tmpl_sprite_train(32, 360) }
-spriteset(sset_twindexx_rear_open, "gfx/twindexx.png") { tmpl_sprite_train(32, 400) }
-spriteset(sset_twindexx_l, "gfx/twindexx.png")         { tmpl_sprite_train12_l(4, 200) }
-spriteset(sset_twindexx_r, "gfx/twindexx.png")         { tmpl_sprite_train12_r(4, 200) }
+spriteset(sset_twindexx_purchase, "gfx/wagons/twindexx.png")  { tmpl_sprite_purchase(4, 520) }
+spriteset(sset_twindexx, "gfx/wagons/twindexx.png")           { tmpl_sprite_train12(4, 20) }
+spriteset(sset_twindexx_open, "gfx/wagons/twindexx.png")      { tmpl_sprite_train12(4, 120) }
+spriteset(sset_twindexx_cut, "gfx/wagons/twindexx.png")       { tmpl_sprite_train12(4, 280) }
+spriteset(sset_twindexx_rear, "gfx/wagons/twindexx.png")      { tmpl_sprite_train(32, 360) }
+spriteset(sset_twindexx_rear_open, "gfx/wagons/twindexx.png") { tmpl_sprite_train(32, 400) }
+spriteset(sset_twindexx_l, "gfx/wagons/twindexx.png")         { tmpl_sprite_train12_l(4, 200) }
+spriteset(sset_twindexx_r, "gfx/wagons/twindexx.png")         { tmpl_sprite_train12_r(4, 200) }
 
 spritegroup sgroup_twindexx {
     loaded:     [sset_twindexx];

@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* TKt48 sprites */
-spriteset(sset_tkt48_purchase, "gfx/tkt48.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_tkt48, "gfx/tkt48.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_tkt48_rev, "gfx/tkt48.png")          { tmpl_sprite_train(4, 80) }
+spriteset(sset_tkt48_purchase, "gfx/engines/tkt48.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_tkt48, "gfx/engines/tkt48.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_tkt48_rev, "gfx/engines/tkt48.png")          { tmpl_sprite_train(4, 80) }
 
 /* TKt48 switches */
 switch(FEAT_TRAINS, PARENT, switch_tkt48_graphics, vehicle_is_reversed) {

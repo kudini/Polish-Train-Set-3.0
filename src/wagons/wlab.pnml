@@ -3,8 +3,8 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* WLAB sprites */
-#define WLAB_FILE       "gfx/wlab.png"
-#define WLAB_IC_FILE    "gfx/gorlitz77.png"
+#define WLAB_FILE       "gfx/wagons/wlab.png"
+#define WLAB_IC_FILE    "gfx/wagons/gorlitz77.png"
 // classic livery
 spriteset(sset_wlab_purchase, WLAB_FILE)            { tmpl_sprite_purchase(4, 60) }
 spriteset(sset_wlab, WLAB_FILE)                     { tmpl_sprite_train12(4, 20) }

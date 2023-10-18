@@ -3,12 +3,12 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Falns sprites */
-spriteset(sset_falns_brown_purchase, "gfx/436v.png")    { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_falns_blue_purchase, "gfx/436v.png")     { tmpl_sprite_purchase(124, 60) }
-spriteset(sset_falns_brown_empty, "gfx/436v.png")       { tmpl_sprite_train(4, 20) }
-spriteset(sset_falns_blue_empty, "gfx/436v.png")        { tmpl_sprite_train(4, 80) }
-spriteset(sset_falns_brown_full, "gfx/436v.png")        { tmpl_sprite_train(4, 120) }
-spriteset(sset_falns_blue_full, "gfx/436v.png")         { tmpl_sprite_train(4, 160) }
+spriteset(sset_falns_brown_purchase, "gfx/wagons/436v.png")    { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_falns_blue_purchase, "gfx/wagons/436v.png")     { tmpl_sprite_purchase(124, 60) }
+spriteset(sset_falns_brown_empty, "gfx/wagons/436v.png")       { tmpl_sprite_train(4, 20) }
+spriteset(sset_falns_blue_empty, "gfx/wagons/436v.png")        { tmpl_sprite_train(4, 80) }
+spriteset(sset_falns_brown_full, "gfx/wagons/436v.png")        { tmpl_sprite_train(4, 120) }
+spriteset(sset_falns_blue_full, "gfx/wagons/436v.png")         { tmpl_sprite_train(4, 160) }
 spritegroup sgroup_falns_brown {
     loaded:     [sset_falns_brown_empty, sset_falns_brown_full];
     loading:    [sset_falns_brown_empty, sset_falns_brown_full];

@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ggs sprites */
-spriteset(sset_ggs_purchase, "gfx/23k.png")         { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_ggs, "gfx/23k.png")                  { tmpl_sprite_train(4, 20) }
-spriteset(sset_ggs_open_empty, "gfx/23k.png")       { tmpl_sprite_train(4, 80) }
-spriteset(sset_ggs_open_full, "gfx/23k.png")        { tmpl_sprite_train(4, 120) }
+spriteset(sset_ggs_purchase, "gfx/wagons/23k.png")         { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_ggs, "gfx/wagons/23k.png")                  { tmpl_sprite_train(4, 20) }
+spriteset(sset_ggs_open_empty, "gfx/wagons/23k.png")       { tmpl_sprite_train(4, 80) }
+spriteset(sset_ggs_open_full, "gfx/wagons/23k.png")        { tmpl_sprite_train(4, 120) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_ggs,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/23k-x2.png")     { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/23k-x2.png")     { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_ggs_open_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/23k-x2.png")     { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/23k-x2.png")     { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_ggs_open_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/23k-x2.png")     { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/23k-x2.png")     { tmpl_sprite_train_x2(8, 200) }
 #endif
 spritegroup sgroup_ggs {
     loaded:     [sset_ggs_open_empty, sset_ggs, sset_ggs];

@@ -3,15 +3,15 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* A/Bhxz sprites */
-spriteset(sset_abhxz_purchase, "gfx/lilpop.png")    { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_abhxz_c2, "gfx/lilpop.png")          { tmpl_sprite_train12(4, 20) }
-spriteset(sset_abhxz_c12, "gfx/lilpop.png")         { tmpl_sprite_train12(4, 80) }
-spriteset(sset_abhxz_c1, "gfx/lilpop.png")          { tmpl_sprite_train12(4, 120) }
-spriteset(sset_abhxz_c2_open, "gfx/lilpop.png")     { tmpl_sprite_train12(4, 160) }
-spriteset(sset_abhxz_c12_open, "gfx/lilpop.png")    { tmpl_sprite_train12(4, 200) }
-spriteset(sset_abhxz_c1_open, "gfx/lilpop.png")     { tmpl_sprite_train12(4, 240) }
-spriteset(sset_abhxz_c2_cut, "gfx/lilpop.png")      { tmpl_sprite_train12(4, 280) }
-spriteset(sset_abhxz_c12_cut, "gfx/lilpop.png")     { tmpl_sprite_train12(4, 320) }
+spriteset(sset_abhxz_purchase, "gfx/wagons/lilpop.png")    { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_abhxz_c2, "gfx/wagons/lilpop.png")          { tmpl_sprite_train12(4, 20) }
+spriteset(sset_abhxz_c12, "gfx/wagons/lilpop.png")         { tmpl_sprite_train12(4, 80) }
+spriteset(sset_abhxz_c1, "gfx/wagons/lilpop.png")          { tmpl_sprite_train12(4, 120) }
+spriteset(sset_abhxz_c2_open, "gfx/wagons/lilpop.png")     { tmpl_sprite_train12(4, 160) }
+spriteset(sset_abhxz_c12_open, "gfx/wagons/lilpop.png")    { tmpl_sprite_train12(4, 200) }
+spriteset(sset_abhxz_c1_open, "gfx/wagons/lilpop.png")     { tmpl_sprite_train12(4, 240) }
+spriteset(sset_abhxz_c2_cut, "gfx/wagons/lilpop.png")      { tmpl_sprite_train12(4, 280) }
+spriteset(sset_abhxz_c12_cut, "gfx/wagons/lilpop.png")     { tmpl_sprite_train12(4, 320) }
 spritegroup sgroup_abhxz_c2 {
     loaded:     [sset_abhxz_c2];
     loading:    [sset_abhxz_c2_open];

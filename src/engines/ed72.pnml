@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* ED72 sprites */
-spriteset(sset_ed72_purchase, "gfx/ed72.png")       { tmpl_sprite_purchase(4, 180) }
-spriteset(sset_ed72_advert, "gfx/ed72.png")         { tmpl_sprite_advertisement200(4, 360) }
+spriteset(sset_ed72_purchase, "gfx/engines/ed72.png")       { tmpl_sprite_purchase(4, 180) }
+spriteset(sset_ed72_advert, "gfx/engines/ed72.png")         { tmpl_sprite_advertisement200(4, 360) }
 
-spriteset(sset_ed72_head, "gfx/ed72.png")           { tmpl_sprite_train12(4, 20) }
-spriteset(sset_ed72_mid1, "gfx/ed72.png")           { tmpl_sprite_train10_offset(4, 60, 1) }
-spriteset(sset_ed72_mid2, "gfx/ed72.png")           { tmpl_sprite_train10_offset(4, 100, 1) }
-spriteset(sset_ed72_tail, "gfx/ed72.png")           { tmpl_sprite_train12_offset(4, 140, 1) }
-spriteset(sset_ed72_head_open, "gfx/ed72.png")      { tmpl_sprite_train12(4, 200) }
-spriteset(sset_ed72_mid1_open, "gfx/ed72.png")      { tmpl_sprite_train10_offset(4, 240, 1) }
-spriteset(sset_ed72_mid2_open, "gfx/ed72.png")      { tmpl_sprite_train10_offset(4, 280, 1) }
-spriteset(sset_ed72_tail_open, "gfx/ed72.png")      { tmpl_sprite_train12_offset(4, 320, 1) }
+spriteset(sset_ed72_head, "gfx/engines/ed72.png")           { tmpl_sprite_train12(4, 20) }
+spriteset(sset_ed72_mid1, "gfx/engines/ed72.png")           { tmpl_sprite_train10_offset(4, 60, 1) }
+spriteset(sset_ed72_mid2, "gfx/engines/ed72.png")           { tmpl_sprite_train10_offset(4, 100, 1) }
+spriteset(sset_ed72_tail, "gfx/engines/ed72.png")           { tmpl_sprite_train12_offset(4, 140, 1) }
+spriteset(sset_ed72_head_open, "gfx/engines/ed72.png")      { tmpl_sprite_train12(4, 200) }
+spriteset(sset_ed72_mid1_open, "gfx/engines/ed72.png")      { tmpl_sprite_train10_offset(4, 240, 1) }
+spriteset(sset_ed72_mid2_open, "gfx/engines/ed72.png")      { tmpl_sprite_train10_offset(4, 280, 1) }
+spriteset(sset_ed72_tail_open, "gfx/engines/ed72.png")      { tmpl_sprite_train12_offset(4, 320, 1) }
 spritegroup sgroup_ed72_head {
     loaded:     [sset_ed72_head];
     loading:    [sset_ed72_head_open];

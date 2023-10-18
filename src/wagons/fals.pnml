@@ -3,11 +3,11 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Fals sprites */
-spriteset(sset_fals_purchase, "gfx/wap.png")        { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_fals_gray_empty, "gfx/wap.png")      { tmpl_sprite_train(4, 20) }
-spriteset(sset_fals_brown_empty, "gfx/wap.png")     { tmpl_sprite_train(4, 80) }
-spriteset(sset_fals_gray_full, "gfx/wap.png")       { tmpl_sprite_train(4, 120) }
-spriteset(sset_fals_brown_full, "gfx/wap.png")      { tmpl_sprite_train(4, 160) }
+spriteset(sset_fals_purchase, "gfx/wagons/wap.png")        { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_fals_gray_empty, "gfx/wagons/wap.png")      { tmpl_sprite_train(4, 20) }
+spriteset(sset_fals_brown_empty, "gfx/wagons/wap.png")     { tmpl_sprite_train(4, 80) }
+spriteset(sset_fals_gray_full, "gfx/wagons/wap.png")       { tmpl_sprite_train(4, 120) }
+spriteset(sset_fals_brown_full, "gfx/wagons/wap.png")      { tmpl_sprite_train(4, 160) }
 spritegroup sgroup_fals_gray {
     loaded:     [sset_fals_gray_empty, sset_fals_gray_full];
     loading:    [sset_fals_gray_empty, sset_fals_gray_full];

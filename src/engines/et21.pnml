@@ -3,10 +3,10 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* ET21 sprites */
-spriteset(sset_et21_purchase, "gfx/et21.png")           { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_et21, "gfx/et21.png")                    { tmpl_sprite_train10(4, 20) }
-spriteset(sset_et21_purchase_yellow, "gfx/et21.png")    { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_et21_yellow, "gfx/et21.png")             { tmpl_sprite_train10(4, 80) }
+spriteset(sset_et21_purchase, "gfx/engines/et21.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_et21, "gfx/engines/et21.png")                    { tmpl_sprite_train10(4, 20) }
+spriteset(sset_et21_purchase_yellow, "gfx/engines/et21.png")    { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_et21_yellow, "gfx/engines/et21.png")             { tmpl_sprite_train10(4, 80) }
 
 /* ET21 switches */
 #define IS_ET21_YELLOW  build_year >= 1989

@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Hbbins sprites */
-spriteset(sset_hbbins_purchase, "gfx/hbbins.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_hbbins, "gfx/hbbins.png")              { tmpl_sprite_train10(4, 20) }
-spriteset(sset_hbbins_open, "gfx/hbbins.png")         { tmpl_sprite_train10(4, 80) }
+spriteset(sset_hbbins_purchase, "gfx/wagons/hbbins.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_hbbins, "gfx/wagons/hbbins.png")              { tmpl_sprite_train10(4, 20) }
+spriteset(sset_hbbins_open, "gfx/wagons/hbbins.png")         { tmpl_sprite_train10(4, 80) }
 spritegroup sgroup_hbbins {
     loaded:     [sset_hbbins];
     loading:    [sset_hbbins_open];

@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Kddet sprites */
-spriteset(sset_kddet_purchase, "gfx/kddet.png")         { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_kddet, "gfx/kddet.png")                  { tmpl_sprite_train(4, 20) }
-spriteset(sset_kddet_open, "gfx/kddet.png")             { tmpl_sprite_train(4, 80) }
+spriteset(sset_kddet_purchase, "gfx/wagons/kddet.png")         { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_kddet, "gfx/wagons/kddet.png")                  { tmpl_sprite_train(4, 20) }
+spriteset(sset_kddet_open, "gfx/wagons/kddet.png")             { tmpl_sprite_train(4, 80) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_kddet,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/kddet-x2.png")   { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/kddet-x2.png")   { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_kddet_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/kddet-x2.png")   { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/kddet-x2.png")   { tmpl_sprite_train_x2(8, 120) }
 #endif
 spritegroup sgroup_kddet {
     loaded:     [sset_kddet_open, sset_kddet, sset_kddet];

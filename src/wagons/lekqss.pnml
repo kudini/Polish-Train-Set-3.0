@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Lekqss sprites */
-spriteset(sset_lekqss_purchase, "gfx/203z.png")         { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_lekqss_empty, "gfx/203z.png")            { tmpl_sprite_train(4, 20) }
-spriteset(sset_lekqss_vehs1_half, "gfx/203z.png")       { tmpl_sprite_train(4, 80) }
-spriteset(sset_lekqss_vehs1_full, "gfx/203z.png")       { tmpl_sprite_train(4, 120) }
-spriteset(sset_lekqss_vehs2_half, "gfx/203z.png")       { tmpl_sprite_train(4, 160) }
-spriteset(sset_lekqss_vehs2_full, "gfx/203z.png")       { tmpl_sprite_train(4, 200) }
-spriteset(sset_lekqss_vehs3_half, "gfx/203z.png")       { tmpl_sprite_train(4, 240) }
-spriteset(sset_lekqss_vehs3_full, "gfx/203z.png")       { tmpl_sprite_train(4, 280) }
+spriteset(sset_lekqss_purchase, "gfx/wagons/203z.png")         { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_lekqss_empty, "gfx/wagons/203z.png")            { tmpl_sprite_train(4, 20) }
+spriteset(sset_lekqss_vehs1_half, "gfx/wagons/203z.png")       { tmpl_sprite_train(4, 80) }
+spriteset(sset_lekqss_vehs1_full, "gfx/wagons/203z.png")       { tmpl_sprite_train(4, 120) }
+spriteset(sset_lekqss_vehs2_half, "gfx/wagons/203z.png")       { tmpl_sprite_train(4, 160) }
+spriteset(sset_lekqss_vehs2_full, "gfx/wagons/203z.png")       { tmpl_sprite_train(4, 200) }
+spriteset(sset_lekqss_vehs3_half, "gfx/wagons/203z.png")       { tmpl_sprite_train(4, 240) }
+spriteset(sset_lekqss_vehs3_full, "gfx/wagons/203z.png")       { tmpl_sprite_train(4, 280) }
 spritegroup sgroup_lekqss_vehs1 {
     loaded:     [sset_lekqss_empty, sset_lekqss_vehs1_half, sset_lekqss_vehs1_full];
     loading:    [sset_lekqss_empty, sset_lekqss_vehs1_half, sset_lekqss_vehs1_full];

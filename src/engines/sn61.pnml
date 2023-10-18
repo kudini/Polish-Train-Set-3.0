@@ -3,13 +3,13 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* SN61 sprites */
-spriteset(sset_sn61_purchase, "gfx/sn61.png")           { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sn61, "gfx/sn61.png")                    { tmpl_sprite_train12(4, 20) }
-spriteset(sset_sn61_open, "gfx/sn61.png")               { tmpl_sprite_train12(4, 80) }
-spriteset(sset_bh_ryf_green, "gfx/sn61.png")            { tmpl_sprite_train12(4, 120) }
-spriteset(sset_bh_ryf_green_open, "gfx/sn61.png")       { tmpl_sprite_train12(4, 160) }
-spriteset(sset_sn61_cut, "gfx/sn61.png")                { tmpl_sprite_train12(4, 200) }
-spriteset(sset_bh_ryf_green_cut, "gfx/sn61.png")        { tmpl_sprite_train12(4, 240) }
+spriteset(sset_sn61_purchase, "gfx/engines/sn61.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sn61, "gfx/engines/sn61.png")                    { tmpl_sprite_train12(4, 20) }
+spriteset(sset_sn61_open, "gfx/engines/sn61.png")               { tmpl_sprite_train12(4, 80) }
+spriteset(sset_bh_ryf_green, "gfx/engines/sn61.png")            { tmpl_sprite_train12(4, 120) }
+spriteset(sset_bh_ryf_green_open, "gfx/engines/sn61.png")       { tmpl_sprite_train12(4, 160) }
+spriteset(sset_sn61_cut, "gfx/engines/sn61.png")                { tmpl_sprite_train12(4, 200) }
+spriteset(sset_bh_ryf_green_cut, "gfx/engines/sn61.png")        { tmpl_sprite_train12(4, 240) }
 spritegroup sgroup_sn61 {
     loaded:     [sset_sn61];
     loading:    [sset_sn61_open];

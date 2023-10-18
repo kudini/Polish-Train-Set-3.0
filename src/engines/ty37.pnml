@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ty37 sprites */
-spriteset(sset_ty37_purchase, "gfx/ty37.png")       { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_ty37, "gfx/ty37.png")                { tmpl_sprite_train(4, 20) }
-spriteset(sset_ty37_tender, "gfx/ty37.png")         { tmpl_sprite_train(4, 60) }
+spriteset(sset_ty37_purchase, "gfx/engines/ty37.png")       { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_ty37, "gfx/engines/ty37.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_ty37_tender, "gfx/engines/ty37.png")         { tmpl_sprite_train(4, 60) }
 
 /* Ty37 switches */
 switch(FEAT_TRAINS, SELF, switch_ty37_articulated, extra_callback_info1) {

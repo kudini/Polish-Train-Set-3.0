@@ -3,10 +3,10 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* Bhxz sprites */
-spriteset(sset_bhxz_purchase, "gfx/ringhoffer.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_bhxz, "gfx/ringhoffer.png")              { tmpl_sprite_train10(4, 20) }
-spriteset(sset_bhxz_open, "gfx/ringhoffer.png")         { tmpl_sprite_train10(4, 80) }
-spriteset(sset_bhxz_cut, "gfx/ringhoffer.png")          { tmpl_sprite_train10(4, 120) }
+spriteset(sset_bhxz_purchase, "gfx/wagons/ringhoffer.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_bhxz, "gfx/wagons/ringhoffer.png")              { tmpl_sprite_train10(4, 20) }
+spriteset(sset_bhxz_open, "gfx/wagons/ringhoffer.png")         { tmpl_sprite_train10(4, 80) }
+spriteset(sset_bhxz_cut, "gfx/wagons/ringhoffer.png")          { tmpl_sprite_train10(4, 120) }
 spritegroup sgroup_bhxz {
     loaded:     [sset_bhxz];
     loading:    [sset_bhxz_open];

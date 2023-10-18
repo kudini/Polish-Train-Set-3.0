@@ -3,10 +3,10 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* ST43 sprites */
-spriteset(sset_st43_purchase, "gfx/st43.png")           { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_st43, "gfx/st43.png")                    { tmpl_sprite_train10(4, 20) }
-spriteset(sset_st43_purchase_yellow, "gfx/st43.png")    { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_st43_yellow, "gfx/st43.png")             { tmpl_sprite_train10(4, 80) }
+spriteset(sset_st43_purchase, "gfx/engines/st43.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_st43, "gfx/engines/st43.png")                    { tmpl_sprite_train10(4, 20) }
+spriteset(sset_st43_purchase_yellow, "gfx/engines/st43.png")    { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_st43_yellow, "gfx/engines/st43.png")             { tmpl_sprite_train10(4, 80) }
 
 /* ST43 switches */
 #define IS_ST43_YELLOW  build_year >= 1989

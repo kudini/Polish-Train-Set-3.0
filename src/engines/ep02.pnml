@@ -3,8 +3,8 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* EP02 sprites */
-spriteset(sset_ep02_purchase, "gfx/ep02.png")   { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_ep02, "gfx/ep02.png")            { tmpl_sprite_train10(4, 20) }
+spriteset(sset_ep02_purchase, "gfx/engines/ep02.png")   { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_ep02, "gfx/engines/ep02.png")            { tmpl_sprite_train10(4, 20) }
 
 /* EP02 switches */
 switch(FEAT_TRAINS, SELF, switch_ep02_articulated, extra_callback_info1) {

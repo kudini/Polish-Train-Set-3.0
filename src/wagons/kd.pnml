@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Kd sprites */
-spriteset(sset_kd_purchase, "gfx/kd.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_kd, "gfx/kd.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_kd_open, "gfx/kd.png")         { tmpl_sprite_train(4, 80) }
+spriteset(sset_kd_purchase, "gfx/wagons/kd.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_kd, "gfx/wagons/kd.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_kd_open, "gfx/wagons/kd.png")         { tmpl_sprite_train(4, 80) }
 spritegroup sgroup_kd {
     loaded:     [sset_kd_open, sset_kd, sset_kd];
     loading:    [sset_kd_open];

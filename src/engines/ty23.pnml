@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ty23 sprites */
-spriteset(sset_ty23_purchase, "gfx/ty23.png")       { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_ty23_f1, "gfx/ty23.png")             { tmpl_sprite_train(4, 20) }
-spriteset(sset_ty23_f2, "gfx/ty23.png")             { tmpl_sprite_train(4, 20) }
-spriteset(sset_ty23_tender, "gfx/ty23.png")         { tmpl_sprite_train(4, 60) }
+spriteset(sset_ty23_purchase, "gfx/engines/ty23.png")       { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_ty23_f1, "gfx/engines/ty23.png")             { tmpl_sprite_train(4, 20) }
+spriteset(sset_ty23_f2, "gfx/engines/ty23.png")             { tmpl_sprite_train(4, 20) }
+spriteset(sset_ty23_tender, "gfx/engines/ty23.png")         { tmpl_sprite_train(4, 60) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_ty23_f1,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ty23-x2.png")    { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ty23-x2.png")    { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_ty23_f2,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ty23-x2.png")    { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ty23-x2.png")    { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_ty23_tender,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ty23-x2.png")    { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ty23-x2.png")    { tmpl_sprite_train_x2(8, 200) }
 #endif
 
 /* Ty23 switches */

@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, McZapkie, licence: GPLv2
 
 /* Gmw sprites */
-spriteset(sset_gmw_purchase, "gfx/5g.png")      { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_gmw, "gfx/5g.png")               { tmpl_sprite_train(4, 20) }
-spriteset(sset_gmw_open, "gfx/5g.png")          { tmpl_sprite_train(4, 80) }
+spriteset(sset_gmw_purchase, "gfx/wagons/5g.png")      { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_gmw, "gfx/wagons/5g.png")               { tmpl_sprite_train(4, 20) }
+spriteset(sset_gmw_open, "gfx/wagons/5g.png")          { tmpl_sprite_train(4, 80) }
 spritegroup sgroup_gmw {
     loaded:     [sset_gmw];
     loading:    [sset_gmw_open];

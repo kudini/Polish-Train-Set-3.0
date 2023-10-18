@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Twindexx control car sprites */
-spriteset(sset_twindexxcc_purchase, "gfx/twindexx.png")  { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_twindexxcc, "gfx/twindexx.png")           { tmpl_sprite_train12(4, 80) }
-spriteset(sset_twindexxcc_open, "gfx/twindexx.png")      { tmpl_sprite_train12(4, 160) }
-spriteset(sset_twindexxcc_cut, "gfx/twindexx.png")       { tmpl_sprite_train12(4, 320) }
-spriteset(sset_twindexxcc_rear, "gfx/twindexx.png")      { tmpl_sprite_train(32, 440) }
-spriteset(sset_twindexxcc_rear_open, "gfx/twindexx.png") { tmpl_sprite_train(32, 480) }
-spriteset(sset_twindexxcc_l, "gfx/twindexx.png")         { tmpl_sprite_train12_l(4, 240) }
-spriteset(sset_twindexxcc_r, "gfx/twindexx.png")         { tmpl_sprite_train12_r(4, 240) }
+spriteset(sset_twindexxcc_purchase, "gfx/wagons/twindexx.png")  { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_twindexxcc, "gfx/wagons/twindexx.png")           { tmpl_sprite_train12(4, 80) }
+spriteset(sset_twindexxcc_open, "gfx/wagons/twindexx.png")      { tmpl_sprite_train12(4, 160) }
+spriteset(sset_twindexxcc_cut, "gfx/wagons/twindexx.png")       { tmpl_sprite_train12(4, 320) }
+spriteset(sset_twindexxcc_rear, "gfx/wagons/twindexx.png")      { tmpl_sprite_train(32, 440) }
+spriteset(sset_twindexxcc_rear_open, "gfx/wagons/twindexx.png") { tmpl_sprite_train(32, 480) }
+spriteset(sset_twindexxcc_l, "gfx/wagons/twindexx.png")         { tmpl_sprite_train12_l(4, 240) }
+spriteset(sset_twindexxcc_r, "gfx/wagons/twindexx.png")         { tmpl_sprite_train12_r(4, 240) }
 
 spritegroup sgroup_twindexxcc {
     loaded:     [sset_twindexxcc];

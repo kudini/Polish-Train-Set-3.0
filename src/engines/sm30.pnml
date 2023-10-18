@@ -3,11 +3,11 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* SM30 sprites */
-spriteset(sset_sm30_purchase, "gfx/sm30.png")           { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sm30, "gfx/sm30.png")                    { tmpl_sprite_train(4, 20) }
-spriteset(sset_sm30_rev, "gfx/sm30.png")                { tmpl_sprite_train(4, 80) }
-spriteset(sset_sm30_pkp_cargo, "gfx/sm30.png")          { tmpl_sprite_train(4, 120) }
-spriteset(sset_sm30_pkp_cargo_rev, "gfx/sm30.png")      { tmpl_sprite_train(4, 160) }
+spriteset(sset_sm30_purchase, "gfx/engines/sm30.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sm30, "gfx/engines/sm30.png")                    { tmpl_sprite_train(4, 20) }
+spriteset(sset_sm30_rev, "gfx/engines/sm30.png")                { tmpl_sprite_train(4, 80) }
+spriteset(sset_sm30_pkp_cargo, "gfx/engines/sm30.png")          { tmpl_sprite_train(4, 120) }
+spriteset(sset_sm30_pkp_cargo_rev, "gfx/engines/sm30.png")      { tmpl_sprite_train(4, 160) }
 
 /* SM30 switches */
 switch (FEAT_TRAINS, SELF, switch_sm30_subtype_text2, cargo_subtype) {

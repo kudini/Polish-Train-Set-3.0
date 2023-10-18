@@ -3,22 +3,22 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Eaos sprites */
-spriteset(sset_eanos_old_purchase, "gfx/415w.png")       { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_eanos_new_purchase, "gfx/415w.png")       { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_eanos_old_empty, "gfx/415w.png")          { tmpl_sprite_train10(4, 20) }
-spriteset(sset_eanos_new_empty, "gfx/415w.png")          { tmpl_sprite_train10(4, 60) }
-spriteset(sset_eanos_old_half, "gfx/415w.png")           { tmpl_sprite_train10(4, 140) }
-spriteset(sset_eanos_new_half, "gfx/415w.png")           { tmpl_sprite_train10(4, 380) }
-spriteset(sset_eanos_old_full, "gfx/415w.png")           { tmpl_sprite_train10(4, 180) }
-spriteset(sset_eanos_new_full, "gfx/415w.png")           { tmpl_sprite_train10(4, 420) }
-spriteset(sset_eanos_old_wood_half, "gfx/415w.png")      { tmpl_sprite_train10(4, 220) }
-spriteset(sset_eanos_new_wood_half, "gfx/415w.png")      { tmpl_sprite_train10(4, 460) }
-spriteset(sset_eanos_old_wood_full, "gfx/415w.png")      { tmpl_sprite_train10(4, 260) }
-spriteset(sset_eanos_new_wood_full, "gfx/415w.png")      { tmpl_sprite_train10(4, 500) }
-spriteset(sset_eanos_old_wdpr_half, "gfx/415w.png")      { tmpl_sprite_train10(4, 300) }
-spriteset(sset_eanos_new_wdpr_half, "gfx/415w.png")      { tmpl_sprite_train10(4, 540) }
-spriteset(sset_eanos_old_wdpr_full, "gfx/415w.png")      { tmpl_sprite_train10(4, 340) }
-spriteset(sset_eanos_new_wdpr_full, "gfx/415w.png")      { tmpl_sprite_train10(4, 580) }
+spriteset(sset_eanos_old_purchase, "gfx/wagons/415w.png")       { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_eanos_new_purchase, "gfx/wagons/415w.png")       { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_eanos_old_empty, "gfx/wagons/415w.png")          { tmpl_sprite_train10(4, 20) }
+spriteset(sset_eanos_new_empty, "gfx/wagons/415w.png")          { tmpl_sprite_train10(4, 60) }
+spriteset(sset_eanos_old_half, "gfx/wagons/415w.png")           { tmpl_sprite_train10(4, 140) }
+spriteset(sset_eanos_new_half, "gfx/wagons/415w.png")           { tmpl_sprite_train10(4, 380) }
+spriteset(sset_eanos_old_full, "gfx/wagons/415w.png")           { tmpl_sprite_train10(4, 180) }
+spriteset(sset_eanos_new_full, "gfx/wagons/415w.png")           { tmpl_sprite_train10(4, 420) }
+spriteset(sset_eanos_old_wood_half, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 220) }
+spriteset(sset_eanos_new_wood_half, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 460) }
+spriteset(sset_eanos_old_wood_full, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 260) }
+spriteset(sset_eanos_new_wood_full, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 500) }
+spriteset(sset_eanos_old_wdpr_half, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 300) }
+spriteset(sset_eanos_new_wdpr_half, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 540) }
+spriteset(sset_eanos_old_wdpr_full, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 340) }
+spriteset(sset_eanos_new_wdpr_full, "gfx/wagons/415w.png")      { tmpl_sprite_train10(4, 580) }
 
 spritegroup sgroup_eanos_old {
     loaded:     [sset_eanos_old_empty, sset_eanos_old_half, sset_eanos_old_full];

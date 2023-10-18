@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Fy sprites */
-spriteset(sset_fy_purchase, "gfx/fy.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_fy, "gfx/fy.png")                { tmpl_sprite_train(4, 20) }
-spriteset(sset_fy_open, "gfx/fy.png")           { tmpl_sprite_train(4, 80) }
+spriteset(sset_fy_purchase, "gfx/wagons/fy.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_fy, "gfx/wagons/fy.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_fy_open, "gfx/wagons/fy.png")           { tmpl_sprite_train(4, 80) }
 #ifdef _ZOOM_SPRITES_ENABLED_
 alternative_sprites(sset_fy,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/fy-x2.png")      { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/fy-x2.png")      { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_fy_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/fy-x2.png")      { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/fy-x2.png")      { tmpl_sprite_train_x2(8, 120) }
 #endif
 spritegroup sgroup_fy {
     loaded:     [sset_fy];
