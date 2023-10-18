@@ -2,7 +2,7 @@
 
 # GRF name and description
 STR_GRF_NAME        :{TITLE} {VERSION}
-STR_GRF_DESCRIPTION :{ORANGE}{TITLE} {VERSION}{BLACK} contains most known Polish rolling stock used over the years, since 1918 to the present.{}{COPYRIGHT}2011-2015{}Author: {SILVER}TadeuszD{BLACK}{}Graphics: {SILVER}TadeuszD{BLACK}, {SILVER}Walter Novotny{BLACK}, {SILVER}Sojita{BLACK}, {SILVER}McZapkie{BLACK}, {SILVER}Czajnikowiec{BLACK}, {SILVER}101ksl{BLACK}, {SILVER}Mewa{BLACK}{}Special thanks to: {SILVER}niemiec{BLACK}{}License: {SILVER}GPLv2{BLACK}{}WWW: {LTBLUE}http://openttd-polska.pl{BLACK}
+STR_GRF_DESCRIPTION :{ORANGE}{TITLE} {VERSION}{BLACK} contains most known Polish rolling stock used over the years, since 1918 to the present.{}{COPYRIGHT}{TIMELINE}{}Author: {SILVER}{AUTHOR}{BLACK}{}Graphics: {SILVER}{GRAPHICS}{BLACK}{}Special thanks to: {SILVER}niemiec{BLACK}{}License: {SILVER}GPLv2{BLACK}{}WWW: {LTBLUE}http://openttd-polska.pl{BLACK}
 
 # GRF parameters
 STR_PARAM_NAME_DISABLE_ORIG     :Disable original normal trains

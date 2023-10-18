@@ -5,7 +5,7 @@
 
 # GRF name and description
 STR_GRF_NAME        :{TITLE} {VERSION}
-STR_GRF_DESCRIPTION :{ORANGE}{TITLE} {VERSION}{BLACK} zawiera zestaw powszechnie znanego polskiego taboru kolejowego, eksploatowanego od 1918r. aż do dnia dzisiejszego.{}{COPYRIGHT}2011-2021{}Autor: {SILVER}TadeuszD{BLACK}, {SILVER}Mewa{BLACK}{}Grafiki: {SILVER}TadeuszD{BLACK}, {SILVER}Walter Novotny{BLACK}, {SILVER}Sojita{BLACK}, {SILVER}McZapkie{BLACK}, {SILVER}Czajnikowiec{BLACK}, {SILVER}101ksl{BLACK}, {SILVER}Mewa{BLACK}{}Podziękowania dla: {SILVER}niemiec{BLACK}{}Licencja: {SILVER}GPLv2{BLACK}{}WWW: {LTBLUE}http://openttd-polska.pl{BLACK}
+STR_GRF_DESCRIPTION :{ORANGE}{TITLE} {VERSION}{BLACK} zawiera zestaw powszechnie znanego polskiego taboru kolejowego, eksploatowanego od 1918r. aż do dnia dzisiejszego.{}{COPYRIGHT}{TIMELINE}{}Autor: {SILVER}{AUTHOR}{BLACK}{}Grafiki: {SILVER}{GRAPHICS}{BLACK}{}Podziękowania dla: {SILVER}niemiec{BLACK}{}Licencja: {SILVER}GPLv2{BLACK}{}WWW: {LTBLUE}http://openttd-polska.pl{BLACK}
 
 # GRF parameters
 STR_PARAM_NAME_DISABLE_ORIG     :Wyłącz oryginalne pociągi normalnotorowe
