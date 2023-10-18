@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* ET26 (Dragon 2) sprites */
-spriteset(sset_et26_purchase, "gfx/et26.png")  { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_et26, "gfx/et26.png")           { tmpl_sprite_train12(4, 20) }
-spriteset(sset_et26_diesel, "gfx/et26.png")    { tmpl_sprite_train12(4, 80) }
+spriteset(sset_et26_purchase, "gfx/engines/et26.png")  { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_et26, "gfx/engines/et26.png")           { tmpl_sprite_train12(4, 20) }
+spriteset(sset_et26_diesel, "gfx/engines/et26.png")    { tmpl_sprite_train12(4, 80) }
 
 
 /* ET26 (Dragon 2) switches */

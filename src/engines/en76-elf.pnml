@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* EN76 sprites */
-spriteset(sset_en76_purchase, "gfx/en76-elf.png")   { tmpl_sprite_purchase(4, 140) }
-spriteset(sset_en76_advert, "gfx/en76-elf.png")   { tmpl_sprite_purchase(4, 280) }
+spriteset(sset_en76_purchase, "gfx/engines/en76-elf.png")   { tmpl_sprite_purchase(4, 140) }
+spriteset(sset_en76_advert, "gfx/engines/en76-elf.png")   { tmpl_sprite_purchase(4, 280) }
 
-spriteset(sset_en76_head, "gfx/en76-elf.png")       { tmpl_sprite_train10(4, 20) }
-spriteset(sset_en76_mid1, "gfx/en76-elf.png")       { tmpl_sprite_train10_offset(4, 60, 1) }
-spriteset(sset_en76_mid2, "gfx/en76-elf.png")       { tmpl_sprite_train10(4, 60) }
-spriteset(sset_en76_tail, "gfx/en76-elf.png")       { tmpl_sprite_train10_offset(4, 100, 2) }
-spriteset(sset_en76_head_open, "gfx/en76-elf.png")  { tmpl_sprite_train10(4, 160) }
-spriteset(sset_en76_mid1_open, "gfx/en76-elf.png")  { tmpl_sprite_train10_offset(4, 200, 1) }
-spriteset(sset_en76_mid2_open, "gfx/en76-elf.png")  { tmpl_sprite_train10(4, 200) }
-spriteset(sset_en76_tail_open, "gfx/en76-elf.png")  { tmpl_sprite_train10_offset(4, 240, 2) }
+spriteset(sset_en76_head, "gfx/engines/en76-elf.png")       { tmpl_sprite_train10(4, 20) }
+spriteset(sset_en76_mid1, "gfx/engines/en76-elf.png")       { tmpl_sprite_train10_offset(4, 60, 1) }
+spriteset(sset_en76_mid2, "gfx/engines/en76-elf.png")       { tmpl_sprite_train10(4, 60) }
+spriteset(sset_en76_tail, "gfx/engines/en76-elf.png")       { tmpl_sprite_train10_offset(4, 100, 2) }
+spriteset(sset_en76_head_open, "gfx/engines/en76-elf.png")  { tmpl_sprite_train10(4, 160) }
+spriteset(sset_en76_mid1_open, "gfx/engines/en76-elf.png")  { tmpl_sprite_train10_offset(4, 200, 1) }
+spriteset(sset_en76_mid2_open, "gfx/engines/en76-elf.png")  { tmpl_sprite_train10(4, 200) }
+spriteset(sset_en76_tail_open, "gfx/engines/en76-elf.png")  { tmpl_sprite_train10_offset(4, 240, 2) }
 spritegroup sgroup_en76_head {
     loaded:     [sset_en76_head];
     loading:    [sset_en76_head_open];

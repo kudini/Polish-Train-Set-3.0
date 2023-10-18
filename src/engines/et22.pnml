@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* ET22 sprites */
-spriteset(sset_et22_purchase, "gfx/et22.png")   { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_et22, "gfx/et22.png")            { tmpl_sprite_train10(4, 20) }
-spriteset(sset_et22_pkp_cargo, "gfx/et22.png")  { tmpl_sprite_train10(4, 80) }
+spriteset(sset_et22_purchase, "gfx/engines/et22.png")   { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_et22, "gfx/engines/et22.png")            { tmpl_sprite_train10(4, 20) }
+spriteset(sset_et22_pkp_cargo, "gfx/engines/et22.png")  { tmpl_sprite_train10(4, 80) }
 
 /* ET22 switches */
 switch (FEAT_TRAINS, SELF, switch_et22_subtype_text2, cargo_subtype) {

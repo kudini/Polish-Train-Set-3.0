@@ -3,10 +3,10 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* EP09 sprites */
-spriteset(sset_ep09_purchase, "gfx/ep09.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_ep09, "gfx/ep09.png")                { tmpl_sprite_train10(4, 20) }
-spriteset(sset_ep09_pkp_ic, "gfx/ep09.png")         { tmpl_sprite_train10(4, 80) }
-spriteset(sset_ep09_pkp_cargo, "gfx/ep09.png")      { tmpl_sprite_train10(4, 120) }
+spriteset(sset_ep09_purchase, "gfx/engines/ep09.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_ep09, "gfx/engines/ep09.png")                { tmpl_sprite_train10(4, 20) }
+spriteset(sset_ep09_pkp_ic, "gfx/engines/ep09.png")         { tmpl_sprite_train10(4, 80) }
+spriteset(sset_ep09_pkp_cargo, "gfx/engines/ep09.png")      { tmpl_sprite_train10(4, 120) }
 
 /* EP09 switches */
 switch (FEAT_TRAINS, SELF, switch_ep09_subtype_text2, cargo_subtype) {

@@ -3,7 +3,7 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* ED250 sprites */
-#define ED250_FILE   "gfx/ed250-pendolino.png"
+#define ED250_FILE   "gfx/engines/ed250-pendolino.png"
 spriteset(sset_ed250_purchase, ED250_FILE)          { tmpl_sprite_purchase(4, 1140) }
 spriteset(sset_ed250_advert, ED250_FILE)            { tmpl_sprite_advertisement300(4, 1160) }
 

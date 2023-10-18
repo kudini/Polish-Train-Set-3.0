@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ty51 sprites */
-spriteset(sset_ty51_purchase, "gfx/ty51.png")       { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_ty51_f1, "gfx/ty51.png")             { tmpl_sprite_train10(4, 20) }
-spriteset(sset_ty51_f2, "gfx/ty51.png")             { tmpl_sprite_train10(4, 20) }
-spriteset(sset_ty51_tender, "gfx/ty51.png")         { tmpl_sprite_train(4, 60) }
+spriteset(sset_ty51_purchase, "gfx/engines/ty51.png")       { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_ty51_f1, "gfx/engines/ty51.png")             { tmpl_sprite_train10(4, 20) }
+spriteset(sset_ty51_f2, "gfx/engines/ty51.png")             { tmpl_sprite_train10(4, 20) }
+spriteset(sset_ty51_tender, "gfx/engines/ty51.png")         { tmpl_sprite_train(4, 60) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_ty51_f1,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ty51-x2.png")    { tmpl_sprite_train10_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ty51-x2.png")    { tmpl_sprite_train10_x2(8, 40) }
 alternative_sprites(sset_ty51_f2,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ty51-x2.png")    { tmpl_sprite_train10_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ty51-x2.png")    { tmpl_sprite_train10_x2(8, 120) }
 alternative_sprites(sset_ty51_tender,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ty51-x2.png")    { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ty51-x2.png")    { tmpl_sprite_train_x2(8, 200) }
 #endif
 
 /* Ty51 switches */

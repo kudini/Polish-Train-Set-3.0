@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* SM42/SP42/SU42 sprites */
-spriteset(sset_sm42_purchase, "gfx/sm42.png")   { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sm42, "gfx/sm42.png")            { tmpl_sprite_train(4, 20) }
-spriteset(sset_sp42_purchase, "gfx/sm42.png")   { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_sp42, "gfx/sm42.png")            { tmpl_sprite_train(4, 80) }
-spriteset(sset_su42_purchase, "gfx/sm42.png")   { tmpl_sprite_purchase(4, 180) }
-spriteset(sset_su42, "gfx/sm42.png")            { tmpl_sprite_train(4, 140) }
-spriteset(sset_sm42_pkp_cargo, "gfx/sm42.png")  { tmpl_sprite_train(4, 200) }
-spriteset(sset_sm42_pkp_ic, "gfx/sm42ic.png")   { tmpl_sprite_train(4, 20) }
+spriteset(sset_sm42_purchase, "gfx/engines/sm42.png")   { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sm42, "gfx/engines/sm42.png")            { tmpl_sprite_train(4, 20) }
+spriteset(sset_sp42_purchase, "gfx/engines/sm42.png")   { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_sp42, "gfx/engines/sm42.png")            { tmpl_sprite_train(4, 80) }
+spriteset(sset_su42_purchase, "gfx/engines/sm42.png")   { tmpl_sprite_purchase(4, 180) }
+spriteset(sset_su42, "gfx/engines/sm42.png")            { tmpl_sprite_train(4, 140) }
+spriteset(sset_sm42_pkp_cargo, "gfx/engines/sm42.png")  { tmpl_sprite_train(4, 200) }
+spriteset(sset_sm42_pkp_ic, "gfx/engines/sm42ic.png")   { tmpl_sprite_train(4, 20) }
 
 /* SM42/SP42/SU42 switches */
 #define IS_SM42_NEW_LIVERY(year)    (build_year >= year) || (date_of_last_service >= date(year, 1, 1))

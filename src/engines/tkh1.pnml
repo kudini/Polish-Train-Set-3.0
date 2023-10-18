@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* TKh1 sprites */
-spriteset(sset_tkh1_purchase, "gfx/tkh1.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_tkh1, "gfx/tkh1.png")                { tmpl_sprite_train(4, 20) }
-spriteset(sset_tkh1_rev, "gfx/tkh1.png")            { tmpl_sprite_train(4, 80) }
+spriteset(sset_tkh1_purchase, "gfx/engines/tkh1.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_tkh1, "gfx/engines/tkh1.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_tkh1_rev, "gfx/engines/tkh1.png")            { tmpl_sprite_train(4, 80) }
 
 /* TKh1 switches */
 switch(FEAT_TRAINS, PARENT, switch_tkh1_graphics, vehicle_is_reversed) {

@@ -3,8 +3,8 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* EU46 (Vectron) sprites */
-spriteset(sset_eu46_purchase, "gfx/vectron.png")    { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_eu46, "gfx/vectron.png")             { tmpl_sprite_train10(4, 20) }
+spriteset(sset_eu46_purchase, "gfx/engines/vectron.png")    { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eu46, "gfx/engines/vectron.png")             { tmpl_sprite_train10(4, 20) }
 
 /* EU46 (Vectron) switches */
 switch(FEAT_TRAINS, SELF, switch_eu46_articulated, extra_callback_info1) {

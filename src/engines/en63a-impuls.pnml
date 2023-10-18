@@ -3,15 +3,15 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* EN63A sprites */
-spriteset(sset_en63a_purchase, "gfx/en63a-impuls.png")   { tmpl_sprite_purchase(4, 140) }
-spriteset(sset_en63a_advert, "gfx/en63a-impuls.png")   { tmpl_sprite_advertisement200(4, 280) }
+spriteset(sset_en63a_purchase, "gfx/engines/en63a-impuls.png")   { tmpl_sprite_purchase(4, 140) }
+spriteset(sset_en63a_advert, "gfx/engines/en63a-impuls.png")   { tmpl_sprite_advertisement200(4, 280) }
 
-spriteset(sset_en63a_head, "gfx/en63a-impuls.png")       { tmpl_sprite_train12(4, 20) }
-spriteset(sset_en63a_mid, "gfx/en63a-impuls.png")       { tmpl_sprite_train10_offset(4, 60, 1) }
-spriteset(sset_en63a_tail, "gfx/en63a-impuls.png")       { tmpl_sprite_train12_offset(4, 100, 3) }
-spriteset(sset_en63a_head_open, "gfx/en63a-impuls.png")  { tmpl_sprite_train12(4, 160) }
-spriteset(sset_en63a_mid_open, "gfx/en63a-impuls.png")  { tmpl_sprite_train10_offset(4, 200, 1) }
-spriteset(sset_en63a_tail_open, "gfx/en63a-impuls.png")  { tmpl_sprite_train12_offset(4, 240, 3) }
+spriteset(sset_en63a_head, "gfx/engines/en63a-impuls.png")       { tmpl_sprite_train12(4, 20) }
+spriteset(sset_en63a_mid, "gfx/engines/en63a-impuls.png")       { tmpl_sprite_train10_offset(4, 60, 1) }
+spriteset(sset_en63a_tail, "gfx/engines/en63a-impuls.png")       { tmpl_sprite_train12_offset(4, 100, 3) }
+spriteset(sset_en63a_head_open, "gfx/engines/en63a-impuls.png")  { tmpl_sprite_train12(4, 160) }
+spriteset(sset_en63a_mid_open, "gfx/engines/en63a-impuls.png")  { tmpl_sprite_train10_offset(4, 200, 1) }
+spriteset(sset_en63a_tail_open, "gfx/engines/en63a-impuls.png")  { tmpl_sprite_train12_offset(4, 240, 3) }
 spritegroup sgroup_en63a_head {
     loaded:     [sset_en63a_head];
     loading:    [sset_en63a_head_open];
@@ -27,17 +27,17 @@ spritegroup sgroup_en63a_tail {
 
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_en63a_head,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/en63a-impuls-x2.png")   { tmpl_sprite_train12_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/en63a-impuls-x2.png")   { tmpl_sprite_train12_x2(8, 40) }
 alternative_sprites(sset_en63a_mid,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/en63a-impuls-x2.png")   { tmpl_sprite_train10_offset_x2(8, 120, 1) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/en63a-impuls-x2.png")   { tmpl_sprite_train10_offset_x2(8, 120, 1) }
 alternative_sprites(sset_en63a_tail,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/en63a-impuls-x2.png")   { tmpl_sprite_train12_offset_x2(8, 200, 3) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/en63a-impuls-x2.png")   { tmpl_sprite_train12_offset_x2(8, 200, 3) }
 alternative_sprites(sset_en63a_head_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/en63a-impuls-x2.png")   { tmpl_sprite_train12_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/en63a-impuls-x2.png")   { tmpl_sprite_train12_x2(8, 280) }
 alternative_sprites(sset_en63a_mid_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/en63a-impuls-x2.png")   { tmpl_sprite_train10_offset_x2(8, 360, 1) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/en63a-impuls-x2.png")   { tmpl_sprite_train10_offset_x2(8, 360, 1) }
 alternative_sprites(sset_en63a_tail_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/en63a-impuls-x2.png")   { tmpl_sprite_train12_offset_x2(8, 440, 3) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/en63a-impuls-x2.png")   { tmpl_sprite_train12_offset_x2(8, 440, 3) }
 #endif
 
 /* EN63A switches */

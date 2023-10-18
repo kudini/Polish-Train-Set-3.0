@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ti12 sprites */
-spriteset(sset_ti12_purchase, "gfx/ti12.png")   { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_ti12, "gfx/ti12.png")            { tmpl_sprite_train(4, 20) }
-spriteset(sset_ti12_tender, "gfx/ti12.png")     { tmpl_sprite_train(4, 60) }
+spriteset(sset_ti12_purchase, "gfx/engines/ti12.png")   { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_ti12, "gfx/engines/ti12.png")            { tmpl_sprite_train(4, 20) }
+spriteset(sset_ti12_tender, "gfx/engines/ti12.png")     { tmpl_sprite_train(4, 60) }
 
 /* Ti12 switches */
 switch(FEAT_TRAINS, SELF, switch_ti12_articulated, extra_callback_info1) {

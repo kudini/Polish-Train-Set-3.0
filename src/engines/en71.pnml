@@ -5,7 +5,7 @@
 // This file requires enxx-common.pnml included before
 
 /* EN71 sprites */
-spriteset(sset_en71_advert, "gfx/en57.png")         { tmpl_sprite_advertisement200(4, 300) }
+spriteset(sset_en71_advert, "gfx/engines/en57.png")         { tmpl_sprite_advertisement200(4, 300) }
 
 /* EN71 switches */
 switch(FEAT_TRAINS, SELF, switch_en71_purchase, extra_callback_info1 & 0xFF) {

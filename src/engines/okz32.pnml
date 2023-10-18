@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* OKz32 sprites */
-spriteset(sset_okz32_purchase, "gfx/okz32.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_okz32, "gfx/okz32.png")              { tmpl_sprite_train10(4, 20) }
-spriteset(sset_okz32_rev, "gfx/okz32.png")          { tmpl_sprite_train10(4, 80) }
+spriteset(sset_okz32_purchase, "gfx/engines/okz32.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_okz32, "gfx/engines/okz32.png")              { tmpl_sprite_train10(4, 20) }
+spriteset(sset_okz32_rev, "gfx/engines/okz32.png")          { tmpl_sprite_train10(4, 80) }
 
 /* OKz32 switches */
 switch(FEAT_TRAINS, SELF, switch_okz32_articulated, extra_callback_info1) {

@@ -3,11 +3,11 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* ST44 sprites */
-spriteset(sset_st44_purchase, "gfx/st44.png")           { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_st44_purchase_yellow, "gfx/st44.png")    { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_st44, "gfx/st44.png")                    { tmpl_sprite_train10(4, 20) }
-spriteset(sset_st44_yellow, "gfx/st44.png")             { tmpl_sprite_train10(4, 80) }
-spriteset(sset_st44_pkp_cargo, "gfx/st44.png")          { tmpl_sprite_train10(4, 140) }
+spriteset(sset_st44_purchase, "gfx/engines/st44.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_st44_purchase_yellow, "gfx/engines/st44.png")    { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_st44, "gfx/engines/st44.png")                    { tmpl_sprite_train10(4, 20) }
+spriteset(sset_st44_yellow, "gfx/engines/st44.png")             { tmpl_sprite_train10(4, 80) }
+spriteset(sset_st44_pkp_cargo, "gfx/engines/st44.png")          { tmpl_sprite_train10(4, 140) }
 
 /* ST44 switches */
 #define IS_ST44_YELLOW  build_year >= 1989

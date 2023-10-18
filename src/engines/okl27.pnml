@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* OKl27 sprites */
-spriteset(sset_okl27_purchase, "gfx/okl27.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_okl27, "gfx/okl27.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_okl27_rev, "gfx/okl27.png")          { tmpl_sprite_train(4, 80) }
+spriteset(sset_okl27_purchase, "gfx/engines/okl27.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_okl27, "gfx/engines/okl27.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_okl27_rev, "gfx/engines/okl27.png")          { tmpl_sprite_train(4, 80) }
 
 /* OKl27 switches */
 switch(FEAT_TRAINS, PARENT, switch_okl27_graphics, vehicle_is_reversed) {

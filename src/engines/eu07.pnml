@@ -3,15 +3,15 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* EU07 sprites */
-spriteset(sset_eu07_purchase, "gfx/eu07.png")           { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_eu07_purchase_yellow, "gfx/eu07.png")    { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_eu07, "gfx/eu07.png")                    { tmpl_sprite_train10(4, 20) }
-spriteset(sset_eu07_yellow, "gfx/eu07.png")             { tmpl_sprite_train10(4, 80) }
-spriteset(sset_eu07_pkp_ic, "gfx/eu07.png")             { tmpl_sprite_train10(4, 140) }
-spriteset(sset_eu07_pkp_cargo, "gfx/eu07.png")          { tmpl_sprite_train10(4, 180) }
-spriteset(sset_eu07_pkp_pr1, "gfx/eu07.png")            { tmpl_sprite_train10(4, 220) }
-spriteset(sset_eu07_pkp_pr2, "gfx/eu07.png")            { tmpl_sprite_train10(4, 260) }
-spriteset(sset_eu07_pkp_polregio, "gfx/eu07.png")       { tmpl_sprite_train10(4, 300) }
+spriteset(sset_eu07_purchase, "gfx/engines/eu07.png")           { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eu07_purchase_yellow, "gfx/engines/eu07.png")    { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_eu07, "gfx/engines/eu07.png")                    { tmpl_sprite_train10(4, 20) }
+spriteset(sset_eu07_yellow, "gfx/engines/eu07.png")             { tmpl_sprite_train10(4, 80) }
+spriteset(sset_eu07_pkp_ic, "gfx/engines/eu07.png")             { tmpl_sprite_train10(4, 140) }
+spriteset(sset_eu07_pkp_cargo, "gfx/engines/eu07.png")          { tmpl_sprite_train10(4, 180) }
+spriteset(sset_eu07_pkp_pr1, "gfx/engines/eu07.png")            { tmpl_sprite_train10(4, 220) }
+spriteset(sset_eu07_pkp_pr2, "gfx/engines/eu07.png")            { tmpl_sprite_train10(4, 260) }
+spriteset(sset_eu07_pkp_polregio, "gfx/engines/eu07.png")       { tmpl_sprite_train10(4, 300) }
 
 /* EU07 switches */
 #define IS_EU07_YELLOW               build_year >= 1989

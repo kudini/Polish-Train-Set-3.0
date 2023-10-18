@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* SU46 sprites */
-spriteset(sset_su46_purchase, "gfx/su46.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_su46, "gfx/su46.png")                { tmpl_sprite_train10(4, 20) }
-spriteset(sset_su46_pkp_cargo, "gfx/su46.png")      { tmpl_sprite_train10(4, 80) }
+spriteset(sset_su46_purchase, "gfx/engines/su46.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_su46, "gfx/engines/su46.png")                { tmpl_sprite_train10(4, 20) }
+spriteset(sset_su46_pkp_cargo, "gfx/engines/su46.png")      { tmpl_sprite_train10(4, 80) }
 
 /* SU46 switches */
 switch (FEAT_TRAINS, SELF, switch_su46_subtype_text2, cargo_subtype) {

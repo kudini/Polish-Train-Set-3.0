@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* SP32 sprites */
-spriteset(sset_sp32_purchase, "gfx/sp32.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sp32, "gfx/sp32.png")                { tmpl_sprite_train10(4, 20) }
-spriteset(sset_sp32_rev, "gfx/sp32.png")            { tmpl_sprite_train10(4, 80) }
+spriteset(sset_sp32_purchase, "gfx/engines/sp32.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sp32, "gfx/engines/sp32.png")                { tmpl_sprite_train10(4, 20) }
+spriteset(sset_sp32_rev, "gfx/engines/sp32.png")            { tmpl_sprite_train10(4, 80) }
 
 /* SP32 switches */
 switch(FEAT_TRAINS, SELF, switch_sp32_articulated, extra_callback_info1) {

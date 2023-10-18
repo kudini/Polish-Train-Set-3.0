@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ol49 sprites */
-spriteset(sset_ol49_purchase, "gfx/ol49.png")       { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_ol49_f1, "gfx/ol49.png")             { tmpl_sprite_train(4, 20) }
-spriteset(sset_ol49_f2, "gfx/ol49.png")             { tmpl_sprite_train(4, 20) }
-spriteset(sset_ol49_tender, "gfx/ol49.png")         { tmpl_sprite_train(4, 60) }
+spriteset(sset_ol49_purchase, "gfx/engines/ol49.png")       { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_ol49_f1, "gfx/engines/ol49.png")             { tmpl_sprite_train(4, 20) }
+spriteset(sset_ol49_f2, "gfx/engines/ol49.png")             { tmpl_sprite_train(4, 20) }
+spriteset(sset_ol49_tender, "gfx/engines/ol49.png")         { tmpl_sprite_train(4, 60) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_ol49_f1,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ol49-x2.png")    { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ol49-x2.png")    { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_ol49_f2,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ol49-x2.png")    { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ol49-x2.png")    { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_ol49_tender,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/ol49-x2.png")    { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/engines/ol49-x2.png")    { tmpl_sprite_train_x2(8, 200) }
 #endif
 
 /* Ol49 switches */

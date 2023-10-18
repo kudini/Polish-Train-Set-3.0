@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* SM41 sprites */
-spriteset(sset_sm41_purchase, "gfx/sm41.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sm41, "gfx/sm41.png")                { tmpl_sprite_train(4, 20) }
-spriteset(sset_sm41_rev, "gfx/sm41.png")            { tmpl_sprite_train(4, 80) }
+spriteset(sset_sm41_purchase, "gfx/engines/sm41.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sm41, "gfx/engines/sm41.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_sm41_rev, "gfx/engines/sm41.png")            { tmpl_sprite_train(4, 80) }
 
 /* SM41 switches */
 switch(FEAT_TRAINS, SELF, switch_sm41_add_text, IS_HEATING_CLIMATE ) {
