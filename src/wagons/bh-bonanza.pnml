@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Bh "bonanza" spritess */
-spriteset(sset_bh_bon_old_purchase, "gfx/120a.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_bh_bon_new_purchase, "gfx/120a.png")     { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_bh_bon_old, "gfx/120a.png")              { tmpl_sprite_train12(4, 20) }
-spriteset(sset_bh_bon_new, "gfx/120a.png")              { tmpl_sprite_train12(4, 80) }
-spriteset(sset_bh_bon_old_open, "gfx/120a.png")         { tmpl_sprite_train12(4, 140) }
-spriteset(sset_bh_bon_new_open, "gfx/120a.png")         { tmpl_sprite_train12(4, 180) }
-spriteset(sset_bh_bon_old_cut, "gfx/120a.png")          { tmpl_sprite_train12(4, 220) }
-spriteset(sset_bh_bon_new_cut, "gfx/120a.png")          { tmpl_sprite_train12(4, 260) }
+spriteset(sset_bh_bon_old_purchase, "gfx/wagons/120a.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_bh_bon_new_purchase, "gfx/wagons/120a.png")     { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_bh_bon_old, "gfx/wagons/120a.png")              { tmpl_sprite_train12(4, 20) }
+spriteset(sset_bh_bon_new, "gfx/wagons/120a.png")              { tmpl_sprite_train12(4, 80) }
+spriteset(sset_bh_bon_old_open, "gfx/wagons/120a.png")         { tmpl_sprite_train12(4, 140) }
+spriteset(sset_bh_bon_new_open, "gfx/wagons/120a.png")         { tmpl_sprite_train12(4, 180) }
+spriteset(sset_bh_bon_old_cut, "gfx/wagons/120a.png")          { tmpl_sprite_train12(4, 220) }
+spriteset(sset_bh_bon_new_cut, "gfx/wagons/120a.png")          { tmpl_sprite_train12(4, 260) }
 spritegroup sgroup_bh_bon_old {
     loaded:     [sset_bh_bon_old];
     loading:    [sset_bh_bon_old_open];

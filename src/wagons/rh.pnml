@@ -3,11 +3,11 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Rh sprites */
-spriteset(sset_rh_purchase, "gfx/rh.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_rh, "gfx/rh.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_rh_purchase, "gfx/wagons/rh.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_rh, "gfx/wagons/rh.png")                { tmpl_sprite_train(4, 20) }
 #ifdef _ZOOM_SPRITES_ENABLED_
 alternative_sprites(sset_rh,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/rh-x2.png")      { tmpl_sprite_train_sym_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/rh-x2.png")      { tmpl_sprite_train_sym_x2(8, 40) }
 #endif
 
 /* Define the actual train */

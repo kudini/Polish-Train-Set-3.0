@@ -3,29 +3,29 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Eanos (445W) sprites */
-spriteset(sset_eanos_445w_purchase, "gfx/445w.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_eanos_445w_empty, "gfx/445w.png")          { tmpl_sprite_train(4, 20) }
-spriteset(sset_eanos_445w_half, "gfx/445w.png")           { tmpl_sprite_train(4, 80) }
-spriteset(sset_eanos_445w_full, "gfx/445w.png")           { tmpl_sprite_train(4, 120) }
-spriteset(sset_eanos_445w_wood_half, "gfx/445w.png")      { tmpl_sprite_train(4, 160) }
-spriteset(sset_eanos_445w_wood_full, "gfx/445w.png")      { tmpl_sprite_train(4, 200) }
-spriteset(sset_eanos_445w_wdpr_half, "gfx/445w.png")      { tmpl_sprite_train(4, 240) }
-spriteset(sset_eanos_445w_wdpr_full, "gfx/445w.png")      { tmpl_sprite_train(4, 280) }
+spriteset(sset_eanos_445w_purchase, "gfx/wagons/445w.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eanos_445w_empty, "gfx/wagons/445w.png")          { tmpl_sprite_train(4, 20) }
+spriteset(sset_eanos_445w_half, "gfx/wagons/445w.png")           { tmpl_sprite_train(4, 80) }
+spriteset(sset_eanos_445w_full, "gfx/wagons/445w.png")           { tmpl_sprite_train(4, 120) }
+spriteset(sset_eanos_445w_wood_half, "gfx/wagons/445w.png")      { tmpl_sprite_train(4, 160) }
+spriteset(sset_eanos_445w_wood_full, "gfx/wagons/445w.png")      { tmpl_sprite_train(4, 200) }
+spriteset(sset_eanos_445w_wdpr_half, "gfx/wagons/445w.png")      { tmpl_sprite_train(4, 240) }
+spriteset(sset_eanos_445w_wdpr_full, "gfx/wagons/445w.png")      { tmpl_sprite_train(4, 280) }
 /*#ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_eanos_445w_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_eanos_445w_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_eanos_445w_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 200) }
 alternative_sprites(sset_eanos_445w_wood_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 280) }
 alternative_sprites(sset_eanos_445w_wood_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 360) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 360) }
 alternative_sprites(sset_eanos_445w_wdpr_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 440) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 440) }
 alternative_sprites(sset_eanos_445w_wdpr_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/445w-x2.png")    { tmpl_sprite_train_x2(8, 520) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/445w-x2.png")    { tmpl_sprite_train_x2(8, 520) }
 #endif */
 spritegroup sgroup_eanos_445w {
     loaded:     [sset_eanos_445w_empty, sset_eanos_445w_half, sset_eanos_445w_full];

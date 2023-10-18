@@ -3,35 +3,35 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Eamos sprites */
-spriteset(sset_eamos_purchase, "gfx/401zb.png")         { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_eamos_empty, "gfx/401zb.png")            { tmpl_sprite_train(4, 20) }
-spriteset(sset_eamos_half, "gfx/401zb.png")             { tmpl_sprite_train(4, 80) }
-spriteset(sset_eamos_full, "gfx/401zb.png")             { tmpl_sprite_train(4, 120) }
-spriteset(sset_eamos_steel_half, "gfx/401zb.png")       { tmpl_sprite_train(4, 160) }
-spriteset(sset_eamos_steel_full, "gfx/401zb.png")       { tmpl_sprite_train(4, 200) }
-spriteset(sset_eamos_coper_half, "gfx/401zb.png")       { tmpl_sprite_train(4, 240) }
-spriteset(sset_eamos_coper_full, "gfx/401zb.png")       { tmpl_sprite_train(4, 280) }
-spriteset(sset_eamos_bdmat_half, "gfx/401zb.png")       { tmpl_sprite_train(4, 320) }
-spriteset(sset_eamos_bdmat_full, "gfx/401zb.png")       { tmpl_sprite_train(4, 360) }
+spriteset(sset_eamos_purchase, "gfx/wagons/401zb.png")         { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_eamos_empty, "gfx/wagons/401zb.png")            { tmpl_sprite_train(4, 20) }
+spriteset(sset_eamos_half, "gfx/wagons/401zb.png")             { tmpl_sprite_train(4, 80) }
+spriteset(sset_eamos_full, "gfx/wagons/401zb.png")             { tmpl_sprite_train(4, 120) }
+spriteset(sset_eamos_steel_half, "gfx/wagons/401zb.png")       { tmpl_sprite_train(4, 160) }
+spriteset(sset_eamos_steel_full, "gfx/wagons/401zb.png")       { tmpl_sprite_train(4, 200) }
+spriteset(sset_eamos_coper_half, "gfx/wagons/401zb.png")       { tmpl_sprite_train(4, 240) }
+spriteset(sset_eamos_coper_full, "gfx/wagons/401zb.png")       { tmpl_sprite_train(4, 280) }
+spriteset(sset_eamos_bdmat_half, "gfx/wagons/401zb.png")       { tmpl_sprite_train(4, 320) }
+spriteset(sset_eamos_bdmat_full, "gfx/wagons/401zb.png")       { tmpl_sprite_train(4, 360) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_eamos_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_eamos_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_eamos_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 200) }
 alternative_sprites(sset_eamos_steel_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 280) }
 alternative_sprites(sset_eamos_steel_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 360) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 360) }
 alternative_sprites(sset_eamos_coper_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 440) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 440) }
 alternative_sprites(sset_eamos_coper_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 520) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 520) }
 alternative_sprites(sset_eamos_bdmat_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 600) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 600) }
 alternative_sprites(sset_eamos_bdmat_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/401zb-x2.png")   { tmpl_sprite_train_x2(8, 680) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/401zb-x2.png")   { tmpl_sprite_train_x2(8, 680) }
 #endif
 spritegroup sgroup_eamos {
     loaded:     [sset_eamos_empty, sset_eamos_half, sset_eamos_full];

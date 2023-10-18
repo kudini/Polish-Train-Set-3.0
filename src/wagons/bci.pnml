@@ -3,11 +3,11 @@
 // (c) Tadeusz Domagalski, McZapkie, licence: GPLv2
 
 /* BCi sprites */
-spriteset(sset_bci_purchase, "gfx/bci.png")     { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_bci1, "gfx/bci.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_bci2, "gfx/bci.png")              { tmpl_sprite_train(4, 60) }
-spriteset(sset_bci1_open, "gfx/bci.png")         { tmpl_sprite_train(4, 120) }
-spriteset(sset_bci2_open, "gfx/bci.png")         { tmpl_sprite_train(4, 160) }
+spriteset(sset_bci_purchase, "gfx/wagons/bci.png")     { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_bci1, "gfx/wagons/bci.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_bci2, "gfx/wagons/bci.png")              { tmpl_sprite_train(4, 60) }
+spriteset(sset_bci1_open, "gfx/wagons/bci.png")         { tmpl_sprite_train(4, 120) }
+spriteset(sset_bci2_open, "gfx/wagons/bci.png")         { tmpl_sprite_train(4, 160) }
 spritegroup sgroup_bci1 {
     loaded:     [sset_bci1];
     loading:    [sset_bci1_open];

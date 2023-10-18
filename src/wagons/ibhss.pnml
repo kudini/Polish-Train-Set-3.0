@@ -3,13 +3,13 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ibhs sprites */
-spriteset(sset_ibhss_purchase, "gfx/202lc.png")      { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_ibhss, "gfx/202lc.png")               { tmpl_sprite_train_sym(4, 20) }
+spriteset(sset_ibhss_purchase, "gfx/wagons/202lc.png")      { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_ibhss, "gfx/wagons/202lc.png")               { tmpl_sprite_train_sym(4, 20) }
 alternative_sprites(sset_ibhss,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/202lc-x2.png")   { tmpl_sprite_train_sym_x2(8, 40) }
-spriteset(sset_ibhss_open, "gfx/202lc.png")          { tmpl_sprite_train_sym(4, 80) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/202lc-x2.png")   { tmpl_sprite_train_sym_x2(8, 40) }
+spriteset(sset_ibhss_open, "gfx/wagons/202lc.png")          { tmpl_sprite_train_sym(4, 80) }
 alternative_sprites(sset_ibhss_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/202lc-x2.png")   { tmpl_sprite_train_sym_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/202lc-x2.png")   { tmpl_sprite_train_sym_x2(8, 120) }
 spritegroup sgroup_ibhss {
     loaded:     [sset_ibhss];
     loading:    [sset_ibhss_open];

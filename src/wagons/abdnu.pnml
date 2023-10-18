@@ -3,9 +3,9 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* A/Bdnu sprites */
-#define ABDNU_OLD_FILE  "gfx/111a-112a.png"
-#define ABDNU_NEW_FILE  "gfx/111a-112a.png"
-#define ABDNU_IC_FILE   "gfx/140a-141a.png"
+#define ABDNU_OLD_FILE  "gfx/wagons/111a-112a.png"
+#define ABDNU_NEW_FILE  "gfx/wagons/111a-112a.png"
+#define ABDNU_IC_FILE   "gfx/wagons/140a-141a.png"
 // old livery
 spriteset(sset_abdnu_old_purchase, ABDNU_OLD_FILE)      { tmpl_sprite_purchase(4, 60) }
 spriteset(sset_abdnu_c2_old, ABDNU_OLD_FILE)            { tmpl_sprite_train12(4, 20) }

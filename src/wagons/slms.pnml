@@ -3,13 +3,13 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ibhs sprites */
-spriteset(sset_slms_purchase, "gfx/4l.png")      { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_slms, "gfx/4l.png")               { tmpl_sprite_train_sym(4, 20) }
+spriteset(sset_slms_purchase, "gfx/wagons/4l.png")      { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_slms, "gfx/wagons/4l.png")               { tmpl_sprite_train_sym(4, 20) }
 alternative_sprites(sset_slms,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/4l-x2.png")   { tmpl_sprite_train_sym_x2(8, 40) }
-spriteset(sset_slms_open, "gfx/4l.png")          { tmpl_sprite_train_sym(4, 80) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/4l-x2.png")   { tmpl_sprite_train_sym_x2(8, 40) }
+spriteset(sset_slms_open, "gfx/wagons/4l.png")          { tmpl_sprite_train_sym(4, 80) }
 alternative_sprites(sset_slms_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/4l-x2.png")   { tmpl_sprite_train_sym_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/4l-x2.png")   { tmpl_sprite_train_sym_x2(8, 120) }
 spritegroup sgroup_slms {
     loaded:     [sset_slms];
     loading:    [sset_slms_open];

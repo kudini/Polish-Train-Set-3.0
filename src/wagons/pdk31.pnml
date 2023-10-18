@@ -3,40 +3,40 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Pdk31 sprites */
-spriteset(sset_pdk31_purchase, "gfx/pdk31.png")         { tmpl_sprite_purchase(4, 100) }
-spriteset(sset_pdk31_empty, "gfx/pdk31.png")            { tmpl_sprite_train(4, 20) }
-spriteset(sset_pdk31_goods_half, "gfx/pdk31.png")       { tmpl_sprite_train(4, 120) }
-spriteset(sset_pdk31_goods_full, "gfx/pdk31.png")       { tmpl_sprite_train(4, 200) }
-spriteset(sset_pdk31_wood_half, "gfx/pdk31.png")        { tmpl_sprite_train(4, 280) }
-spriteset(sset_pdk31_wood_full, "gfx/pdk31.png")        { tmpl_sprite_train(4, 360) }
-spriteset(sset_pdk31_steel, "gfx/pdk31.png")            { tmpl_sprite_train(4, 440) }
-spriteset(sset_pdk31_coper, "gfx/pdk31.png")            { tmpl_sprite_train(4, 520) }
-spriteset(sset_pdk31_wdprd_half, "gfx/pdk31.png")       { tmpl_sprite_train(4, 600) }
-spriteset(sset_pdk31_wdprd_full, "gfx/pdk31.png")       { tmpl_sprite_train(4, 680) }
-spriteset(sset_pdk31_bdmat_half, "gfx/pdk31.png")       { tmpl_sprite_train(4, 760) }
-spriteset(sset_pdk31_bdmat_full, "gfx/pdk31.png")       { tmpl_sprite_train(4, 840) }
+spriteset(sset_pdk31_purchase, "gfx/wagons/pdk31.png")         { tmpl_sprite_purchase(4, 100) }
+spriteset(sset_pdk31_empty, "gfx/wagons/pdk31.png")            { tmpl_sprite_train(4, 20) }
+spriteset(sset_pdk31_goods_half, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 120) }
+spriteset(sset_pdk31_goods_full, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 200) }
+spriteset(sset_pdk31_wood_half, "gfx/wagons/pdk31.png")        { tmpl_sprite_train(4, 280) }
+spriteset(sset_pdk31_wood_full, "gfx/wagons/pdk31.png")        { tmpl_sprite_train(4, 360) }
+spriteset(sset_pdk31_steel, "gfx/wagons/pdk31.png")            { tmpl_sprite_train(4, 440) }
+spriteset(sset_pdk31_coper, "gfx/wagons/pdk31.png")            { tmpl_sprite_train(4, 520) }
+spriteset(sset_pdk31_wdprd_half, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 600) }
+spriteset(sset_pdk31_wdprd_full, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 680) }
+spriteset(sset_pdk31_bdmat_half, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 760) }
+spriteset(sset_pdk31_bdmat_full, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 840) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_pdk31_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_pdk31_goods_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 200) }
 alternative_sprites(sset_pdk31_goods_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 360) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 360) }
 alternative_sprites(sset_pdk31_wood_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 520) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 520) }
 alternative_sprites(sset_pdk31_wood_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 680) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 680) }
 alternative_sprites(sset_pdk31_steel,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 840) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 840) }
 // to do: coper
 alternative_sprites(sset_pdk31_wdprd_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1000) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1000) }
 alternative_sprites(sset_pdk31_wdprd_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1160) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1160) }
 alternative_sprites(sset_pdk31_bdmat_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1320) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1320) }
 alternative_sprites(sset_pdk31_bdmat_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1480) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1480) }
 #endif
 spritegroup sgroup_pdk31_goods {
     loaded:     [sset_pdk31_empty, sset_pdk31_goods_half, sset_pdk31_goods_full];
@@ -63,40 +63,40 @@ spritegroup sgroup_pdk31_bdmat {
     loading:    [sset_pdk31_empty, sset_pdk31_bdmat_half, sset_pdk31_bdmat_full];
 }
 /* Pdkh31 sprites */
-spriteset(sset_pdkh31_purchase, "gfx/pdk31.png")        { tmpl_sprite_purchase(124, 100) }
-spriteset(sset_pdkh31_empty, "gfx/pdk31.png")           { tmpl_sprite_train(4, 60) }
-spriteset(sset_pdkh31_goods_half, "gfx/pdk31.png")      { tmpl_sprite_train(4, 160) }
-spriteset(sset_pdkh31_goods_full, "gfx/pdk31.png")      { tmpl_sprite_train(4, 240) }
-spriteset(sset_pdkh31_wood_half, "gfx/pdk31.png")       { tmpl_sprite_train(4, 320) }
-spriteset(sset_pdkh31_wood_full, "gfx/pdk31.png")       { tmpl_sprite_train(4, 400) }
-spriteset(sset_pdkh31_steel, "gfx/pdk31.png")           { tmpl_sprite_train(4, 480) }
-spriteset(sset_pdkh31_coper, "gfx/pdk31.png")           { tmpl_sprite_train(4, 560) }
-spriteset(sset_pdkh31_wdprd_half, "gfx/pdk31.png")      { tmpl_sprite_train(4, 640) }
-spriteset(sset_pdkh31_wdprd_full, "gfx/pdk31.png")      { tmpl_sprite_train(4, 720) }
-spriteset(sset_pdkh31_bdmat_half, "gfx/pdk31.png")      { tmpl_sprite_train(4, 800) }
-spriteset(sset_pdkh31_bdmat_full, "gfx/pdk31.png")      { tmpl_sprite_train(4, 880) }
+spriteset(sset_pdkh31_purchase, "gfx/wagons/pdk31.png")        { tmpl_sprite_purchase(124, 100) }
+spriteset(sset_pdkh31_empty, "gfx/wagons/pdk31.png")           { tmpl_sprite_train(4, 60) }
+spriteset(sset_pdkh31_goods_half, "gfx/wagons/pdk31.png")      { tmpl_sprite_train(4, 160) }
+spriteset(sset_pdkh31_goods_full, "gfx/wagons/pdk31.png")      { tmpl_sprite_train(4, 240) }
+spriteset(sset_pdkh31_wood_half, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 320) }
+spriteset(sset_pdkh31_wood_full, "gfx/wagons/pdk31.png")       { tmpl_sprite_train(4, 400) }
+spriteset(sset_pdkh31_steel, "gfx/wagons/pdk31.png")           { tmpl_sprite_train(4, 480) }
+spriteset(sset_pdkh31_coper, "gfx/wagons/pdk31.png")           { tmpl_sprite_train(4, 560) }
+spriteset(sset_pdkh31_wdprd_half, "gfx/wagons/pdk31.png")      { tmpl_sprite_train(4, 640) }
+spriteset(sset_pdkh31_wdprd_full, "gfx/wagons/pdk31.png")      { tmpl_sprite_train(4, 720) }
+spriteset(sset_pdkh31_bdmat_half, "gfx/wagons/pdk31.png")      { tmpl_sprite_train(4, 800) }
+spriteset(sset_pdkh31_bdmat_full, "gfx/wagons/pdk31.png")      { tmpl_sprite_train(4, 880) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_pdkh31_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_pdkh31_goods_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 280) }
 alternative_sprites(sset_pdkh31_goods_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 440) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 440) }
 alternative_sprites(sset_pdkh31_wood_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 600) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 600) }
 alternative_sprites(sset_pdkh31_wood_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 760) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 760) }
 alternative_sprites(sset_pdkh31_steel,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 920) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 920) }
 // to do: coper
 alternative_sprites(sset_pdkh31_wdprd_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1080) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1080) }
 alternative_sprites(sset_pdkh31_wdprd_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1240) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1240) }
 alternative_sprites(sset_pdkh31_bdmat_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1400) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1400) }
 alternative_sprites(sset_pdkh31_bdmat_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1560) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/pdk31-x2.png")    { tmpl_sprite_train_x2(8, 1560) }
 #endif
 spritegroup sgroup_pdkh31_goods {
     loaded:     [sset_pdkh31_empty, sset_pdkh31_goods_half, sset_pdkh31_goods_full];

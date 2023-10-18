@@ -1,5 +1,12 @@
 Polish Train Set - Change log
 ================================
+3.0.4
+New:
+Adjustments:
+Adjusted gfx folders
+Adjusted code to use new gfx folders
+Adjusted Custom tags for translations
+
 3.0.3
 Fixed handling of electrified rail in OpenTTD 13 (Thanks for Brickblock1!)
 Fixed EN63A (Impuls) graphics alignment

@@ -4,31 +4,31 @@
 
 /* Bdhpumn sprites */
 // default livery
-spriteset(sset_bdhpumn_yb_purchase, "gfx/bdhpumn.png")  { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_bdhpumn_yb, "gfx/bdhpumn.png")           { tmpl_sprite_train12(4, 20) }
-spriteset(sset_bdhpumn_yb_open, "gfx/bdhpumn.png")      { tmpl_sprite_train12(4, 180) }
-spriteset(sset_bdhpumn_yb_cut, "gfx/bdhpumn.png")       { tmpl_sprite_train12(4, 420) }
-spriteset(sset_bdhpumn_yb_rear, "gfx/bdhpumn.png")      { tmpl_sprite_train12_rear(4, 20) }
-spriteset(sset_bdhpumn_yb_rear_open, "gfx/bdhpumn.png") { tmpl_sprite_train12_rear(4, 180) }
-spriteset(sset_bdhpumn_yb_l, "gfx/bdhpumn.png")         { tmpl_sprite_train12_l(4, 300) }
-spriteset(sset_bdhpumn_yb_r, "gfx/bdhpumn.png")         { tmpl_sprite_train12_r(4, 300) }
+spriteset(sset_bdhpumn_yb_purchase, "gfx/wagons/bdhpumn.png")  { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_bdhpumn_yb, "gfx/wagons/bdhpumn.png")           { tmpl_sprite_train12(4, 20) }
+spriteset(sset_bdhpumn_yb_open, "gfx/wagons/bdhpumn.png")      { tmpl_sprite_train12(4, 180) }
+spriteset(sset_bdhpumn_yb_cut, "gfx/wagons/bdhpumn.png")       { tmpl_sprite_train12(4, 420) }
+spriteset(sset_bdhpumn_yb_rear, "gfx/wagons/bdhpumn.png")      { tmpl_sprite_train12_rear(4, 20) }
+spriteset(sset_bdhpumn_yb_rear_open, "gfx/wagons/bdhpumn.png") { tmpl_sprite_train12_rear(4, 180) }
+spriteset(sset_bdhpumn_yb_l, "gfx/wagons/bdhpumn.png")         { tmpl_sprite_train12_l(4, 300) }
+spriteset(sset_bdhpumn_yb_r, "gfx/wagons/bdhpumn.png")         { tmpl_sprite_train12_r(4, 300) }
 // classic "Przewozy regionalne" livery
-spriteset(sset_bdhpumn_pr_purchase, "gfx/bdhpumn.png")  { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_bdhpumn_pr, "gfx/bdhpumn.png")           { tmpl_sprite_train12(4, 80) }
-spriteset(sset_bdhpumn_pr_open, "gfx/bdhpumn.png")      { tmpl_sprite_train12(4, 220) }
-spriteset(sset_bdhpumn_pr_cut, "gfx/bdhpumn.png")       { tmpl_sprite_train12(4, 460) }
-spriteset(sset_bdhpumn_pr_rear, "gfx/bdhpumn.png")      { tmpl_sprite_train12_rear(4, 80) }
-spriteset(sset_bdhpumn_pr_rear_open, "gfx/bdhpumn.png") { tmpl_sprite_train12_rear(4, 220) }
-spriteset(sset_bdhpumn_pr_l, "gfx/bdhpumn.png")         { tmpl_sprite_train12_l(4, 340) }
-spriteset(sset_bdhpumn_pr_r, "gfx/bdhpumn.png")         { tmpl_sprite_train12_r(4, 340) }
+spriteset(sset_bdhpumn_pr_purchase, "gfx/wagons/bdhpumn.png")  { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_bdhpumn_pr, "gfx/wagons/bdhpumn.png")           { tmpl_sprite_train12(4, 80) }
+spriteset(sset_bdhpumn_pr_open, "gfx/wagons/bdhpumn.png")      { tmpl_sprite_train12(4, 220) }
+spriteset(sset_bdhpumn_pr_cut, "gfx/wagons/bdhpumn.png")       { tmpl_sprite_train12(4, 460) }
+spriteset(sset_bdhpumn_pr_rear, "gfx/wagons/bdhpumn.png")      { tmpl_sprite_train12_rear(4, 80) }
+spriteset(sset_bdhpumn_pr_rear_open, "gfx/wagons/bdhpumn.png") { tmpl_sprite_train12_rear(4, 220) }
+spriteset(sset_bdhpumn_pr_l, "gfx/wagons/bdhpumn.png")         { tmpl_sprite_train12_l(4, 340) }
+spriteset(sset_bdhpumn_pr_r, "gfx/wagons/bdhpumn.png")         { tmpl_sprite_train12_r(4, 340) }
 // Inter-REGIO livery
-spriteset(sset_bdhpumn_ir, "gfx/bdhpumn.png")           { tmpl_sprite_train12(4, 140) }
-spriteset(sset_bdhpumn_ir_open, "gfx/bdhpumn.png")      { tmpl_sprite_train12(4, 260) }
-spriteset(sset_bdhpumn_ir_cut, "gfx/bdhpumn.png")       { tmpl_sprite_train12(4, 500) }
-spriteset(sset_bdhpumn_ir_rear, "gfx/bdhpumn.png")      { tmpl_sprite_train12_rear(4, 140) }
-spriteset(sset_bdhpumn_ir_rear_open, "gfx/bdhpumn.png") { tmpl_sprite_train12_rear(4, 260) }
-spriteset(sset_bdhpumn_ir_l, "gfx/bdhpumn.png")         { tmpl_sprite_train12_l(4, 380) }
-spriteset(sset_bdhpumn_ir_r, "gfx/bdhpumn.png")         { tmpl_sprite_train12_r(4, 380) }
+spriteset(sset_bdhpumn_ir, "gfx/wagons/bdhpumn.png")           { tmpl_sprite_train12(4, 140) }
+spriteset(sset_bdhpumn_ir_open, "gfx/wagons/bdhpumn.png")      { tmpl_sprite_train12(4, 260) }
+spriteset(sset_bdhpumn_ir_cut, "gfx/wagons/bdhpumn.png")       { tmpl_sprite_train12(4, 500) }
+spriteset(sset_bdhpumn_ir_rear, "gfx/wagons/bdhpumn.png")      { tmpl_sprite_train12_rear(4, 140) }
+spriteset(sset_bdhpumn_ir_rear_open, "gfx/wagons/bdhpumn.png") { tmpl_sprite_train12_rear(4, 260) }
+spriteset(sset_bdhpumn_ir_l, "gfx/wagons/bdhpumn.png")         { tmpl_sprite_train12_l(4, 380) }
+spriteset(sset_bdhpumn_ir_r, "gfx/wagons/bdhpumn.png")         { tmpl_sprite_train12_r(4, 380) }
 // default livery
 spritegroup sgroup_bdhpumn_yb {
     loaded:     [sset_bdhpumn_yb];

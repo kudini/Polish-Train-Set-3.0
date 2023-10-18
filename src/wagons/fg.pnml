@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Fg sprites */
-spriteset(sset_fg_purchase, "gfx/fg.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_fg, "gfx/fg.png")                { tmpl_sprite_train(4, 20) }
-spriteset(sset_fg_open, "gfx/fg.png")           { tmpl_sprite_train(4, 80) }
+spriteset(sset_fg_purchase, "gfx/wagons/fg.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_fg, "gfx/wagons/fg.png")                { tmpl_sprite_train(4, 20) }
+spriteset(sset_fg_open, "gfx/wagons/fg.png")           { tmpl_sprite_train(4, 80) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_fg,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/fg-x2.png")      { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/fg-x2.png")      { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_fg_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/fg-x2.png")      { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/fg-x2.png")      { tmpl_sprite_train_x2(8, 120) }
 #endif
 spritegroup sgroup_fg {
     loaded:     [sset_fg];

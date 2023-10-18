@@ -3,17 +3,17 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Gbs sprites */
-spriteset(sset_gbs_purchase, "gfx/208kf.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_gbs, "gfx/208kf.png")                { tmpl_sprite_train_sym(4, 20) }
-spriteset(sset_gbs_open_empty, "gfx/208kf.png")     { tmpl_sprite_train_sym(4, 80) }
-spriteset(sset_gbs_open_full, "gfx/208kf.png")      { tmpl_sprite_train_sym(4, 120) }
+spriteset(sset_gbs_purchase, "gfx/wagons/208kf.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_gbs, "gfx/wagons/208kf.png")                { tmpl_sprite_train_sym(4, 20) }
+spriteset(sset_gbs_open_empty, "gfx/wagons/208kf.png")     { tmpl_sprite_train_sym(4, 80) }
+spriteset(sset_gbs_open_full, "gfx/wagons/208kf.png")      { tmpl_sprite_train_sym(4, 120) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_gbs,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/208kf-x2.png")   { tmpl_sprite_train_sym_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/208kf-x2.png")   { tmpl_sprite_train_sym_x2(8, 40) }
 alternative_sprites(sset_gbs_open_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/208kf-x2.png")   { tmpl_sprite_train_sym_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/208kf-x2.png")   { tmpl_sprite_train_sym_x2(8, 120) }
 alternative_sprites(sset_gbs_open_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/208kf-x2.png")   { tmpl_sprite_train_sym_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/208kf-x2.png")   { tmpl_sprite_train_sym_x2(8, 200) }
 #endif
 spritegroup sgroup_gbs {
     loaded:     [sset_gbs_open_empty, sset_gbs, sset_gbs];

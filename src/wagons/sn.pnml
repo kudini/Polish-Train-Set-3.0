@@ -3,20 +3,20 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Sn sprites */
-spriteset(sset_sn_purchase, "gfx/vh14.png")         { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sn, "gfx/vh14.png")                  { tmpl_sprite_train(4, 20) }
-spriteset(sset_sn_full, "gfx/vh14.png")             { tmpl_sprite_train(4, 80) }
-spriteset(sset_sn_open, "gfx/vh14.png")             { tmpl_sprite_train(4, 120) }
-spriteset(sset_sn_open_full, "gfx/vh14.png")        { tmpl_sprite_train(4, 160) }
+spriteset(sset_sn_purchase, "gfx/wagons/vh14.png")         { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sn, "gfx/wagons/vh14.png")                  { tmpl_sprite_train(4, 20) }
+spriteset(sset_sn_full, "gfx/wagons/vh14.png")             { tmpl_sprite_train(4, 80) }
+spriteset(sset_sn_open, "gfx/wagons/vh14.png")             { tmpl_sprite_train(4, 120) }
+spriteset(sset_sn_open_full, "gfx/wagons/vh14.png")        { tmpl_sprite_train(4, 160) }
 #ifdef _ZOOM_SPRITES_ENABLED_
 alternative_sprites(sset_sn,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/vh14-x2.png")  { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/vh14-x2.png")  { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_sn_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/vh14-x2.png")  { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/vh14-x2.png")  { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_sn_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/vh14-x2.png")  { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/vh14-x2.png")  { tmpl_sprite_train_x2(8, 200) }
 alternative_sprites(sset_sn_open_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/vh14-x2.png")  { tmpl_sprite_train_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/vh14-x2.png")  { tmpl_sprite_train_x2(8, 280) }
 #endif
 spritegroup sgroup_sn {
     loaded:     [sset_sn, sset_sn_full];

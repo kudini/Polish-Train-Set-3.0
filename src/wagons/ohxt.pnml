@@ -3,8 +3,8 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Ohxt sprites */
-spriteset(sset_ohxt_purchase, "gfx/ohxt.png")   { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_ohxt, "gfx/ohxt.png")            { tmpl_sprite_train10(4, 20) }
+spriteset(sset_ohxt_purchase, "gfx/wagons/ohxt.png")   { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_ohxt, "gfx/wagons/ohxt.png")            { tmpl_sprite_train10(4, 20) }
 
 /* Ohxt sprites */
 switch(FEAT_TRAINS, SELF, switch_ohxt_articulated, extra_callback_info1) {

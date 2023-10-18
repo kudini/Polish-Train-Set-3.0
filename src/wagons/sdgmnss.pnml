@@ -3,19 +3,19 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Sdgmnss sprites */
-spriteset(sset_sdgmnss_purchase, "gfx/434s.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_sdgmnss_empty, "gfx/434s.png")          { tmpl_sprite_train10(4, 20) }
-spriteset(sset_sdgmnss_s1_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 80) }
-spriteset(sset_sdgmnss_s2_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 120) }
-spriteset(sset_sdgmnss_s3_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 160) }
-spriteset(sset_sdgmnss_s4_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 200) }
-spriteset(sset_sdgmnss_s5_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 240) }
-spriteset(sset_sdgmnss_s6_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 280) }
-spriteset(sset_sdgmnss_s7_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 320) }
-spriteset(sset_sdgmnss_s8_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 360) }
-spriteset(sset_sdgmnss_s9_full, "gfx/434s.png")        { tmpl_sprite_train10(4, 400) }
-spriteset(sset_sdgmnss_s10_full, "gfx/434s.png")       { tmpl_sprite_train10(4, 440) }
-spriteset(sset_sdgmnss_s11_full, "gfx/434s.png")       { tmpl_sprite_train10(4, 480) }
+spriteset(sset_sdgmnss_purchase, "gfx/wagons/434s.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_sdgmnss_empty, "gfx/wagons/434s.png")          { tmpl_sprite_train10(4, 20) }
+spriteset(sset_sdgmnss_s1_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 80) }
+spriteset(sset_sdgmnss_s2_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 120) }
+spriteset(sset_sdgmnss_s3_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 160) }
+spriteset(sset_sdgmnss_s4_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 200) }
+spriteset(sset_sdgmnss_s5_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 240) }
+spriteset(sset_sdgmnss_s6_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 280) }
+spriteset(sset_sdgmnss_s7_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 320) }
+spriteset(sset_sdgmnss_s8_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 360) }
+spriteset(sset_sdgmnss_s9_full, "gfx/wagons/434s.png")        { tmpl_sprite_train10(4, 400) }
+spriteset(sset_sdgmnss_s10_full, "gfx/wagons/434s.png")       { tmpl_sprite_train10(4, 440) }
+spriteset(sset_sdgmnss_s11_full, "gfx/wagons/434s.png")       { tmpl_sprite_train10(4, 480) }
 spritegroup sgroup_sdgmnss_s1 {
     loaded:     [sset_sdgmnss_empty, sset_sdgmnss_s1_full];
     loading:    [sset_sdgmnss_empty, sset_sdgmnss_s1_full];

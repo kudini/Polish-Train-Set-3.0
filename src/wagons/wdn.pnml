@@ -3,13 +3,13 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Wdn sprites */
-spriteset(sset_wdn_purchase, "gfx/wdn-gray.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_wdn_empty, "gfx/wdn-gray.png")          { tmpl_sprite_train(4, 20) }
-spriteset(sset_wdn_full, "gfx/wdn-gray.png")           { tmpl_sprite_train(4, 80) }
-spriteset(sset_wdn_wood_full, "gfx/wdn-gray.png")      { tmpl_sprite_train(4, 120) }
-spriteset(sset_wdn_wdprd_full, "gfx/wdn-gray.png")     { tmpl_sprite_train(4, 160) }
-spriteset(sset_wdn_steel_full, "gfx/wdn-gray.png")     { tmpl_sprite_train(4, 200) }
-spriteset(sset_wdn_bdmat_full, "gfx/wdn-gray.png")     { tmpl_sprite_train(4, 240) }
+spriteset(sset_wdn_purchase, "gfx/wagons/wdn-gray.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_wdn_empty, "gfx/wagons/wdn-gray.png")          { tmpl_sprite_train(4, 20) }
+spriteset(sset_wdn_full, "gfx/wagons/wdn-gray.png")           { tmpl_sprite_train(4, 80) }
+spriteset(sset_wdn_wood_full, "gfx/wagons/wdn-gray.png")      { tmpl_sprite_train(4, 120) }
+spriteset(sset_wdn_wdprd_full, "gfx/wagons/wdn-gray.png")     { tmpl_sprite_train(4, 160) }
+spriteset(sset_wdn_steel_full, "gfx/wagons/wdn-gray.png")     { tmpl_sprite_train(4, 200) }
+spriteset(sset_wdn_bdmat_full, "gfx/wagons/wdn-gray.png")     { tmpl_sprite_train(4, 240) }
 spritegroup sgroup_wdn {
     loaded:     [sset_wdn_empty, sset_wdn_full];
     loading:    [sset_wdn_empty, sset_wdn_full];

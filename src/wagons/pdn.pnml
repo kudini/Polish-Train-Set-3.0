@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, GPL 2.0
 
 /* Pdn sprites */
-spriteset(sset_pdn_old_purchase, "gfx/101c.png")    { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_pdn_new_purchase, "gfx/101c.png")    { tmpl_sprite_purchase(4, 120) }
-spriteset(sset_pdn_old, "gfx/101c.png")             { tmpl_sprite_train12(4, 20) }
-spriteset(sset_pdn_new, "gfx/101c.png")             { tmpl_sprite_train12(4, 80) }
-spriteset(sset_pdn_old_open, "gfx/101c.png")        { tmpl_sprite_train12(4, 140) }
-spriteset(sset_pdn_new_open, "gfx/101c.png")        { tmpl_sprite_train12(4, 180) }
-spriteset(sset_pdn_old_cut, "gfx/101c.png")         { tmpl_sprite_train12(4, 220) }
-spriteset(sset_pdn_new_cut, "gfx/101c.png")         { tmpl_sprite_train12(4, 260) }
+spriteset(sset_pdn_old_purchase, "gfx/wagons/101c.png")    { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_pdn_new_purchase, "gfx/wagons/101c.png")    { tmpl_sprite_purchase(4, 120) }
+spriteset(sset_pdn_old, "gfx/wagons/101c.png")             { tmpl_sprite_train12(4, 20) }
+spriteset(sset_pdn_new, "gfx/wagons/101c.png")             { tmpl_sprite_train12(4, 80) }
+spriteset(sset_pdn_old_open, "gfx/wagons/101c.png")        { tmpl_sprite_train12(4, 140) }
+spriteset(sset_pdn_new_open, "gfx/wagons/101c.png")        { tmpl_sprite_train12(4, 180) }
+spriteset(sset_pdn_old_cut, "gfx/wagons/101c.png")         { tmpl_sprite_train12(4, 220) }
+spriteset(sset_pdn_new_cut, "gfx/wagons/101c.png")         { tmpl_sprite_train12(4, 260) }
 spritegroup sgroup_pdn_old {
     loaded:     [sset_pdn_old];
     loading:    [sset_pdn_old_open];

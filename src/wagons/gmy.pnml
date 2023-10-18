@@ -3,14 +3,14 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Gmy sprites */
-spriteset(sset_gmy_purchase, "gfx/gmy.png")     { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_gmy, "gfx/gmy.png")              { tmpl_sprite_train(4, 20) }
-spriteset(sset_gmy_open, "gfx/gmy.png")         { tmpl_sprite_train(4, 80) }
+spriteset(sset_gmy_purchase, "gfx/wagons/gmy.png")     { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_gmy, "gfx/wagons/gmy.png")              { tmpl_sprite_train(4, 20) }
+spriteset(sset_gmy_open, "gfx/wagons/gmy.png")         { tmpl_sprite_train(4, 80) }
 #ifdef ZOOM_SPRITES_ENABLED
 alternative_sprites(sset_gmy,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/gmy-x2.png")   { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/gmy-x2.png")   { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_gmy_open,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/gmy-x2.png")   { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/gmy-x2.png")   { tmpl_sprite_train_x2(8, 120) }
 #endif
 spritegroup sgroup_gmy {
     loaded:     [sset_gmy];

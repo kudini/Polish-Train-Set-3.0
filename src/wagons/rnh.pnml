@@ -3,8 +3,8 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Rnh sprites */
-spriteset(sset_rnh_purchase, "gfx/kwasiarka.png")   { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_rnh, "gfx/kwasiarka.png")            { tmpl_sprite_train(4, 20) }
+spriteset(sset_rnh_purchase, "gfx/wagons/kwasiarka.png")   { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_rnh, "gfx/wagons/kwasiarka.png")            { tmpl_sprite_train(4, 20) }
 
 /* Sdw(h) switches */
 WAGON_RUNNING_COST_SWITCH(RNH, RUNNING_COST_CARGO_SMALL)

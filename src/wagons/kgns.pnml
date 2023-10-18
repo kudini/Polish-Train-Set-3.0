@@ -3,44 +3,44 @@
 // (c) Tadeusz Domagalski, licence: GPLv2
 
 /* Kgns sprites */
-spriteset(sset_kgns_purchase, "gfx/212z.png")       { tmpl_sprite_purchase(4, 60) }
-spriteset(sset_kgns_empty, "gfx/212z.png")          { tmpl_sprite_train(4, 20) }
-spriteset(sset_kgns_goods_half, "gfx/212z.png")     { tmpl_sprite_train(4, 80) }
-spriteset(sset_kgns_goods_full, "gfx/212z.png")     { tmpl_sprite_train(4, 120) }
-spriteset(sset_kgns_wood_half, "gfx/212z.png")      { tmpl_sprite_train(4, 160) }
-spriteset(sset_kgns_wood_full, "gfx/212z.png")      { tmpl_sprite_train(4, 200) }
-spriteset(sset_kgns_steel_half, "gfx/212z.png")     { tmpl_sprite_train(4, 240) }
-spriteset(sset_kgns_steel_full, "gfx/212z.png")     { tmpl_sprite_train(4, 280) }
-spriteset(sset_kgns_coper_half, "gfx/212z.png")     { tmpl_sprite_train(4, 320) }
-spriteset(sset_kgns_coper_full, "gfx/212z.png")     { tmpl_sprite_train(4, 360) }
-spriteset(sset_kgns_wdprd_half, "gfx/212z.png")     { tmpl_sprite_train(4, 400) }
-spriteset(sset_kgns_wdprd_full, "gfx/212z.png")     { tmpl_sprite_train(4, 440) }
-spriteset(sset_kgns_bdmat_half, "gfx/212z.png")     { tmpl_sprite_train(4, 480) }
-spriteset(sset_kgns_bdmat_full, "gfx/212z.png")     { tmpl_sprite_train(4, 520) }
+spriteset(sset_kgns_purchase, "gfx/wagons/212z.png")       { tmpl_sprite_purchase(4, 60) }
+spriteset(sset_kgns_empty, "gfx/wagons/212z.png")          { tmpl_sprite_train(4, 20) }
+spriteset(sset_kgns_goods_half, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 80) }
+spriteset(sset_kgns_goods_full, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 120) }
+spriteset(sset_kgns_wood_half, "gfx/wagons/212z.png")      { tmpl_sprite_train(4, 160) }
+spriteset(sset_kgns_wood_full, "gfx/wagons/212z.png")      { tmpl_sprite_train(4, 200) }
+spriteset(sset_kgns_steel_half, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 240) }
+spriteset(sset_kgns_steel_full, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 280) }
+spriteset(sset_kgns_coper_half, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 320) }
+spriteset(sset_kgns_coper_full, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 360) }
+spriteset(sset_kgns_wdprd_half, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 400) }
+spriteset(sset_kgns_wdprd_full, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 440) }
+spriteset(sset_kgns_bdmat_half, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 480) }
+spriteset(sset_kgns_bdmat_full, "gfx/wagons/212z.png")     { tmpl_sprite_train(4, 520) }
 #ifdef ZOOM_SPRITES_ENABLED_
 alternative_sprites(sset_kgns_empty,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 40) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 40) }
 alternative_sprites(sset_kgns_goods_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 120) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 120) }
 alternative_sprites(sset_kgns_goods_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 200) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 200) }
 alternative_sprites(sset_kgns_wood_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 280) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 280) }
 alternative_sprites(sset_kgns_wood_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 360) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 360) }
 alternative_sprites(sset_kgns_steel_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 440) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 440) }
 alternative_sprites(sset_kgns_steel_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 520) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 520) }
 // to do: coper
 alternative_sprites(sset_kgns_wdprd_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 600) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 600) }
 alternative_sprites(sset_kgns_wdprd_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 680) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 680) }
 alternative_sprites(sset_kgns_bdmat_half,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 760) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 760) }
 alternative_sprites(sset_kgns_bdmat_full,
-    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/212z-x2.png")    { tmpl_sprite_train_x2(8, 840) }
+    ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/wagons/212z-x2.png")    { tmpl_sprite_train_x2(8, 840) }
 #endif
 spritegroup sgroup_kgns_goods {
     loaded:     [sset_kgns_empty, sset_kgns_goods_half, sset_kgns_goods_full];
